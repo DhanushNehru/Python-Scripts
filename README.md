@@ -28,3 +28,8 @@ FontArt.py
 # Script 6 - Video Downloader
 
 VideoDownloader.py
+
+# Script 7 - Fake Profiles
+
+Get many fake profiles using python
+FakeProfile.py

@@ -52,5 +52,11 @@ GeneratePassword.py
 ## Script 10 - Simple TCP Chat Server
 server.py - Creates a local server on your LAN for receiving and sending messages!
 
+## Script 11 - Wallpaper Changer
+Automatically change home wallpaper adding a random quote and stock tickers on it
+
+## Script 12 - Star Pattern
+Create a star pattern pyramid
+
 ## Script 13 - compound interest calculator 
 calculate compound interest 

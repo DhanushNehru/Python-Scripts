@@ -43,3 +43,8 @@ FakeProfile.py
 ## Script 8 - Digital Clock
 
 DigitalClock.py
+
+
+## Script 8 - Digital Clock
+
+Generate a random password

@@ -52,5 +52,5 @@ GeneratePassword.py
 ## Script 10 - Simple TCP Chat Server
 server.py - Creates a local server on your LAN for receiving and sending messages!
 
-## Script 13 - compound intrest calculator 
-calculate compound intrest 
+## Script 13 - compound interest calculator 
+calculate compound interest 

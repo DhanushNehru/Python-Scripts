@@ -44,7 +44,7 @@ FakeProfile.py
 
 DigitalClock.py
 
-
-## Script 8 - Digital Clock
+## Script 9 - Password Generator
 
 Generate a random password
+GeneratePassword.py

@@ -57,3 +57,6 @@ Automatically change home wallpaper adding a random quote and stock tickers on i
 
 ## Script 12 - Star Pattern
 Create a star pattern pyramid
+
+## Script 13 - File Encryption Decryption
+Encrypt the given file using AES algorithm and decrypt it automatically

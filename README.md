@@ -54,3 +54,6 @@ server.py - Creates a local server on your LAN for receiving and sending message
 
 ## Script 11 - Wallpaper Changer
 Automatically change home wallpaper adding a random quote and stock tickers on it
+
+## Script 12 - Star Pattern
+Create a star pattern pyramid

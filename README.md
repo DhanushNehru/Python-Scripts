@@ -48,3 +48,6 @@ DigitalClock.py
 
 Generate a random password
 GeneratePassword.py
+
+## Script 10 - Simple TCP Chat Server
+server.py

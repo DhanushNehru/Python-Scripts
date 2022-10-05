@@ -65,3 +65,6 @@ calculate compound interest
 Moves your mouse every 15 seconds
 ## Script 15 - JSON to YAML converter
 Converts JSON file to YAML files. A sample JSON is included for testing.
+
+## Script 16 - AutoCert
+A Python script to auto generate e-certificates in bulk.

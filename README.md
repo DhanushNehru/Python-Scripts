@@ -61,5 +61,9 @@ Create a star pattern pyramid
 ## Script 13 - compound interest calculator 
 calculate compound interest 
 
-## Script 14 - Mouse mover
+## Script 14 - AutoCert
+A Python script to auto generate e-certificates in bulk.
+
+## Script 15 - Mouse mover
 Moves your mouse every 15 seconds
+

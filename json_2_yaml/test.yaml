@@ -1,0 +1,27 @@
+quiz:
+  maths:
+    q1:
+      answer: '12'
+      options:
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      question: 5 + 7 = ?
+    q2:
+      answer: '4'
+      options:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      question: 12 - 8 = ?
+  sport:
+    q1:
+      answer: Huston Rocket
+      options:
+      - New York Bulls
+      - Los Angeles Kings
+      - Golden State Warriros
+      - Huston Rocket
+      question: Which one is correct team name in NBA?

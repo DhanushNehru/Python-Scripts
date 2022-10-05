@@ -15,20 +15,15 @@ characters = ['@', '#', '$', '%', '&', '?']
 pass_len = int(input('How lengthy do you want your password to be : '))
 
 tempy, tempz = 0, 0
-
 tempx = rr.randint(2, pass_len-1)                           # alphabets
-
-print(f'\nAlphabets : {tempx}')
 
 if tempx != pass_len:
     tempy = rr.randint(1, (pass_len - tempx - 1))           # numbers
-
-print(f'Numbers : {tempy}')
+    total_nums = tempy
 
 if (tempx + tempy) != pass_len:
     tempz = rr.randint(1, (pass_len-(tempx+tempy)))         # special characters
-
-print(f'Characters : {tempz}')
+    total_symbols = tempz
 
 # password : empty string for now
 pass_word = ''
@@ -39,6 +34,9 @@ while tempx:
     x = tempx
     num_cap = rr.randint(0, x)
     num_low = x-num_cap
+
+    total_cap = num_cap
+    total_low = num_low
 
     # capitals in password :
     while num_cap:
@@ -79,4 +77,20 @@ def colored(r, g, b, text):
 
 final_pass =colored(200,200,50, (shuffle_(shuffle_(shuffle_(pass_word)))))
 
-print(f"\nYour computer generated password is : {final_pass}\n\n")
+
+# result & summary
+result = """
+Generate Password Summary :
+
+Charactor Uppercase : {0}
+Charactor Lowercase : {1}
+Numbers : {2}
+Symbols : {3}
+
+Your computer generated password is :
+{4}
+""".format(total_cap, total_low, total_nums, total_symbols, final_pass)
+
+print(result)
+
+# print(f"\nYour computer generated password is : {final_pass}\n\n")

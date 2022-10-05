@@ -51,3 +51,6 @@ GeneratePassword.py
 
 ## Script 10 - Simple TCP Chat Server
 server.py - Creates a local server on your LAN for receiving and sending messages!
+
+## Script 11 - Blackjack
+BlackjackGame.py - Plus, let's get 21

@@ -78,3 +78,7 @@ BlackjackGame.py - Plus, let's get 21
 
 ## Script 19 - Website Cloner
 Clone any website and open the site in your local IP
+
+## Script 20 - OTP Verification
+An OTP Verification Checker
+OTPVerification.py

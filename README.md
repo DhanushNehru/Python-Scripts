@@ -61,10 +61,15 @@ Create a star pattern pyramid
 ## Script 13 - compound interest calculator 
 calculate compound interest 
 
-## Script 14 - Mouse mover
-Moves your mouse every 15 seconds
+## Script 14 - Image Capture
+Capture image from your webcam and save it on your local device.
+
 ## Script 15 - JSON to YAML converter
 Converts JSON file to YAML files. A sample JSON is included for testing.
 
 ## Script 16 - AutoCert
 A Python script to auto generate e-certificates in bulk.
+
+## Script 17 - Mouse mover
+Moves your mouse every 15 seconds
+

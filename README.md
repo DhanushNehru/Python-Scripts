@@ -60,3 +60,6 @@ Create a star pattern pyramid
 
 ## Script 13 - compound interest calculator 
 calculate compound interest 
+
+## Script 14 - Mouse mover
+Moves your mouse every 15 seconds

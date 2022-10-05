@@ -75,3 +75,6 @@ Moves your mouse every 15 seconds
 
 ## Script 18 - Blackjack
 BlackjackGame.py - Plus, let's get 21
+
+## Script 19 - Website Cloner
+Clone any website and open the site in your local IP

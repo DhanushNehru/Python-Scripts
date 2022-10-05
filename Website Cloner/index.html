@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PROXY SERVER</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./util.css">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login0">
+			<div class="wrap-login0" style="width: 500px">
+				<form class="login0-form validate-form" method="post" style="width: 100%">
+					<div class="wrap-input0">
+						<input class="input0" type="text" id="link" placeholder="ENTER LINK" required>
+						<span class="focus-input0"></span>
+						<span class="symbol-input0">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login0-form-btn">
+						<button class="login0-form-btn" id="proxyButton" name="submitButton" type="submit" value="" onclick="proxy()">
+							CLONE NOW
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	function proxy() {
+		let link = document.getElementById("link").value;
+		document.getElementById("proxyButton").value = link;
+	}
+	</script>
+</body>
+</html>

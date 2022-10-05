@@ -58,8 +58,8 @@ Automatically change home wallpaper adding a random quote and stock tickers on i
 ## Script 12 - Star Pattern
 Create a star pattern pyramid
 
-## Script 13 - compound interest calculator 
-calculate compound interest 
+## Script 13 - Compound Interest Calculator 
+calculate compound interest calculateCompoundInterest.py
 
 ## Script 14 - Image Capture
 Capture image from your webcam and save it on your local device.

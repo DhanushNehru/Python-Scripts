@@ -1,0 +1,4 @@
+# If you need to test anything name the file as "test" followed by any extension
+# This helps in testing the code while in development environment
+# These files will not be pushed in github
+test*

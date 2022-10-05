@@ -73,3 +73,7 @@ A Python script to auto generate e-certificates in bulk.
 ## Script 17 - Mouse mover
 Moves your mouse every 15 seconds
 
+## Script 18 - OTP Verification
+
+An OTP Verification Checker
+OTPVerification.py

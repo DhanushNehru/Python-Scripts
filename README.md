@@ -60,3 +60,6 @@ Create a star pattern pyramid
 
 ## Script 13 - compound interest calculator 
 calculate compound interest 
+
+## Script 14 - AutoCert
+A Python script to auto generate e-certificates in bulk.

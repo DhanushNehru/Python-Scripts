@@ -43,3 +43,8 @@ FakeProfile.py
 ## Script 8 - Digital Clock
 
 DigitalClock.py
+
+## Script 9 - JSON Checker
+
+Checks if file is valid JSON
+CheckJSON.py

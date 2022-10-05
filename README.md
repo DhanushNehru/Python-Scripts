@@ -30,3 +30,4 @@ Incase you have anything to be followed while executing the python script mentio
 | OTP Verification             | https://github.com/DhanushNehru/Python-Scripts/tree/master/OTP%20%20Verify                 | An OTP Verification Checker OTPVerification.py                                    |
 | ROCK-PAPER-SCISSOR           | https://github.com/DhanushNehru/Python-Scripts/tree/master/ROCK-PAPER-SCISSOR                 | A python game Rock Paper Scissor.                                                 |
 | File Encryption Decryption   | https://github.com/DhanushNehru/Python-Scripts/tree/master/File%20Encryption%20Decryption  | Encrypts and Decrypts files using AES Algorithms for Security purposes.           |
+| Get Hexcodes From Websites   | https://github.com/BhagatHarsh/Python-Scripts/tree/master/Get%20Hexcodes%20From%20Websites  | Generates a python list containing Hexcodes from website.           |

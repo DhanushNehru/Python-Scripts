@@ -58,8 +58,8 @@ Automatically change home wallpaper adding a random quote and stock tickers on i
 ## Script 12 - Star Pattern
 Create a star pattern pyramid
 
-## Script 13 - compound interest calculator 
-calculate compound interest 
+## Script 13 - Compound Interest Calculator 
+calculate compound interest calculateCompoundInterest.py
 
 ## Script 14 - Image Capture
 Capture image from your webcam and save it on your local device.
@@ -73,7 +73,12 @@ A Python script to auto generate e-certificates in bulk.
 ## Script 17 - Mouse mover
 Moves your mouse every 15 seconds
 
-## Script 18 - OTP Verification
+## Script 18 - Blackjack
+BlackjackGame.py - Plus, let's get 21
 
+## Script 19 - Website Cloner
+Clone any website and open the site in your local IP
+
+## Script 20 - OTP Verification
 An OTP Verification Checker
 OTPVerification.py

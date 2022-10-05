@@ -28,5 +28,5 @@ Incase you have anything to be followed while executing the python script mentio
 | Blackjack                    | https://github.com/DhanushNehru/Python-Scripts/tree/master/Blackjack                       | BlackjackGame.py - Plus, let's get 21                                             |
 | Website Cloner               | https://github.com/DhanushNehru/Python-Scripts/tree/master/Website%20Cloner                | Clone any website and open the site in your local IP                              |
 | OTP Verification             | https://github.com/DhanushNehru/Python-Scripts/tree/master/OTP%20%20Verify                 | An OTP Verification Checker OTPVerification.py                                    |
-| ROCK-PAPER-SCISSOR           | https://github.com/NurAktar2/Python-Scripts/tree/master/ROCK-PAPER-SCISSOR                 | A python game Rock Paper Scissor.                                                 |
-| File Encryption Decryption   | https://github.com/Sushant-1999/Python-Scripts/tree/master/File%20Encryption%20Decryption  | Encrypts and Decrypts files using AES Algorithms for Security purposes.           |
+| ROCK-PAPER-SCISSOR           | https://github.com/DhanushNehru/Python-Scripts/tree/master/ROCK-PAPER-SCISSOR                 | A python game Rock Paper Scissor.                                                 |
+| File Encryption Decryption   | https://github.com/DhanushNehru/Python-Scripts/tree/master/File%20Encryption%20Decryption  | Encrypts and Decrypts files using AES Algorithms for Security purposes.           |

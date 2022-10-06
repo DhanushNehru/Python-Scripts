@@ -32,3 +32,4 @@ Incase you have anything to be followed while executing the python script mentio
 | File Encryption Decryption   | https://github.com/DhanushNehru/Python-Scripts/tree/master/File%20Encryption%20Decryption  | Encrypts and Decrypts files using AES Algorithms for Security purposes.           |
 | Get Hexcodes From Websites   | https://github.com/BhagatHarsh/Python-Scripts/tree/master/Get%20Hexcodes%20From%20Websites  | Generates a python list containing Hexcodes from website.           |
 | Keylogger  | https://github.com/DhanushNehru/Python-Scripts/tree/master/Keylogger | Keylogger that can track your keystrokes, clipboard text, take screenshots at regular intervals, and records audio.          |
+| Jokes generator   | https://github.com/DhanushNehru/Python-Scripts/tree/master/Jokes-generator  | A script to generates jokes.           |

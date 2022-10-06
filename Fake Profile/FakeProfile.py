@@ -1,9 +1,22 @@
 from faker import Faker
-fake = Faker()
-print(fake.email())
-print(fake.country())
-print(fake.name())
-print(fake.text())
-print(fake.latitude(),
- fake.longitude())
-print(fake.url())
+fake = Faker(['it_IT', 'en_US', 'ja_JP'])
+print("### ALL faker Attribute")
+print(dir(fake))
+
+profile = """
+### Faker Profile ###
+Name : {}
+Email : {}
+Social Security number (SSN) : {}
+Address : {}
+Location : {}, {}
+URL : {}
+""".format(fake.name(),
+           fake.email(),
+           fake.ssn(),
+           fake.address(),
+           fake.latitude(), fake.longitude(),
+           fake.url()
+            )
+
+print(profile)

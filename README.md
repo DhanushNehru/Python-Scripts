@@ -35,3 +35,8 @@ Incase you have anything to be followed while executing the python script mentio
 | Wallpaper Changer            | https://github.com/DhanushNehru/Python-Scripts/tree/master/Wallpaper%20Changer             | Automatically change home wallpaper adding a random quote and stock tickers on it |                                                                                               
 | Website Cloner               | https://github.com/DhanushNehru/Python-Scripts/tree/master/Website%20Cloner                | Clone any website and open the site in your local IP                              |
 
+
+### Project Contributors
+<a href="https://github.com/vinayskywalker/Hactoberfest2022/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=vinayskywalker/Hactoberfest2022" />
+</a>

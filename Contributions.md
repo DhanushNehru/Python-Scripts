@@ -1,85 +1,96 @@
-# First Contribution
-<p>This project is for those who are new to open-source and looking for make their first contribution.<p>
-<p>Follow the steps below :- </p>
+# Contributing
 
-***
+When contributing to this repository, please first discuss the change you wish to make via issue, with the maintainers of this repository before making a change. 
 
-# Git Setup Guide
-## To initialise Git, write
-```bash
-git init
-```
+First time contributers can refer to various resources on how 
+to make their first contribution, one which we would refer is [this.][first]
 
-## 1. Configure your local Git
-```bash
-git config --global user.name "github username"
-```
+Please note we have a code of conduct, please follow it in all your interactions with the project.
 
-```bash
-git config --global user.email "email address"
-```
+## Pull Request Process
 
-## 2.  Go to the first-contribution repository and Fork it.
-* A fork is a rough copy of a repository. Forking a repository allows you to freely test and debug with changes without affecting the original project. One of the excessive use of forking is to propose changes for bug fixing.
+1. Fork the repository and add a new file with a name that 
+describes your script in short to put your scripts there.
+2. Add a `README.md` in that file which explains your script 
+and any prerequisites.
+3. Update the main `README.md` with details of changes to the  interface, this includes your script, link to it and a small
+description.
+4. Mention the issue in your Pull Request, which will be then verified and merged accordingly. 
+5. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
 
-  
-* Click on Code Button and copy the URL of your forked Repository
+---
+## Code of Conduct
 
-  
-## 3. Switch to your Git bash window, and enter the following :
+### Our Pledge
 
-* Clone the Forked project on your local system 
+In the interest of fostering an open and welcoming environment, we as
+contributors and maintainers pledge to making participation in our project and
+our community a harassment-free experience for everyone, regardless of age, body
+size, disability, ethnicity, gender identity and expression, level of experience,
+nationality, personal appearance, race, religion, or sexual identity and
+orientation.
 
+### Our Standards
 
+Examples of behavior that contributes to creating a positive environment
+include:
 
-* Make the changes
+* Using welcoming and inclusive language
+* Being respectful of differing viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for the community
+* Showing empathy towards other community members
 
+Examples of unacceptable behavior by participants include:
 
-## 4. Creating a Pull request
-### Create a branch
+* The use of sexualized language or imagery and unwelcome sexual attention or
+advances
+* Trolling, insulting/derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or electronic
+  address, without explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 
-* A branch is designed to encapsulate a group of changes. These changes might be thrown away, entirely rewritten or in the majority of cases they’ll be promoted into the main history of the codebase - via a merge.
+### Our Responsibilities
 
+Project maintainers are responsible for clarifying the standards of acceptable
+behavior and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behavior.
 
-* Creating a branch
+Project maintainers have the right and responsibility to remove, edit, or
+reject comments, commits, code, wiki edits, issues, and other contributions
+that are not aligned to this Code of Conduct, or to ban temporarily or
+permanently any contributor for other behaviors that they deem inappropriate,
+threatening, offensive, or harmful.
 
-```bash
-git branch branch_name
-```
+### Scope
 
-* Checkout to the created branch
+This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an appointed
+representative at an online or offline event. Representation of a project may be
+further defined and clarified by project maintainers.
 
-```bash
-git checkout branch_name
-```
+### Enforcement
 
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
+complaints will be reviewed and investigated and will result in a response that
+is deemed necessary and appropriate to the circumstances. The project team is
+obligated to maintain confidentiality with regard to the reporter of an incident.
+Further details of specific enforcement policies may be posted separately.
 
-* Now add the files using the git command
+Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project's leadership.
 
-```bash
-git add .
-```
-* Commit the changes to the local project
+### Attribution
 
-```bash
-git commit -m "Added my data"
-```
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
+available [here.][version]
 
-* Push the changes to your forked github repo
-```bash
-git push origin branch_name
-```
-
-## 5. Final Steps
-* Open your forked git repository, you will get a message like as shown in the figure (if not then refresh the page).
-
-- Click on "Contribute"
-- Now click on "Open pull request"
-- Click on "Create pull request"  
-- Click on "Create pull request"
-- You will get  message which says that you have sucessfully made a pull request !
-
-
- 
-
-
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
+[first]: https://dev.to/diballesteros/step-by-step-guide-for-the-first-time-open-source-contribution-48bo

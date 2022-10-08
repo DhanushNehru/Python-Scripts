@@ -1,0 +1,62 @@
+from turtle import *
+from tkinter import *
+from tkinter import ttk
+win=Tk()
+win.geometry('300x120')
+win.title('BENZENE STRUCTURES')
+a=Label(win,text='BENZENE STRUCTURES \n Click on the option you want to see')
+a.grid(column=0,row=0)
+selected = IntVar()
+rad1 = ttk.Radiobutton(win,text='Simple structure', value=1, variable=selected)
+rad2 = ttk.Radiobutton(win,text='Resonating structure', value=2, variable=selected)
+rad1.grid(column=0, row=1)
+rad2.grid(column=0, row=2)
+def hexi():
+    speed(-1)
+    for i in range (6):
+        width(5)
+        rt(60)
+        fd(100)
+    width(2)
+def pi():
+    goto(0,0)
+    rt(180)
+    up()
+    lt(60)
+    fd(10)
+    lt(60)
+    down()
+    fd(80)
+    lt(-60)
+    up()
+    fd(100)
+    down()
+    rt(60)
+    fd(80)
+    rt(60)
+    up()
+    fd(90)
+    down()
+    rt(60)
+    fd(80)
+def reso():
+    up()
+    goto(-48,-19)
+    down()
+    rt(180)
+    circle(65)
+def main():
+    reset()
+    if selected.get()==1:
+        hexi()
+        pi()
+    elif selected.get()==2:
+        hexi()
+        reso()
+    ht()
+b=Button(win,text='Enter',bg='black',fg='white',command=main)
+b.grid(column=0,row=3)
+if __name__=='__main__':
+    main()
+    mainloop()
+win.mainloop()

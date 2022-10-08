@@ -38,6 +38,6 @@ Incase you have anything to be followed while executing the python script mentio
 
 
 ### Project Contributors
-<a href="https://github.com/vinayskywalker/Hactoberfest2022/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=vinayskywalker/Hactoberfest2022" />
+<a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=DhanushNehru/Python-Scripts" />
 </a>

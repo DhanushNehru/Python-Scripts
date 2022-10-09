@@ -35,7 +35,7 @@ Incase you have anything to be followed while executing the python script mentio
 | Wallpaper Changer            | https://github.com/DhanushNehru/Python-Scripts/tree/master/Wallpaper%20Changer             | Automatically change home wallpaper adding a random quote and stock tickers on it |                                                                                               
 | Website Cloner               | https://github.com/DhanushNehru/Python-Scripts/tree/master/Website%20Cloner                | Clone any website and open the site in your local IP                              |
 | Youtube Downloader           | https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader            | Download any video from [youtube](https://youtube.com) in video or audio format!
-
+| Keyword - Retweeting | https://github.com/DhanushNehru/Python-Scripts/tree/master/Keyword-retweet-twitter-bot | Find latest tweets containing given keywords and then retweet them |
 
 ### Project Contributors
 <a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">

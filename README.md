@@ -29,14 +29,15 @@ Incase you have anything to be followed while executing the python script mentio
 | ROCK-PAPER-SCISSOR           | https://github.com/DhanushNehru/Python-Scripts/tree/master/ROCK-PAPER-SCISSOR              | A python game Rock Paper Scissor.                                                 |
 | Simple TCP Chat Server       | https://github.com/DhanushNehru/Python-Scripts/tree/master/TCP%20Chat%20Server             | Creates a local server on your LAN for receiving and sending messages!            |
 | Star Pattern                 | https://github.com/DhanushNehru/Python-Scripts/tree/master/Star%20Pattern                  | Create a star pattern pyramid                                                     |    
-| Take a break                 | https://github.com/DhanushNehru/Python-Scripts/tree/master/Take%20A%20Break                | Python code to take a break while working long hours TakeABreak.py                | 
+| Take a break                 | https://github.com/DhanushNehru/Python-Scripts/tree/master/Take%20A%20Break                | Python code to take a break while working long hours TakeABreak.py          
+| Turtle Art & Patterns                | [Turtle Art](https://github.com/DhanushNehru/Python-Scripts/tree/master/Turtle_Art)                | Some few scripts to view turtle art also has prompt based ones               | 
 | Turtle Graphics              | https://github.com/DhanushNehru/Python-Scripts/tree/master/Turtle%20Graphics               | Code using turtle graphics                                                        |                                                                       
 | Video Downloader             | https://github.com/DhanushNehru/Python-Scripts/tree/master/Video%20Downloader              | Download Videos from youtube to your local system                                                                                  |                                                                                                               
 | Wallpaper Changer            | https://github.com/DhanushNehru/Python-Scripts/tree/master/Wallpaper%20Changer             | Automatically change home wallpaper adding a random quote and stock tickers on it |                                                                                               
 | Website Cloner               | https://github.com/DhanushNehru/Python-Scripts/tree/master/Website%20Cloner                | Clone any website and open the site in your local IP                              |
 | Youtube Downloader           | https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader            | Download any video from [youtube](https://youtube.com) in video or audio format!
 | Keyword - Retweeting | https://github.com/DhanushNehru/Python-Scripts/tree/master/Keyword-retweet-twitter-bot | Find latest tweets containing given keywords and then retweet them |
-
+| Video Watermarker           | https://github.com/CrazyYoungBroo/Python-Scripts/blob/patch-1/VideoWatermarker.py            | Adds watermark to any video of your choice with ea
 ### Project Contributors
 <a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=DhanushNehru/Python-Scripts" />

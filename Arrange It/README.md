@@ -1,5 +1,5 @@
 
-### Arrange It
+# Arrange It
 
 With the help of this script, files can be moved automatically to the folder that corresponds to their extension (for example, ".jpg" or ".png" ==> "/Pictures," and ".mp4" ==> "/Videos").
 

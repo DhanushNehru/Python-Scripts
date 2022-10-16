@@ -1,0 +1,10 @@
+
+   Speedtest by Ookla
+
+     Server: TATASky Broadband Pvt Ltd - Bangalore (id = 16671)
+        ISP: BSNL
+    Latency:    39.15 ms   (0.56 ms jitter)
+   Download:     6.87 Mbps (data used: 6.8 MB)                               
+     Upload:     0.47 Mbps (data used: 788.5 kB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/ee62a2ad-934c-43b5-b5a5-c2d69b3745ca

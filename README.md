@@ -1,7 +1,7 @@
-This repository consists of a list of python scripts to automate few tasks.
+This repository consists of a list of python scripts to automate a few tasks.
 
-You can contribute by adding more python scripts which can be used to automate things. Some of already done are listed below.
-Incase you have anything to be followed while executing the python script mention it as well
+You can contribute by adding more python scripts which can be used to automate things. Some of already added ones are listed below.
+Incase there is something that needs to be followed while executing the python script mention it as well.
 
 
 # Python Scripts
@@ -38,7 +38,6 @@ Incase you have anything to be followed while executing the python script mentio
 | Youtube Downloader           | https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader            | Download any video from [youtube](https://youtube.com) in video or audio format!                                    |
 | Video Watermarker            | https://github.com/CrazyYoungBroo/Python-Scripts/blob/patch-1/VideoWatermarker.py          | Adds watermark to any video of your choice with ease!                                                               |
 | Internet Speed Test          | https://github.com/euhidaman/Python-Scripts/tree/master/python-ookla-speedtest             | Displays Your Internet Speed by running just a single command!                                                      |
-
 
 ### Project Contributors
 <a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">

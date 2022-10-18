@@ -39,6 +39,7 @@ Incase there is something that needs to be followed while executing the python s
 | Youtube Downloader           | https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader            | Download any video from [youtube](https://youtube.com) in video or audio format!
 | Keyword - Retweeting | https://github.com/DhanushNehru/Python-Scripts/tree/master/Keyword-retweet-twitter-bot | Find latest tweets containing given keywords and then retweet them |
 | Video Watermarker           | https://github.com/DhanushNehru/Python-Scripts/tree/master/Video%20Watermarker/VideoWatermarker.py            | Adds watermark to any video of your choice with ea
+| currency_script            | https://github.com/DhanushNehru/Python-Scripts/tree/master/currency_script                |  Currency converter          
 ### Project Contributors
 <a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=DhanushNehru/Python-Scripts" />

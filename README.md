@@ -66,7 +66,7 @@ Incase there is something that needs to be followed while executing the python s
 | Website Blocker                      | [Website Blocker](https://github.com/DhanushNehru/Python-Scripts/tree/master/Website%20Blocker)                                               | Downloads the website and loads it on your homepage in your local IP.                                               |
 | Website Cloner                       | [Website Cloner](https://github.com/DhanushNehru/Python-Scripts/tree/master/Website%20Cloner)                                                 | Clones any website and opens the site in your local IP                                                              |
 | Youtube Downloader                   | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader)                                         | Download any video from [YouTube](https://youtube.com) in video or audio format!                                    |
-
+| Weight Coverter                   | [Weight Converter](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader)                                         | Download any video from [YouTube](https://youtube.com) in video or audio format!                                    |
 
 ### Project Contributors
 <a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">

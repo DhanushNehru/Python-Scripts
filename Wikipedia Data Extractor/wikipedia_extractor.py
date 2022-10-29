@@ -1,9 +1,7 @@
 import wikipedia
 
-
-print(wikipedia.summary("Open Source"))
-
-
+search=input("Enter the topic you want: ")
+print(wikipedia.summary(search))
 
 language = "jp"
 wikipedia.set_lang(language)

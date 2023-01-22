@@ -68,7 +68,7 @@ flake8 @ file:///tmp/build/80754af9/flake8_1615834841867/work
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
 fsspec @ file:///tmp/build/80754af9/fsspec_1617959894824/work
 func-timeout==4.3.5
-future==0.18.2
+future==0.18.3
 ga==0.1.1.dev0
 geneticalgorithm==1.0.2
 gevent @ file:///tmp/build/80754af9/gevent_1616770671827/work

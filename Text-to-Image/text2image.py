@@ -9,7 +9,7 @@ def main():
     # Get text for the image
     writing = input("Write your text here: ")
     # Choose the font
-    fnt = ImageFont.truetype("fonts/Roboto-Black.ttf", 40)
+    fnt = ImageFont.truetype("Python-Scripts/Text-to-Image/fonts/Roboto-Black.ttf", 40)
     # Write the text
     d1.text((65, 10), writing, fill=(255,0,0), font=fnt)
     #  Show & save the image

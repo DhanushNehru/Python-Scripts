@@ -1,14 +1,14 @@
-This repository consists of a list of python scripts to automate a few tasks.
+This repository consists of a list of Python scripts to automate a few tasks.
 
-You can contribute by adding more python scripts which can be used to automate things. Some of already added ones are listed below.
-Incase there is something that needs to be followed while executing the python script mention it as well.
+You can contribute by adding more Python scripts that can be used to automate things. Some of the already-added ones are listed below.
+If there is something that needs to be followed while executing the Python script, mention it as well.
 
 
 # Python Scripts
 
 | Script                               | Link                                                                                                                                          | Description                                                                                                         |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Arrange It                           | [Arrange It](https://github.com/DhanushNehru/Python-Scripts/tree/master/Arrange%20It)                                                         | Files can be moved automatically into the folder that corresponds to their extension.                               |
+| Arrange It                           | [Arrange It](https://github.com/DhanushNehru/Python-Scripts/tree/master/Arrange%20It)                                                         | A Python script for files can be moved automatically into the folder that corresponds to their extension.                               |
 | AutoCert                             | [AutoCert](https://github.com/DhanushNehru/Python-Scripts/tree/master/AutoCert)                                                               | A Python script to auto generate e-certificates in bulk.                                                            |
 | Automated Emails                     | [Automated Emails](https://github.com/DhanushNehru/Python-Scripts/tree/master/Automating%20Emails)                                            | Send out personalized emails by reading a csv file.                                                                 |
 | Blackjack                            | [Blackjack](https://github.com/DhanushNehru/Python-Scripts/tree/master/Blackjack)                                                             | BlackjackGame.py - Plus, let's get 21.                                                                              |

@@ -229,7 +229,7 @@ Rtree @ file:///tmp/build/80754af9/rtree_1618420845272/work
 ruamel-yaml-conda @ file:///tmp/build/80754af9/ruamel_yaml_1616016699510/work
 scikit-image==0.18.1
 scikit-learn==0.24.0
-scipy==1.6.0
+scipy==1.10.0
 seaborn @ file:///tmp/build/80754af9/seaborn_1608578541026/work
 SecretStorage @ file:///tmp/build/80754af9/secretstorage_1614022784285/work
 selenium==3.141.0

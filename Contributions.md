@@ -9,13 +9,11 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Pull Request Process
 
-1. Fork the repository and add a new file with a name that 
-describes your script in short to put your scripts there.
+1. Create an issue and fork the repository, add a new folder with a name that describes your script in short. You'll place your Python script(s) in there.
 2. Add a `README.md` in that file which explains your script 
-and any prerequisites.
-3. Update the main `README.md` with details of changes to the  interface, this includes your script, link to it and a small
-description.
-4. Mention the issue in your Pull Request, which will be then verified and merged accordingly. 
+and any prerequisites it may have.
+3. Update the main `README.md`, adding your script to the List of Scripts in Repo, providing the script's name, a link to it, and a brief description. 
+4. Mention the issue you made in 1) in your Pull Request, which will be then verified and merged accordingly. 
 5. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
 
 ---

@@ -4,17 +4,26 @@
 3. [List of Scripts in Repo](#list-of-scripts-in-repo)
 4. [Wall of Contributors](#wall-of-contributors)
 
+
 # Python Scripts
 
 This repository consists of a list of more than 60 Python scripts, primarily those which automate a specific task. Each folder contains one or more .py files and a README to explain what that specific python script needs to run. These scripts are free to use as long as long as the original contributor is credited.
 
 ## Contributing
 
-For new Python scripts, first create an Issue listing the script you would like to contribute to the repo. Then fork the repository and create a Pull Request which contains a README describing the script along with listing any prequisites it would need, the python file(s) themselves, and any additional files the script(s) may need. Additionally, the script should be alphabetically added to this README in the List of Scripts in Repo section below, providing a title, a link to the folder in the github, and a brief description of what the script does. 
+We encourage contributions from the community to make this repository even more valuable. Whether you want to add a new Python script or enhance an existing one, we welcome your input. Here's how you can contribute:
 
-For editing existing scripts, first create an Issue listing any problems or additions for a given script and wait for others to give input on your proposed changes. After discussion, create a pull request that also links to the issue that contains your changes, updating the List of Scripts in Repo if need be. 
+### Adding a New Script
 
-Remember to close your issues once your PR has been merged! They can be reopened if needed.
+**1. Create an issue:** Start by creating an issue in this repository. Describe the new script you'd like to contribute, its purpose, and any specific features it will provide.
+
+**2. Fork the repository:** Fork this repository to your own GitHub account to create a copy that you can work on.
+
+**3. Create a Pull Request (PR):** In your forked repository, develop the Python script and include a `README` file explaining how to use it. Ensure you credit the original contributor if you're building upon an existing script. 
+
+**4. Update the List:** If you're adding a new script, make sure to include it in the "List of Python Scripts" section below, providing a title, a link to the script's folder, and a brief description.
+
+**NOTE:** Remember to close your issues once your PR has been merged! They can be reopened if needed.
 
 More information on contributing and the general code of conduct for discussion and feedback in this repo can be found here: [Contributions.md](https://github.com/DhanushNehru/Python-Scripts/blob/master/Contributions.md)
 

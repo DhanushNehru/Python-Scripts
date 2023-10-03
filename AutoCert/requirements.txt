@@ -45,7 +45,7 @@ conda-token @ file:///tmp/build/80754af9/conda-token_1620076980546/work
 conda-verify==3.4.2
 contextlib2==0.6.0.post1
 crc32c==2.2
-cryptography==41.0.3
+cryptography==41.0.4
 cycler==0.10.0
 Cython==0.29.22
 cytoolz==0.11.0

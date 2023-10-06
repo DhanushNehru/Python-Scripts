@@ -8,7 +8,7 @@ print("Winning Rules of the Rock paper scissor game as follows: \n"
                                 +"paper vs scissor->scissor wins \n") 
   
 while True: 
-    print("Enter choice \n 1. Rock \n 2. paper \n 3. scissor \n") 
+    print("Enter choice by entering the appropiate number \n 1. Rock \n 2. paper \n 3. scissor \n") 
       
     # take the input from user 
     choice = int(input("User turn: ")) 

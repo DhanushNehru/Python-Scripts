@@ -2,13 +2,14 @@ import subprocess
 import sys
 import time
 import socket
+from getpass import getpass
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 
-user_email = "your_email@example.com"
-user_password = "your_email_password"
+user_email = input("Enter your email: ")
+user_password = getpass()
 smtp_server = "smtp.gmail.com"
 smtp_port = 587  # Port 587 for TLS
 

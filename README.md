@@ -3,7 +3,6 @@
 - [Table of Contents](#table-of-contents)
 - [Python Scripts](#python-scripts)
   - [Contributing](#contributing)
-    - [Adding a New Script](#adding-a-new-script)
   - [List of Scripts in Repo](#list-of-scripts-in-repo)
   - [Wall of Contributors](#wall-of-contributors)
 

@@ -14,7 +14,7 @@ Before you begin, ensure you have met the following requirements:
    pip install pygame
 
 
-**Usage**
+## Usage
 Clone or download this repository to your local machine.
 Open your terminal or command prompt and navigate to the project directory.
 

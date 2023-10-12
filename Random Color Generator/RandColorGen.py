@@ -4,12 +4,9 @@ import math
 
 
 def GenerateRandomColorValue():
-    # r = random.randint(0, 255)
-    # g = random.randint(0, 255)
-    # b = random.randint(0, 255)
-    r = 255
-    g = 255
-    b = 255
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
 
     return (r, g, b)
 
@@ -37,8 +34,8 @@ def ReturnTextColor(colorValue):
     L = 0.2126 * r + 0.7152 * g + 0.0722 * b
 
     shouldBeWhite = L > 0.179
-
     # shouldBeWhite = (r * 0.299 + g * 0.587 + b * 0.114) > 186
+    
     if shouldBeWhite:
         return (0, 0, 0)
     else:
@@ -47,8 +44,8 @@ def ReturnTextColor(colorValue):
 
 pygame.init()
 
-height = 750
-width = 750
+height = 500
+width = 500
 
 canvas = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Random Color Generator!")

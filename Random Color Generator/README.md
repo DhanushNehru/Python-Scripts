@@ -7,6 +7,10 @@
 ./Random Color Generator> python RandColorGen.py
 ```
 
+# How to use
+- Click on the window to change colors
+- The color values are logged in the console and shown on screen
+
 # How to Install Pygame
 - After installing python
 - Use pip to install Pygame

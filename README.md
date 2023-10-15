@@ -14,6 +14,8 @@ This repository consists of a list of more than 60 Python scripts, primarily tho
 
 We encourage contributions from the community to make this repository even more valuable. Whether you want to add a new Python script or enhance an existing one, we welcome your input. Here's how you can contribute:
 
+_**Note: Please follow the maintainer of the repository for quick approval of the PR's via [Twitter](https://twitter.com/Dhanush_Nehru), [Instagram](https://www.instagram.com/dhanush_nehru/), [Youtube](https://www.youtube.com/@dhanushnehru?sub_confirmation=1), [Github](https://github.com/DhanushNehru)**_
+
 ### Adding a New Script
 
 **1. Create an issue:** Start by creating an issue in this repository. Describe the new script you'd like to contribute, its purpose, and any specific features it will provide.
@@ -79,6 +81,8 @@ More information on contributing and the general code of conduct for discussion 
 | Planet Simulation                    | [Planet Simulation](https://github.com/DhanushNehru/Python-Scripts/tree/master/planetSimulation)                                              | A simulation of several planets rotating around the sun.                                                            |
 | Remove Background                    | [Remove Background](https://github.com/DhanushNehru/Python-Scripts/tree/master/Remove%20Background)                                           | Removes the background of images.                                                                                   |
 | ROCK-PAPER-SCISSOR                   | [ROCK-PAPER-SCISSOR](https://github.com/DhanushNehru/Python-Scripts/tree/master/ROCK-PAPER-SCISSOR)                                           | A game of Rock Paper Scissors.                                                                                      |
+| Random Color Generator               | [Random Color Generator](https://github.com/DhanushNehru/Python-Scripts/tree/master/Random%20Color%20Generator)                               | A random color generator that will show you the color and values!
+| Run Then Notify                   | [Run Then Notify](https://github.com/DhanushNehru/Python-Scripts/tree/master/Run%20Then%20Notify)                                           | Runs a slow command and mails you when it completes execution.                                                                                      |
 | Selfie with Python                   | [Selfie_with_Python](https://github.com/DhanushNehru/Python-Scripts/tree/master/Selfie_with_Python)                                           | Take your selfie with python .                                                                                      |
 | Simple TCP Chat Server               | [Simple TCP Chat Server](https://github.com/DhanushNehru/Python-Scripts/tree/master/TCP%20Chat%20Server)                                      | Creates a local server on your LAN for receiving and sending messages!                                              |
 | Snake Water Gun                      | [Snake Water Gun](https://github.com/DhanushNehru/Python-Scripts/tree/master/Snake-Water-Gun)                                                 | A game similar to Rock Paper Scissors.                                                                              |
@@ -109,3 +113,7 @@ More information on contributing and the general code of conduct for discussion 
 <a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=DhanushNehru/Python-Scripts" />
 </a>
+
+If you liked this repository support it by starring ⭐
+
+Thank You for being here :)

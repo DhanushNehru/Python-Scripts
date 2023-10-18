@@ -3,6 +3,7 @@
 - [Table of Contents](#table-of-contents)
 - [Python Scripts](#python-scripts)
   - [Contributing](#contributing)
+    - [Adding a New Script](#adding-a-new-script)
   - [List of Scripts in Repo](#list-of-scripts-in-repo)
   - [Wall of Contributors](#wall-of-contributors)
 
@@ -67,6 +68,7 @@ More information on contributing and the general code of conduct for discussion 
 | JSON to CSV 1                        | [JSON to CSV](https://github.com/DhanushNehru/Python-Scripts/tree/master/JSON2CSV)                                                            | Convert JSON to CSV files.                                                                                          |
 | JSON to CSV 2                        | [JSON to CSV](https://github.com/DhanushNehru/Python-Scripts/tree/master/Json_2_csv)                                                          | Converts a JSON file to a CSV file.                                                                                 |
 | JSON to YAML converter               | [JSON to YAML converter](https://github.com/DhanushNehru/Python-Scripts/tree/master/json_2_yaml)                                              | Converts JSON file to YAML files. A sample JSON is included for testing.                                            |
+| JSON to CSV converter               | [JSON to CSV converter](https://github.com/DhanushNehru/Python-Scripts/tree/master/Json_to_csv_convertor)                                              | Converts JSON file to CSV files. It can convert nested json files as well. A sample JSON is included for testing. 
 | Keylogger                            | [Keylogger](https://github.com/DhanushNehru/Python-Scripts/tree/master/Keylogger)                                                             | Keylogger that can track your keystrokes, clipboard text, take screenshots at regular intervals, and records audio. |
 | Keyword - Retweeting                 | [Keyword - Retweeting](https://github.com/DhanushNehru/Python-Scripts/tree/master/Keyword-retweet-twitter-bot)                                | Find latest tweets containing given keywords and then retweet them.                                                 |
 | LinkedIn Bot                         | [LinkedIn Bot](https://github.com/DhanushNehru/Python-Scripts/tree/master/LinkedIn_Bot)                                                       | Automates the process of searching for public profiles on LinkedIn and exporting the data to an Excel sheet.        |

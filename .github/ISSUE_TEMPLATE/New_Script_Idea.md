@@ -1,10 +1,13 @@
-##  **Hi Everyone**,
+# New Script Idea
+**Hi Everyone**,
 
-**Script_Idea_Name**:
+**Script Idea Name**:
 
-**Description_Of_The_Script**:
+**Description Of The Script**:
 
-**Ready_To_Contribute_For_The_Script_Idea**:*[Yes/No]*
+**Ready To Contribute For The Script Idea**:*[Yes/No]*
+
+**Reference for the idea(if any)**:
 
 _Thank You_,
 

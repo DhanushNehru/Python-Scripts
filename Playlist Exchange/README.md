@@ -55,7 +55,7 @@ cd Spotify-Youtube-Music-Exchange</code></pre>
     <li>Run the script:</li>
   </ol>
 
-  <pre><code>python exchange_music.py</code></pre>
+  <pre><code>python playlistexchange.py</code></pre>
 
   <p>Follow the on-screen instructions to exchange songs and playlists between Spotify and YouTube Music.</p>
 

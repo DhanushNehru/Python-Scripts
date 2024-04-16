@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib.colors import LogNorm
 
 dx, dy = 0.015, 0.05
-#numpy.arrange returns evenly spaced values within a given interval
+#numpy.arange returns evenly spaced values within a given interval
 x = np.arange(-04.0, 4.0, dx)
 y = np.arange(-04.0, 4.0, dy)
 #returns coordinate matrices from coordinate vectors

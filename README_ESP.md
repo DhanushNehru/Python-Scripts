@@ -1,5 +1,5 @@
 # Ver original (Inglés)
-- [Original README ENGLISH](README.md) 
+- [Original README in English](README.md) 
 
 # Tabla de Contenidos
 

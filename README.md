@@ -1,3 +1,6 @@
+# Spanish Version
+- [Ver en Español](README_ESP.md) 
+
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)

@@ -1,5 +1,5 @@
-# Spanish Version
-- [Ver en Español](README_ESP.md) 
+# Spanish Readme
+- [Ver esta página en Español](README_ESP.md) 
 
 # Table of Contents
 

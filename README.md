@@ -114,6 +114,8 @@ More information on contributing and the general code of conduct for discussion 
 | Wikipedia Data Extractor             | [Wikipedia Data Extractor](https://github.com/DhanushNehru/Python-Scripts/tree/master/Wikipedia%20Data%20Extractor)                           | A simple Wikipedia data extractor script to get output in your IDE.                                                 |
 | Youtube Downloader                   | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader)                                         | Download any video from [YouTube](https://youtube.com) in video or audio format!                                    |
 
+| Pigeonhole Sort                      |[Algorithm](https://github.com/DhanushNehru/Python-Scripts/tree/master/PigeonHole)
+                                                    | the pigeonhole sort algorithm to sort your arrays efficiently!
 ## Wall of Contributors
 
 <a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">

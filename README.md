@@ -123,6 +123,8 @@ More information on contributing and the general code of conduct for discussion 
 
 
 
+| Pigeonhole Sort                      |[Algorithm](https://github.com/DhanushNehru/Python-Scripts/tree/master/PigeonHole)
+                                                    | the pigeonhole sort algorithm to sort your arrays efficiently!
 ## Wall of Contributors
 
 <a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">

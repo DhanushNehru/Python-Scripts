@@ -21,3 +21,9 @@ python3 udp_client.py
 ```
 sudo python3 proxy.py 127.0.0.1 21 ftp.sun.ac.za 21 True
 ```
+
+### ssh_cmd.py
+
+```
+python3 ssh_cmd.py 
+```

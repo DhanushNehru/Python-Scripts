@@ -19,5 +19,5 @@ python3 udp_client.py
 ### proxy.py
 
 ```
-sudo python3 proxy.py 127.0.0.1 21 ftp.sum.ac.za 21 True
+sudo python3 proxy.py 127.0.0.1 21 ftp.sun.ac.za 21 True
 ```

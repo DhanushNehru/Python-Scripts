@@ -35,3 +35,9 @@ Script to run Windows Client over SSH
 ```
 python3 ssh_rcmd.py 
 ```
+
+### ssh_server.py
+
+```
+python3 ssh_server.py 
+```

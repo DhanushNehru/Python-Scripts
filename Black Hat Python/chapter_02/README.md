@@ -24,6 +24,14 @@ sudo python3 proxy.py 127.0.0.1 21 ftp.sun.ac.za 21 True
 
 ### ssh_cmd.py
 
+Script to run Linux Client over SSH
 ```
 python3 ssh_cmd.py 
+```
+
+### ssh_rcmd.py
+
+Script to run Windows Client over SSH
+```
+python3 ssh_rcmd.py 
 ```

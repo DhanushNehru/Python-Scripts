@@ -16,3 +16,19 @@ Then you should see some garbled output
 ```bash
 sudo sniffer_ip_header_decode.py 
 ```
+Open another terminal pick a host to ping.
+```bash
+ping google.com 
+```
+We would be able to see only the response and only for the ICMP protocol
+### sniffer_with_icmp.py
+
+```bash
+sudo python3 sniffer_with_icmp.py
+```
+Open another terminal pick a host to ping.
+```bash
+ping google.com 
+```
+
+The output actually indicates that the ping (ICMP Echo) responses are being correctly received and decoded

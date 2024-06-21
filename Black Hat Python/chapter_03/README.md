@@ -10,3 +10,9 @@ Open another terminal pick a host to ping.
 ping google.com 
 ```
 Then you should see some garbled output 
+
+### sniffer_ip_header_decode.py
+
+```bash
+sudo sniffer_ip_header_decode.py 
+```

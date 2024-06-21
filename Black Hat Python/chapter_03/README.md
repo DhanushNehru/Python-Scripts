@@ -21,6 +21,7 @@ Open another terminal pick a host to ping.
 ping google.com 
 ```
 We would be able to see only the response and only for the ICMP protocol
+
 ### sniffer_with_icmp.py
 
 ```bash
@@ -32,3 +33,12 @@ ping google.com
 ```
 
 The output actually indicates that the ping (ICMP Echo) responses are being correctly received and decoded
+
+### scanner.py
+
+This code scans a specified subnet for active hosts by sending UDP datagrams and listening for ICMP "port unreachable" responses to identify which hosts are up. It prints the IP addresses of responsive hosts within the given subnet
+```bash
+sudo python3 scanner.py 192.168.1.0
+
+# subnet to target: 192.168.1.0/24 
+```

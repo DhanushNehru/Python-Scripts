@@ -40,44 +40,43 @@ while True:
     # among 1 , 2 and 3. Using randint method 
     # of random module 
     comp_choice = random.randint(1, 3) 
-      
-    # looping until comp_choice value  
-    # is equal to the choice value 
-    while comp_choice == choice: 
-        comp_choice = random.randint(1, 3) 
-  
-    # initialize value of comp_choice_name  
-    # variable corresponding to the choice value 
-    if comp_choice == 1: 
-        comp_choice_name = 'Rock'
-    elif comp_choice == 2: 
-        comp_choice_name = 'Paper'
-    else: 
-        comp_choice_name = 'Scissor'
+    #check for draw
+    if comp_choice == choice: 
+        print("We both choose "+choice_name)
+        print(" - It´s a draw")
+    else:  
+        # initialize value of comp_choice_name  
+        # variable corresponding to the choice value 
+        if comp_choice == 1: 
+            comp_choice_name = 'Rock'
+        elif comp_choice == 2: 
+            comp_choice_name = 'Paper'
+        else: 
+            comp_choice_name = 'Scissor'
           
-    print("I did choose: " + comp_choice_name) 
+        print("I did choose: " + comp_choice_name) 
   
-    print(choice_name + " V/s " + comp_choice_name) 
+        print(choice_name + " V/s " + comp_choice_name) 
   
-    # condition for winning 
-    if((choice == 1 and comp_choice == 2) or
-      (choice == 2 and comp_choice ==1 )): 
-        print("Paper wins => ", end = "") 
-        result = "Paper"
+        # condition for winning 
+        if((choice == 1 and comp_choice == 2) or
+          (choice == 2 and comp_choice ==1 )): 
+            print("Paper wins => ", end = "") 
+            result = "Paper"
           
-    elif((choice == 1 and comp_choice == 3) or
-        (choice == 3 and comp_choice == 1)): 
-        print("Rock wins =>", end = "") 
-        result = "Rock"
-    else: 
-        print("Scissor wins =>", end = "") 
-        result = "Scissor"
+        elif((choice == 1 and comp_choice == 3) or
+            (choice == 3 and comp_choice == 1)): 
+            print("Rock wins =>", end = "") 
+            result = "Rock"
+        else: 
+            print("Scissor wins =>", end = "") 
+            result = "Scissor"
   
-    # Printing either user or computer wins 
-    if result == choice_name: 
-        print("<== User wins ==>") 
-    else: 
-        print("<== Computer wins ==>") 
+        # Printing either user or computer wins 
+        if result == choice_name: 
+            print("<== User wins ==>") 
+        else: 
+            print("<== Computer wins ==>") 
           
     print("Do you want to play again? (Y/N)") 
     ans = input() 

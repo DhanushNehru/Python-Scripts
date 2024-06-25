@@ -6,7 +6,7 @@ This python module retrieve information about a YouTube playlist in json format 
 
 Install dependencies:
 
-    pip install -r playlist-requirements.txt
+    pip install -r requirements.txt
 
 Import module:
 

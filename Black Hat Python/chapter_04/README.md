@@ -14,3 +14,8 @@ sudo python3 mail_sniffer.py
 ```
 sudo python3 mail_sniffer_using_BPF_syntax.py
 ```
+
+### arper.py
+```
+python3 arper.py <victim_ip> <gateway_ip> <interface>
+```

@@ -3,6 +3,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
+import os
 
 context=[]
 img="img.jpg"
@@ -29,3 +30,10 @@ with open('input.txt') as f:
         context.append(Paragraph(line, styles["Normal"]))
 
 doc.build(context)
+
+pdf_filename = doc.filename
+pdf_filepath = os.path.dirname(os.path.abspath(pdf_filename))
+
+print("PDF succesfully created!")
+print("-File name: ", os.path.basename(pdf_filename))
+print("-PDF Location: ", pdf_filepath + "\\" + pdf_filename)

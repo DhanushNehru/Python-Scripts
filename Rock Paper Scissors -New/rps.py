@@ -1,8 +1,8 @@
 import random
 
+choices = ["rock", "paper", "scissors", "lizard", "spock"]
 
 def get_user_choice():
-    choices = ["rock", "paper", "scissors", "lizard", "spock"]
     user_choice = input("Enter your choice (rock, paper, scissors, lizard, spock): ").lower()
     while user_choice not in choices:
         user_choice = input("Invalid choice. Please enter rock, paper, scissors, lizard, or spock: ").lower()
@@ -10,7 +10,6 @@ def get_user_choice():
 
 
 def get_computer_choice():
-    choices = ["rock", "paper", "scissors", "lizard", "spock"]
     return random.choice(choices)
 
 
@@ -76,12 +75,16 @@ def play_game():
         print(f"User: {user_score}")
         print(f"Computer: {computer_score}")
         print(f"Ties: {ties}")
+        
+        while True:
+            play_again = input("\nDo you want to play again? (y/n): ").lower()
+            if play_again in ["y", "n"]:
+                break
+            print("Invalid input. Please enter 'y' or 'n'.")
 
-        play_again = input("\nDo you want to play again? (y/n): ").lower()
         if play_again != "y":
             print("Thanks for playing!")
             break
-
 
 if __name__ == "__main__":
     play_game()

@@ -25,6 +25,6 @@ countdown(1,"Break")  # for a 1-minute break
 
 # Example use, running for infinity:
 
-while true: 
+while True: 
     countdown(25,"Work Session")
     countdown(5, "Break")

@@ -1,5 +1,5 @@
 fuzzywuzzy==0.18.0
 pandas==2.1.3
-Requests==2.31.0
+Requests==2.32.2
 spotipy==2.23.0
 ytmusicapi==1.3.2

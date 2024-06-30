@@ -22,3 +22,9 @@ def countdown(minutes, name):
 # Example usage:
 countdown(1,"Work Session")  # for a 1-minute work session
 countdown(1,"Break")  # for a 1-minute break
+
+# Example use, running for infinity:
+
+while true: 
+    countdown(25,"Work Session")
+    countdown(5, "Break")

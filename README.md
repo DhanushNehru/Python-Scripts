@@ -127,7 +127,7 @@ More information on contributing and the general code of conduct for discussion 
 
 ## Gitpod
 
-In the cloud-free development environment where you can directly start coding.
+Use the cloud-free development environment where you can directly start coding.
 
 You can use Gitpod in the cloud  [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/DhanushNehru/Python-Scripts/)
 

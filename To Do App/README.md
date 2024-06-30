@@ -1,0 +1,1 @@
+- To run, you need to install QT to install type `pip install PySide6` in terminal.

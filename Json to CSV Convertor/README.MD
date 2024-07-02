@@ -51,3 +51,5 @@ python json_to_csv_with_nested_dict.py
 The script will create a directory named **csv_data.csv** in the same location as the script. Within this directory.
 
 ![Alt text](image.png)
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

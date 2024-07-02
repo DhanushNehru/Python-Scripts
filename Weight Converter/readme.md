@@ -27,3 +27,6 @@ Simply run the script via terminal and use the GUI.
 
 ![Demo](https://i.imgur.com/cgoSfWP.png)
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

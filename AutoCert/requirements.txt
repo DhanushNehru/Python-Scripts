@@ -22,7 +22,7 @@ backports.weakref==1.0.post1
 beautifulsoup4 @ file:///home/linux1/recipes/ci/beautifulsoup4_1610988766420/work
 bitarray @ file:///tmp/build/80754af9/bitarray_1620827551536/work
 bkcharts==0.2
-black==19.10b0
+black==24.3.0
 bleach @ file:///tmp/build/80754af9/bleach_1612211392645/work
 bokeh @ file:///tmp/build/80754af9/bokeh_1620779595936/work
 boto==2.49.0
@@ -45,7 +45,7 @@ conda-token @ file:///tmp/build/80754af9/conda-token_1620076980546/work
 conda-verify==3.4.2
 contextlib2==0.6.0.post1
 crc32c==2.2
-cryptography==41.0.4
+cryptography==42.0.4
 cycler==0.10.0
 Cython==0.29.22
 cytoolz==0.11.0
@@ -228,7 +228,7 @@ rsa==4.7.2
 Rtree @ file:///tmp/build/80754af9/rtree_1618420845272/work
 ruamel-yaml-conda @ file:///tmp/build/80754af9/ruamel_yaml_1616016699510/work
 scikit-image==0.18.1
-scikit-learn==0.24.0
+scikit-learn==1.5.0
 scipy==1.10.0
 seaborn @ file:///tmp/build/80754af9/seaborn_1608578541026/work
 SecretStorage @ file:///tmp/build/80754af9/secretstorage_1614022784285/work

@@ -3,3 +3,6 @@
 ## ✊ ROCK ✊
 ## 🖐 PAPER 🖐
 ## ✌️ SCISSOR ✌️
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

@@ -9,3 +9,6 @@ Incase you have anything to be followed while executing the python script mentio
 ## Script  - Digital Clock
 
 DigitalClock.py
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

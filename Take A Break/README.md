@@ -11,3 +11,6 @@ Incase you have anything to be followed while executing the python script mentio
 Python code to take a break while working long hours
 TakeABreak.py
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

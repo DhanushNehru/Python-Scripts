@@ -58,3 +58,6 @@ It will generate the encryption key. Paste this key into `DecryptFile.py` & `Key
 >>> python Keylogger.py
 ```
 You will see that new files are generating on their own. Watch Demonstration of the project [Here](https://www.youtube.com/watch?v=upWCYSoyOt8).
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

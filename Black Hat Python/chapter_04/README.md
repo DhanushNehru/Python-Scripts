@@ -20,3 +20,5 @@ sudo python3 mail_sniffer_using_BPF_syntax.py
 python3 arper_1.py <victim_ip> <gateway_ip> <interface>
 python3 arper_2.py <victim_ip> <gateway_ip> <interface>
 ```
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

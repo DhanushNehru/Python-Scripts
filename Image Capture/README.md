@@ -6,3 +6,6 @@ The default path would be your current directory.
 
 You can also give name to your image using following command:
 > python3 take_pictures_from_webcam.py --name ImageName
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

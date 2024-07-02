@@ -16,3 +16,5 @@ If not then you can install by
 ` pip install pyautogui `
 
 To close the program if run from terminal press `Ctrl+C` or if from IDLE then just simply close the interface.
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

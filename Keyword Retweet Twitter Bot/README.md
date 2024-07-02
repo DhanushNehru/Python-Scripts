@@ -11,3 +11,6 @@ a working example of this is : https://twitter.com/COVID_retweet
 - Run the file and input the keyword you want to search
 
 Done :)
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

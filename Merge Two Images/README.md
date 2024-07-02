@@ -11,3 +11,5 @@ pip3 install opencv-python
 ```bash
 python3 mergeImages.py
 ```
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

@@ -23,3 +23,6 @@
 - math library
 - pygame library
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

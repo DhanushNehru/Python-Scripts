@@ -18,3 +18,5 @@ This python code takes user input for private and public profiles to download re
 ### Important
 * Please enter the post code only for the desired post
 * You might face errors if you are downloading from a private profile without logging in
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

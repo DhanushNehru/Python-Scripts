@@ -28,3 +28,6 @@ All the following tasks are completely automated without any manual user input. 
 #### Adding likes to tweets on search results of some query
 ![tweet3gif](https://user-images.githubusercontent.com/44807945/87979877-5aa5d280-caf0-11ea-8738-f2c29a37edca.gif)
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

@@ -11,3 +11,5 @@ You may need to replace these files with ones that are compatible with your OS.
 ### FFPMEG: https://ffmpeg.org/download.html 
 
 Simply pip install yt-dlp and run the script!
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

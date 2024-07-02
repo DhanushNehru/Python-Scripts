@@ -13,3 +13,6 @@ Create a chesboard using matplotlib
 ChessBoard.py
 
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

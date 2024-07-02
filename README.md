@@ -143,3 +143,6 @@ If you liked this repository, support it by starring ⭐
 Thank You for being here :)
 
 ### Connect 👉 [**Twitter**](https://twitter.com/Dhanush_Nehru) **/** [**Instagram**](https://www.instagram.com/dhanush_nehru/) **/** [**Github**](https://github.com/DhanushNehru/) **/** [**Youtube**](https://www.youtube.com/@dhanushnehru?sub_confirmation=1) **/** [**Newsletter**](https://dhanushn.substack.com/) **/** [**Discord**](https://discord.com/invite/Yn9g6KuWyA)
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

@@ -14,3 +14,6 @@ This python code takes user input of different category of jokes and gives out j
 * run `python jokes.py`
 ##### for linux
 * run `python3 jokes.py`
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

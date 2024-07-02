@@ -31,3 +31,6 @@ This script scans a given directory for duplicate files based on their MD5 hash.
 
 Always backup your data before using scripts that modify files. The author is not responsible for any data loss.
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

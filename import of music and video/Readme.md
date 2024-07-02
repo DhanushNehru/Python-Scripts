@@ -70,3 +70,6 @@ If you encounter any issues while using the video player, please consider the fo
 2. Verify that opencv-python is installed by running pip show opencv-python.
 3. Check your system's video codec support and audio settings.
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

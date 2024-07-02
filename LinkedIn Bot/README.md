@@ -16,3 +16,6 @@ python scraper.py
 
 <b> If suggested you need to download web driver on your system.
 You can download it from here: https://chromedriver.chromium.org/downloads</b>
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

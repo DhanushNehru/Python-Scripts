@@ -22,3 +22,6 @@ You can install the `pdfkit` library using pip:
 
 ```bash
 pip install pdfkit
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

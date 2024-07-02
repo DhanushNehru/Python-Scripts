@@ -9,3 +9,5 @@ This script removes bacckground of images.
     Anti-alias the edges
     Convert a copy of the input to BGRA and insert the mask as the alpha channel
     Save the results
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

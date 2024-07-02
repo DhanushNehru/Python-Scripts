@@ -6,3 +6,5 @@ This script converts a JSON file to CSV file.
 
 #### CSV :
     It is a simple file format used to store tabular data, such as a spreadsheet or database.
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

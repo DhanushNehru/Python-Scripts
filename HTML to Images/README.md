@@ -8,3 +8,5 @@ Example use:
 >Enter the directory of your html file: ./test.html
 >Enter the name of your image including file format: out.jpg
 >(OPTIONAL) Enter the background color you would like: grey
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

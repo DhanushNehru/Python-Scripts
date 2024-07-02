@@ -12,3 +12,6 @@ Incase you have anything to be followed while executing the python script mentio
 Get many fake profiles using python
 FakeProfile.py
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

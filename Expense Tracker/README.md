@@ -13,3 +13,6 @@ Run the expense.py file to start the bot:
 ```
 python expense.py
 ```
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

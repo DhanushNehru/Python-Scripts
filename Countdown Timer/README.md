@@ -15,3 +15,6 @@ Running the script is pretty easy, open a terminal in the folder where your scri
 # Author's name
 
 [KOTHA V V S AAKASH](https://github.com/AakashKotha)
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

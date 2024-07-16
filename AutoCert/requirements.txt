@@ -29,7 +29,7 @@ boto==2.49.0
 Bottleneck==1.3.2
 brotlipy==0.7.0
 cachetools==4.2.1
-certifi==2023.7.22
+certifi==2024.7.4
 cffi @ file:///tmp/build/80754af9/cffi_1613246945912/work
 chardet @ file:///tmp/build/80754af9/chardet_1607706746162/work
 click @ file:///home/linux1/recipes/ci/click_1610990599742/work

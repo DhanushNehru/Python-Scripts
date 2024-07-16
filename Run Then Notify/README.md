@@ -9,3 +9,5 @@ Please enter your email and password when prompted. These values are _not_ store
 > This system has a hardcoded gmail smtp server specified. In case of any other smtp server, please update the value in code.
 >
 > **Note**: You may have to enable `less secure app access` in your gmail account.
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

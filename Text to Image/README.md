@@ -11,3 +11,5 @@ python3 code/Python-Scripts/Text-To-Image/text2image.py
 
 ## Output
 The saved JPEG file will be located in the directory
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

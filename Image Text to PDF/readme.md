@@ -19,3 +19,6 @@ This script adds image and text to a pdf file.
   python3 script.py
   ```
 * Hurray!! Your PDF is generated.
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

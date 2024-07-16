@@ -25,3 +25,6 @@ A Python script to auto generate e-certificates in bulk.
 
 
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

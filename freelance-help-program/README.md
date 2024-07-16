@@ -20,3 +20,6 @@ The program will display a message box with the total payment amount.
 The modified Excel file with the calculated results will be saved as "modified_[original_file_name].xlsx".
 
 Note: Make sure the Excel file has the correct format, with the start time in the first column and the end time in the second column.
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

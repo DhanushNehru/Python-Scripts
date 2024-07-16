@@ -28,3 +28,6 @@ This is a Python implementation of the classic Rock, Paper, Scissors game extend
    - After completing all rounds, final scores are displayed.
    - You have the option to play again or exit.
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

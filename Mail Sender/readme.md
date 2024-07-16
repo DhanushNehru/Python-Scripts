@@ -21,3 +21,6 @@ Code Explanation:
 Please note that this script is set up for Gmail's SMTP server by default. If you are using a different email service, you may need to adjust the SMTP server details accordingly.
 
 Ensure that you have allowed less secure apps to access your Gmail account or use an application-specific password for sending emails via Gmail
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

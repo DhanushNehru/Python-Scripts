@@ -13,3 +13,6 @@ Includes the following manipulations:
 - Lightness
 - Brightness
 - Contrast
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

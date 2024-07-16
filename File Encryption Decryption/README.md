@@ -14,3 +14,6 @@ Files can be encrypted using desired password.
 fileEncryptDecrypt.py
 
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

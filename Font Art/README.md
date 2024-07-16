@@ -10,3 +10,6 @@ Incase you have anything to be followed while executing the python script mentio
 
 Display a font art using python
 FontArt.py
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

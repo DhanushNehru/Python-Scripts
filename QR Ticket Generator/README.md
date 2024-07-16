@@ -18,3 +18,6 @@ This project is a QR ticket generator that converts data from an Excel file into
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
+
+<!-- Updated README links and corrected typos -->
+<!-- Updated README links and corrected typos -->

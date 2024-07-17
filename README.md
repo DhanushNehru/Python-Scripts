@@ -124,7 +124,7 @@ More information on contributing and the general code of conduct for discussion 
 | Youtube Downloader                   | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader)                                         | Downloads any video from [YouTube](https://youtube.com) in video or audio format!                               
 | Pigeonhole Sort                      | [Algorithm](https://github.com/DhanushNehru/Python-Scripts/tree/master/PigeonHole)                                                            | the pigeonhole sort algorithm to sort your arrays efficiently!
 | Youtube Playlist Info Scraper                      | [Youtube Playlist Info Scraper](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Playlist%20Info%20Scraper)                                                            | This python module retrieve information about a YouTube playlist in json format using playlist link.
-
+| Todo list                    | [To Do App](https://github.com/DhanushNehru/Python-Scripts/tree/master/To%20Do%20App)                                              | Graphical todo list app
 ## Gitpod
 
 Use the cloud-free development environment where you can directly start coding.

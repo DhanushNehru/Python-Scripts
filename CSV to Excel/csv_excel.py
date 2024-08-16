@@ -1,35 +1,37 @@
 import openpyxl
-import sys
+import os
 
+# Get the CSV and Excel file names from the user
 csv_name = input("Name of the input CSV file with extension: ")
 sep = input("Separator of the CSV file: ")
-ename = input("Name of the output excel file with extension: ")
-sname = input("Name of the output excel sheet: ")
+excel_name = input("Name of the output excel file with extension: ")
+sheet_name = input("Name of the output excel sheet: ")
+
+# Load the CSV file
+if os.path.exists(excel_name):
+    workbook = openpyxl.load_workbook(excel_name)
+    sheet = workbook[sheet_name] if sheet_name in workbook.sheetnames else workbook.create_sheet(sheet_name)
+else:
+    workbook = openpyxl.Workbook()
+    sheet = workbook.active
+    sheet.title = sheet_name
+
+# Write the CSV data to the Excel sheet
 try:
-    workbook = openpyxl.load_workbook(ename)
-    sheet = workbook.get_sheet_by_name(sname)
+    with open(csv_name, "r", encoding="utf-8") as file:
+        excel_row = 1
+        for line in file:
+            data = line.strip().split(sep)
+            excel_column = 1
+            for value in data:
+                sheet.cell(row=excel_row, column=excel_column, value=value)
+                excel_column += 1
+            excel_row += 1
 
-    file = open(csv_name, "r", encoding="utf-8")
-except:
-    print("Error: File not found")
-    sys.exit()
-excel_row = 1
-excel_column = 1
+    # Save the Excel file
+    workbook.save(excel_name)
 
-for lines in file:
-
-    lines = lines[:-1]
-    lines = lines.split(sep)
-
-    for dat in lines:
-
-        sheet.cell(excel_row, excel_column).value = dat
-
-        excel_column += 1
-
-    excel_column = 1
-    excel_row += 1
-
-
-workbook.save(ename)
-file.close()
+except FileNotFoundError:
+    print("Error: The CSV file was not found.")
+except Exception as e:
+    print(f"An error occurred: {e}")

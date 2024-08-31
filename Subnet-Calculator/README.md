@@ -11,6 +11,11 @@ Incase you have anything to be followed while executing the python script mentio
 Python code to Identify your IP addresses, Subnet, Broadcast channel of all you LAN interfaces.
 subnet_calculator.py
 
+# How to Use
+pip install psutil / pip install requirements.txt
+
+python3 subnet_calculator.py
+
 
 <!-- Updated README links and corrected typos -->
 <!-- Updated README links and corrected typos -->

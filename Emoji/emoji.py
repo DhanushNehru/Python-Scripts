@@ -22,6 +22,6 @@ def create_pdf_with_emoji(output_filename, emoji, font_path):
 if __name__ == "__main__":
     output_filename = "emoji.pdf"
     emoji = "😊"  # Replace with the emoji you want to display
-    font_path ="emoji.tiff"  # Replace with the path to your emoji font
+    font_path ="/Users/shru/Python-Scripts/Emoji/Emoji.ttf"  # Replace with the path to your emoji font
 
     create_pdf_with_emoji(output_filename, emoji, font_path)

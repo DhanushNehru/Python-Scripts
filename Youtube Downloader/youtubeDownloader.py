@@ -5,10 +5,10 @@ def my_hook(d):
         print(f"Done downloading, now post-processing ... File saved as: {d['filename']}")
 
 ydl_opts = {
-    'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best',
     'ffmpeg_location': r'Youtube Downloader\bin',
     'progress_hooks': [my_hook],
     'outtmpl': '%(title)s.%(ext)s',
+    'restrictfilenames': 'True',
 }
 
 
@@ -25,9 +25,14 @@ def downloader():
     else:
         URLS.append(input('Enter Video URL: '))
 
+    question = input("Do you want audio output only (Y/n): ").lower()
+    if question == 'y':
+        ydl_opts['format'] = 'bestaudio[ext=m4a]/best,'
+    else:
+        ydl_opts['format'] = 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best,'
+
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download(URLS)
-
-
+    
 if __name__ == "__main__":
     downloader()

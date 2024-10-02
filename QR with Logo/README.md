@@ -17,4 +17,4 @@ This Python script generates a QR code with a specified URL and overlays a logo 
 ![QR Code with Logo](qr_with_logo.png)
 
 ## Author
-Shashank Reddy (GitHub: shashank-amireddy)
+[Shashank Reddy](https://github.com/shashank-amireddy)

@@ -92,6 +92,7 @@ More information on contributing and the general code of conduct for discussion 
 | Playlist Exchange                    | [Playlist Exchange](https://github.com/DhanushNehru/Python-Scripts/tree/master/Playlist%20Exchange)                                              | A Python script to exchange songs and playlists between Spotify and Python.   
 | PNG TO JPG CONVERTOR                    | [PNG-To-JPG](https://github.com/DhanushNehru/Python-Scripts/tree/master/PNG%20To%20JPG)                                              | A PNG TO JPG IMAGE CONVERTOR.  
 | QR Code Generator                    | [QR Code Generator](https://github.com/DhanushNehru/Python-Scripts/tree/master/QR%20Code%20Generator)                                              | This is generate a QR code from the provided link                                                            |
+| QR Code with logo                      | [QR code with Logo](https://github.com/DhanushNehru/Python-Scripts/tree/master/QR%20with%20Logo)                                                            | QR Code Customization Feature
 | Random Color Generator               | [Random Color Generator](https://github.com/DhanushNehru/Python-Scripts/tree/master/Random%20Color%20Generator)                               | A random color generator that will show you the color and values!                                                   |
 | Remove Background                    | [Remove Background](https://github.com/DhanushNehru/Python-Scripts/tree/master/Remove%20Background)                                           | Removes the background of images.                                                                                   |
 | Rock Paper Scissor 1                   | [Rock Paper Scissor 1](https://github.com/DhanushNehru/Python-Scripts/tree/master/Rock%20Paper%20Scissor%201)                                           | A game of Rock Paper Scissors. 
@@ -125,7 +126,7 @@ More information on contributing and the general code of conduct for discussion 
 | Youtube Downloader                   | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader)                                         | Downloads any video from [YouTube](https://youtube.com) in video or audio format!                               
 | Pigeonhole Sort                      | [Algorithm](https://github.com/DhanushNehru/Python-Scripts/tree/master/PigeonHole)                                                            | the pigeonhole sort algorithm to sort your arrays efficiently!
 | Youtube Playlist Info Scraper                      | [Youtube Playlist Info Scraper](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Playlist%20Info%20Scraper)                                                            | This python module retrieve information about a YouTube playlist in json format using playlist link.
-| QR Code with logo                      | [QR code generator](https://github.com/DhanushNehru/Python-Scripts/tree/master/QR%20with%20Logo)                                                            | QR Code Customization Feature
+
 ## Gitpod
 
 Use the cloud-free development environment where you can directly start coding.

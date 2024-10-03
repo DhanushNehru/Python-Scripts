@@ -6,7 +6,7 @@ class PDFMerger:
         self.pdf_list = []
 
     def add_pdf(self, pdf_file):
-        """Add a PDF file to the list if it's valid."""
+        
         if os.path.isfile(pdf_file) and pdf_file.endswith('.pdf'):
             self.pdf_list.append(pdf_file)
             print(f'Added: {pdf_file}')
@@ -14,7 +14,7 @@ class PDFMerger:
             print(f'Error: Invalid file - {pdf_file}')
 
     def merge_pdfs(self, output_filename):
-        """Merge all added PDFs into a single output file."""
+        
         pdf_writer = PyPDF2.PdfWriter()
 
         try:

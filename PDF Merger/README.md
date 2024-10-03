@@ -1,6 +1,12 @@
 Here is the `README.md` text specifically for the `pdf_merger` folder:
 
 ```markdown
+
+## List of Scripts
+
+1. [PDF Merger](./pdf_merger/README.md) - A Python script that merges multiple PDF files into one. Useful for combining documents easily.
+
+
 # PDF Merger
 
 ## Overview

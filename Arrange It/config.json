@@ -1,0 +1,11 @@
+{
+    "Programming Files": ["ipynb", "py", "java", "cs", "js", "vsix", "jar", "cc", "ccc", "html", "xml", "kt"],
+    "Music": ["mp3", "wav", "wma", "mpa", "ram", "ra", "aac", "aif", "m4a", "tsa"],
+    "Videos": ["mp4", "webm", "mkv", "MPG", "MP2", "MPEG", "MPE", "MPV", "OGG", "M4P", "M4V", "WMV", "MOV", "QT", "FLV", "SWF", "AVCHD", "avi", "mpg", "mpe", "mpeg", "asf", "wmv", "mov", "qt", "rm"],
+    "Pictures": ["jpeg", "jpg", "png", "gif", "tiff", "raw", "webp", "jfif", "ico", "psd", "svg", "ai"],
+    "Applications": ["exe", "msi", "deb", "rpm"],
+    "Compressed": ["zip", "rar", "arj", "gz", "sit", "sitx", "sea", "ace", "bz2", "7z"],
+    "Documents": ["txt", "pdf", "doc", "xlsx", "ppt", "pps", "docx", "pptx"],
+    "Other": []
+  }
+  

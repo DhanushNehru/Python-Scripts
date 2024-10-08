@@ -1,22 +1,18 @@
 from shutil import move
-from os import path
 import os
+import json
 
+# Load folder-extension mappings from config.json
+def load_config(file='config.json'):
+    try:
+        with open(file, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"Configuration file {file} not found! Using default settings.")
+        return {}
 
-directory = {
-    'Programming Files': set(['ipynb', 'py', 'java', 'cs', 'js', 'vsix', 'jar', 'cc', 'ccc', 'html', 'xml', 'kt']),
-    'Music':  set(['mp3', 'wav', 'wma', 'mpa', 'ram', 'ra', 'aac', 'aif', 'm4a', 'tsa']),
-    'Videos':  set(['mp4', 'webm', 'mkv', 'MPG', 'MP2', 'MPEG', 'MPE', 'MPV', 'OGG', 'M4P', 'M4V', 'WMV', 'MOV', 'QT', 'FLV', 'SWF', 'AVCHD', 'avi', 'mpg', 'mpe', 'mpeg', 'asf', 'wmv', 'mov', 'qt', 'rm']),
-    'Pictures':  set(['jpeg', 'jpg', 'png', 'gif', 'tiff', 'raw', 'webp', 'jfif', 'ico', 'psd', 'svg', 'ai']),
-    'Applications': set(['exe', 'msi', 'deb', 'rpm']),
-    'Compressed': set(['zip', 'rar', 'arj', 'gz', 'sit', 'sitx', 'sea', 'ace', 'bz2', '7z']),
-    'Documents': set(['txt', 'pdf', 'doc', 'xlsx', 'pdf', 'ppt', 'pps', 'docx', 'pptx']),
-    'Other': set([])
-}
-
-
-def create_folders():
-
+# Create folders based on config.json
+def create_folders(directory):
     for dir_ in directory:
         try:
             os.mkdir(dir_)
@@ -24,24 +20,23 @@ def create_folders():
         except OSError:
             print(f'{dir_:20} Already Exists')
 
-
-def get_folder(ext):
-    
-    for f, ex in directory.items():
-        if ext in ex:
-            return f
+# Determine which folder a file belongs to
+def get_folder(ext, directory):
+    for folder, extensions in directory.items():
+        if ext in extensions:
+            return folder
     return 'Other'
 
-
-def start():
+# Start moving files based on their extensions
+def start(directory):
     for filename in os.listdir():
         if filename != __file__ and filename[0] != '.' and '.' in filename:
             ext = os.path.basename(filename).split('.')[-1]
-            folder = get_folder(ext)
+            folder = get_folder(ext, directory)
             if not os.path.isfile(os.path.join(folder, filename)):
                 move(filename, folder)
 
-
 if __name__ == '__main__':
-    create_folders()
-    start()
+    config = load_config()  # Load configuration
+    create_folders(config)  # Create necessary folders
+    start(config)           # Start organizing files

@@ -135,6 +135,7 @@ Weight Converter                      | [Weight Converter](https://github.com/Wa
 | Word to PDF                          | [Word to PDF](https://github.com/DhanushNehru/Python-Scripts/tree/master/Word%20to%20PDF%20converter)                                         | A Python script to convert an MS Word file to a PDF file.                                                            |
 | Youtube Downloader                   | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader)                                         | Downloads any video from [YouTube](https://youtube.com) in video or audio format!                               
 | Youtube Playlist Info Scraper                      | [Youtube Playlist Info Scraper](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Playlist%20Info%20Scraper)                                                            | This python module retrieve information about a YouTube playlist in json format using playlist link.
+| File Search                   | [File_search](https://github.com/debojit11/Python-Scripts/tree/master/File_Search)                                         | A python script that searches a specified folder for all files, regardless of file type, within its directory and subdirectories.
 
 ## Gitpod
 

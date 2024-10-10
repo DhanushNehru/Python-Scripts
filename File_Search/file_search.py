@@ -1,8 +1,8 @@
 import pathlib
-jpg_files_path = pathlib.Path('Place the folder path here under quotes')
+all_files_path = pathlib.Path('Place the folder path here under quotes')
 file_paths = []
 
-for file in jpg_files_path.rglob('*'):
+for file in all_files_path.rglob('*'):
     if file.is_file():
         file_paths.append(str(file))
 
@@ -12,7 +12,7 @@ print(formatted_output)
 
 file_extensions = []
 
-for file in jpg_files_path.rglob('*'):
+for file in all_files_path.rglob('*'):
     if file.is_file():
         ext = file.suffix.lower()
         if ext and ext not in file_extensions:

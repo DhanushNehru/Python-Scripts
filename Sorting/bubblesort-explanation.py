@@ -35,4 +35,4 @@ def bubble_sort_with_explanation(arr):
 # Test the function
 if __name__ == "__main__":
     test_array = [64, 34, 25, 12, 22, 11, 90]
-    bubble_sort_explained(test_array)
+    bubble_sort_with_explanation(test_array)

@@ -3,20 +3,46 @@ import ssl
 import os
 from email.message import EmailMessage
 from email.utils import formataddr
+from mimetypes import guess_type
 
 def send_email(sender_email: str,
                sender_name: str,
                password:str,
-               receiver_emails: str ,
+               receiver_emails: list,
                email_body: str,
-               email_subject: str="No subject",)-> None:
+               email_subject: str = "No subject",
+               is_html: bool = False,
+               attachments: list = None) -> None:
     
     msg = EmailMessage()
     msg["Subject"] = email_subject
     msg["From"] = formataddr((f"{sender_name}", f"{sender_email}"))
-    msg["BCC"] = sender_email
-    msg.set_content(email_body)
+    msg["BCC"] = sender_email  # Can add CC or BCC here if needed
     
+    # Support both plain text and HTML emails
+    if is_html:
+        msg.add_alternative(email_body, subtype='html')
+    else:
+        msg.set_content(email_body)
+
+    # Add attachments if provided
+    if attachments:
+        for file_path in attachments:
+            try:
+                with open(file_path, 'rb') as file:
+                    file_data = file.read()
+                    file_name = os.path.basename(file_path)
+                    mime_type, _ = guess_type(file_path)
+                    if mime_type:
+                        mime_main, mime_subtype = mime_type.split('/')
+                    else:
+                        mime_main, mime_subtype = 'application', 'octet-stream'
+                    
+                    msg.add_attachment(file_data, maintype=mime_main, subtype=mime_subtype, filename=file_name)
+                    print(f"Attached file: {file_name}")
+            except Exception as e:
+                print(f"Failed to attach {file_path}: {e}")
+
     smtp_port = 587
     smtp_server = "smtp.gmail.com"
 
@@ -48,14 +74,18 @@ def send_email(sender_email: str,
     finally:
         my_server.quit()
 
-# change these variables to suite your requirements
+# Example usage
 sender_email = "your-email@gmail.com"
 sender_name = "your name"
 password = os.environ.get("EMAIL_PASSWORD")
 
-email_subject = "good morning"
-email_body = "good morning, hope you have a wonderful day"
+email_subject = "Good morning"
+email_body = """
+<h1>Good Morning!</h1>
+<p>Hope you have a <strong>wonderful day</strong>.</p>
+"""
+receiver_emails = ["receiver1-email@gmail.com", "receiver2-email@gmail.com"]
+attachments = ["path/to/attachment1.pdf", "path/to/attachment2.jpg"]
 
-receiver_emails = ["receiver1-email@gmail.com", "receiver2-email@gmail.com", "receiver3-email@gmail.com"]
-
-send_email(sender_email, sender_name, password, receiver_emails, email_body,email_subject)
+# Sending the email as HTML with attachments
+send_email(sender_email, sender_name, password, receiver_emails, email_body, email_subject, is_html=True, attachments=attachments)

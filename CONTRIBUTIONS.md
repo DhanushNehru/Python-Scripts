@@ -88,7 +88,3 @@ members of the project's leadership.
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
 available [here.][version]
-
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
-[first]: https://dev.to/diballesteros/step-by-step-guide-for-the-first-time-open-source-contribution-48bo

@@ -1,4 +1,4 @@
-File Path Finder and Unique Extension Lister:
+Automated File Explorer:
 This Python script searches a specified folder for all files, regardless of file type, within its directory and subdirectories. It outputs the paths of all files found and also lists all unique file extensions present in the folder. The script uses Python's pathlib module, which is cross-platform and simplifies working with file paths.
 
 Features:

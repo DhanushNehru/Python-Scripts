@@ -1,11 +1,16 @@
 # Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Python Scripts](#python-scripts)
-  - [Contributing](#contributing)
-    - [Adding a New Script](#adding-a-new-script)
-  - [List of Scripts in Repo](#list-of-scripts-in-repo)
-  - [Wall of Contributors](#wall-of-contributors)
+- [Contributing](#contributing)
+  - [Adding a New Script](#adding-a-new-script)
+- [List of Scripts in Repo](#list-of-scripts-in-repo)
+- [Gitpod](#gitpod)
+- [Wall of Contributors](#wall-of-contributors)
+
+</br>
+ 
+[![Join Our Discord](https://img.shields.io/badge/Discord-Join%20Server-blue?logo=discord&style=for-the-badge)](https://discord.com/invite/Yn9g6KuWyA)
+[![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube&style=for-the-badge)](https://www.youtube.com/@dhanushnehru?sub_confirmation=1)
+[![Subscribe to Newsletter](https://img.shields.io/badge/Newsletter-Subscribe-orange?style=for-the-badge)](https://dhanushn.substack.com/)
 
 # Python Scripts
 
@@ -17,7 +22,7 @@ We encourage contributions from the community to make this repository even more 
 
 _**Note: Please follow the maintainer of the repository for quick approval of the PR's via [Twitter](https://twitter.com/Dhanush_Nehru), [Instagram](https://www.instagram.com/dhanush_nehru/), [Youtube](https://www.youtube.com/@dhanushnehru?sub_confirmation=1), [Github](https://github.com/DhanushNehru)**_
 
-### Adding a New Script 👇
+### Adding a New Script
 
 **1. Create an issue:** Start by creating an issue in this repository. Describe the new script you'd like to contribute, its purpose, and any specific features it will provide.
 
@@ -41,8 +46,7 @@ More information on contributing and the general code of conduct for discussion 
 | Autocomplete Notes App                           | [AutoCert](https://github.com/DhanushNehru/Python-Scripts/tree/master/Autocomplete%20Notes%20App)                                                               | A Python script to auto-generate e-certificates in bulk.                                                            |
 | Automated Emails                     | [Automated Emails](https://github.com/DhanushNehru/Python-Scripts/tree/master/Automate%20Emails%20Daily)                                            | A Python script to send out personalized emails by reading a CSV file.                                              |
 | Black Hat Python                            | [Black Hat Python](https://github.com/DhanushNehru/Python-Scripts/tree/master/Black%20Hat%20Python)                                                             | Source code from the book Black Hat Python                                                           |
-| Blackjack                            | [Blackjack](https://github.com/DhanushNehru/Python-Scripts/tree/master/Blackjack)                                                             | A game of Blackjack - let's get a 21. 
-|Caesar Cipher                         | [Caesar Cipher](https://github.com/rusty-bytes7/Python-Scripts/blob/e94c8b52d313dc0d66b9ed0b55032c4470f72475/caesarcipher.py)                                                             | A Python script to encrypt messages using the Caesar cipher.                                          |
+| Blackjack                            | [Blackjack](https://github.com/DhanushNehru/Python-Scripts/tree/master/Blackjack)                                                             | A game of Blackjack - let's get a 21.                                                                               |
 | Chessboard                           | [Chessboard](https://github.com/DhanushNehru/Python-Scripts/tree/master/Chess%20Board)                                                        | Creates a chessboard using matplotlib.                                                                               |
 | Compound Interest Calculator         | [Compound Interest Calculator](https://github.com/DhanushNehru/Python-Scripts/tree/master/Calculate%20Compound%20Interest)                    | A Python script to calculate compound interest.                                                                     |
 | Countdown Timer                      | [Countdown Timer](https://github.com/DhanushNehru/Python-Scripts/tree/master/Countdown%20Timer)                                               | Displays a message when the Input time elapses.                                                                     |
@@ -59,6 +63,7 @@ More information on contributing and the general code of conduct for discussion 
 | Face Reaction                        | [Face Reaction](https://github.com/DhanushNehru/Python-Scripts/tree/master/Face%20Reaction)                                                   | A script which attempts to detect facial expressions.                                                               |
 | Fake Profiles                        | [Fake Profiles](https://github.com/DhanushNehru/Python-Scripts/tree/master/Fake%20Profile)                                                    | Creates fake profiles.                                                                                               |
 | File Encryption Decryption           | [File Encryption Decryption](https://github.com/DhanushNehru/Python-Scripts/tree/master/File%20Encryption%20Decryption)                       | Encrypts and Decrypts files using AES Algorithms for Security purposes.                                             |
+| File Search                   | [File_search](https://github.com/debojit11/Python-Scripts/tree/master/File_Search)                                         | A python script that searches a specified folder for all files, regardless of file type, within its directory and subdirectories.
 | Font Art                             | [Font Art](https://github.com/DhanushNehru/Python-Scripts/tree/master/Font%20Art)                                                             | Displays a font art using Python.                                                                                    |
 | Freelance Helper Program | [freelance-helper](https://github.com/DhanushNehru/Python-Scripts/tree/master/freelance-help-program)                                                             | Takes an Excel file with working hours and calculates the payment.                                                                                   |
 | Get Hexcodes From Websites           | [Get Hexcodes From Websites](https://github.com/DhanushNehru/Python-Scripts/tree/master/Get%20Hexcodes%20From%20Websites)                     | Generates a Python list containing Hexcodes from a website.                                                           |
@@ -152,11 +157,8 @@ You can use Gitpod in the cloud  [![Gitpod Ready-to-Code](https://img.shields.io
 <img src="https://contrib.rocks/image?repo=DhanushNehru/Python-Scripts" />
 </a>
 
+</br>
+
 If you liked this repository, support it by starring ⭐
 
 Thank You for being here :)
-
-### Connect 👉 [**Twitter**](https://twitter.com/Dhanush_Nehru) **/** [**Instagram**](https://www.instagram.com/dhanush_nehru/) **/** [**Github**](https://github.com/DhanushNehru/) **/** [**Youtube**](https://www.youtube.com/@dhanushnehru?sub_confirmation=1) **/** [**Newsletter**](https://dhanushn.substack.com/) **/** [**Discord**](https://discord.com/invite/Yn9g6KuWyA)
-
-<!-- Updated README links and corrected typos -->
-<!-- Updated README links and corrected typos -->

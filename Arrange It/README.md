@@ -5,7 +5,7 @@ With the help of this script, files can be moved automatically to the folder tha
 ## New Feature: Custom Folder Configuration
 
 -Now, you can customize how files are arranged by defining your own folder structure and file extensions using a config.json file. This allows for more flexibility without needing to modify the Python code itself.
-python arrangeit.py
+`python arrangeit.py`
 
 # How To Use the config.json File
 
@@ -14,6 +14,7 @@ python arrangeit.py
 
 Example config.json:
 
+```bash
 {
   "Programming Files": ["ipynb", "py", "java", "cs", "js"],
   "Music": ["mp3", "wav", "aac"],
@@ -21,6 +22,7 @@ Example config.json:
   "Pictures": ["jpeg", "png", "gif"],
   "Documents": ["pdf", "docx", "xlsx"]
 }
+```
 
 # How To Run
 
@@ -28,14 +30,17 @@ Put the script and the config.json file in the folder where you want to automati
 
 Run the following command from the terminal:
 
+```bash
 python arrangeit.py
-
+```
 
 The script will create folders and move files based on the folder-extension mappings in the config.json file.
 
 
 # Benefits
 
-Customizable: Easily modify the config.json file to tailor the organization to your preferences.
-User-Friendly: No need to modify Python code—just update the config.json file.
-Scalable: Works with different folder structures for different use cases.
+**Customizable:** Easily modify the config.json file to tailor the organization to your preferences.
+
+**User-Friendly:** No need to modify Python code—just update the config.json file.
+
+**Scalable:** Works with different folder structures for different use cases.

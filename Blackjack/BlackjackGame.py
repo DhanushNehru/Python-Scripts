@@ -58,6 +58,7 @@ class Player:
         self.score = 0
         for card in self.cards:
             self.score += self.scoreDictionary[card]
+        self.adjustAceValue()
         return self.score
 
     def adjustAceValue(self):
@@ -145,25 +146,17 @@ class GameBlackJack:
                 print("My Money: " + str(player.money))
 
     def removeLossers(self):
-        i = 0
-        for player in self.playerlist:
-            if player.money <= 0:
-                self.playerlist.pop(i)
-            i += 1
+        self.playerlist = [player for player in self.playerlist if player.money > 0]
 
     def refreshPlayerCard(self):
         for player in self.playerlist:
             player.cards = []
-        dealer.cards = []
+        self.dealer.cards = []
 
     def genDeck(self):
-        cardType = ['2','3','4','5','6','7','8','9','10','J','Q','K','A']
-        self.cardDeck = []
-        for card in cardType:
-            self.cardDeck.append(card)
-            self.cardDeck.append(card)
-            self.cardDeck.append(card)
-            self.cardDeck.append(card)
+        cardType = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+        self.cardDeck = [card for card in cardType for _ in range(4)]
+        random.shuffle(self.cardDeck)
 
 # Set betting limits
 min_bet = 5

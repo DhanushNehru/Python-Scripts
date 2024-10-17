@@ -1,0 +1,1187 @@
+[
+    {
+        "name": "BITS Pilani",
+        "location": "Pilani",
+        "type": "Private",
+        "rating": 4.5,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 245000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 245000
+            },
+            {
+                "name": "B.Tech Electrical and Electronics Engineering",
+                "duration": "4 years",
+                "annual_fee": 245000
+            },
+            {
+                "name": "B.Tech Chemical Engineering",
+                "duration": "4 years",
+                "annual_fee": 245000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 245000
+            }
+        ],
+        "admission": {
+            "exam": "BITSAT",
+            "cutoff": {
+                "2023": 320,
+                "2022": 315,
+                "2021": 310
+            }
+        },
+        "placements": {
+            "average_package": 2500000,
+            "highest_package": 6000000,
+            "top_recruiters": ["Microsoft", "Google", "Amazon", "Oracle", "Goldman Sachs"]
+        },
+        "facilities": ["Wi-Fi campus", "Smart classrooms", "Advanced labs", "Sports complex", "Incubation center"]
+    },
+    {
+        "name": "Malaviya National Institute of Technology (MNIT)",
+        "location": "Jaipur",
+        "type": "Public",
+        "rating": 4.4,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 125000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 125000
+            },
+            {
+                "name": "B.Tech Electronics and Communication Engineering",
+                "duration": "4 years",
+                "annual_fee": 125000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 125000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 20000,
+                "2022": 22000,
+                "2021": 23000
+            }
+        },
+        "placements": {
+            "average_package": 1800000,
+            "highest_package": 5500000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Adobe"]
+        },
+        "facilities": ["Library", "Hostel", "Sports facilities", "Research labs", "Wi-Fi"]
+    },
+    {
+        "name": "Manipal University Jaipur",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.2,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 210000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 200000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 200000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 200000
+            }
+        ],
+        "admission": {
+            "exam": "MET",
+            "cutoff": {
+                "2023": 15000,
+                "2022": 16000,
+                "2021": 17000
+            }
+        },
+        "placements": {
+            "average_package": 1200000,
+            "highest_package": 4500000,
+            "top_recruiters": ["Accenture", "Capgemini", "Infosys", "HCL", "IBM"]
+        },
+        "facilities": ["Library", "Hostel", "Wi-Fi", "Sports complex", "Cafeteria"]
+    },
+    {
+        "name": "Rajasthan Technical University (RTU)",
+        "location": "Kota",
+        "type": "Public",
+        "rating": 4.0,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 80000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 80000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 80000
+            },
+            {
+                "name": "B.Tech Electronics and Communication Engineering",
+                "duration": "4 years",
+                "annual_fee": 80000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 30000,
+                "2022": 32000,
+                "2021": 35000
+            }
+        },
+        "placements": {
+            "average_package": 800000,
+            "highest_package": 2000000,
+            "top_recruiters": ["Tech Mahindra", "L&T", "IBM", "Siemens", "Samsung"]
+        },
+        "facilities": ["Hostel", "Library", "Labs", "Sports facilities", "Cafeteria"]
+    },
+    {
+        "name": "JK Lakshmipat University",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.1,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 180000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 175000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 175000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 175000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 35000,
+                "2022": 36000,
+                "2021": 37000
+            }
+        },
+        "placements": {
+            "average_package": 1000000,
+            "highest_package": 3000000,
+            "top_recruiters": ["Deloitte", "Cognizant", "Wipro", "TCS", "Infosys"]
+        },
+        "facilities": ["Wi-Fi campus", "Library", "Labs", "Sports complex", "Cafeteria"]
+    },
+    {
+        "name": "Poornima University",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 3.9,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 150000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 145000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 145000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 145000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 40000,
+                "2022": 41000,
+                "2021": 42000
+            }
+        },
+        "placements": {
+            "average_package": 900000,
+            "highest_package": 2500000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Sports complex", "Cafeteria"]
+    },
+    {
+        "name": "JECRC University",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.0,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 170000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 165000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 165000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 165000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 38000,
+                "2022": 39000,
+                "2021": 40000
+            }
+        },
+        "placements": {
+            "average_package": 1100000,
+            "highest_package": 3000000,
+            "top_recruiters": ["Infosys", "TCS", "Wipro", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Swami Keshvanand Institute of Technology (SKIT)",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.1,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 130000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 130000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 130000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 130000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 35000,
+                "2022": 36000,
+                "2021": 37000
+            }
+        },
+        "placements": {
+            "average_package": 950000,
+            "highest_package": 2200000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Jaipur Engineering College & Research Centre (JECRC)",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.2,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 140000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 40000,
+                "2022": 42000,
+                "2021": 43000
+            }
+        },
+        "placements": {
+            "average_package": 1000000,
+            "highest_package": 2800000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Arya College of Engineering & IT",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 3.8,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 125000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 125000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 125000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 125000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 45000,
+                "2022": 46000,
+                "2021": 47000
+            }
+        },
+        "placements": {
+            "average_package": 850000,
+            "highest_package": 2100000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Global Institute of Technology",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 3.9,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 140000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 48000,
+                "2022": 49000,
+                "2021": 50000
+            }
+        },
+        "placements": {
+            "average_package": 900000,
+            "highest_package": 2400000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Vivekananda Global University (VGU)",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.0,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 160000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 44000,
+                "2022": 45000,
+                "2021": 46000
+            }
+        },
+        "placements": {
+            "average_package": 1000000,
+            "highest_package": 3000000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Jagannath University",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 3.7,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 135000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 135000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 135000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 135000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 47000,
+                "2022": 48000,
+                "2021": 49000
+            }
+        },
+        "placements": {
+            "average_package": 800000,
+            "highest_package": 2000000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "LNM Institute of Information Technology (LNMIIT)",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.3,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 240000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 240000
+            },
+            {
+                "name": "B.Tech Electrical and Electronics Engineering",
+                "duration": "4 years",
+                "annual_fee": 240000
+            },
+            {
+                "name": "B.Tech Communication & Computer Engineering",
+                "duration": "4 years",
+                "annual_fee": 240000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 20000,
+                "2022": 21000,
+                "2021": 22000
+            }
+        },
+        "placements": {
+            "average_package": 1500000,
+            "highest_package": 4000000,
+            "top_recruiters": ["Amazon", "Microsoft", "Google", "Adobe", "Flipkart"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+
+    
+
+    {
+        "name": "Amity University Rajasthan",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.3,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 220000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 215000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 215000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 215000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 30000,
+                "2022": 31000,
+                "2021": 32000
+            }
+        },
+        "placements": {
+            "average_package": 1200000,
+            "highest_package": 3500000,
+            "top_recruiters": ["TCS", "Wipro", "Infosys", "IBM", "Cognizant"]
+        },
+        "facilities": ["Library", "Hostel", "Wi-Fi", "Sports complex", "Labs"]
+    },
+    {
+        "name": "Jaipur National University",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.0,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 175000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 170000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 170000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 170000
+            }
+        ],
+        "admission": {
+            "exam": "JEE Main",
+            "cutoff": {
+                "2023": 45000,
+                "2022": 46000,
+                "2021": 47000
+            }
+        },
+        "placements": {
+            "average_package": 900000,
+            "highest_package": 2500000,
+            "top_recruiters": ["Wipro", "Infosys", "Capgemini", "Cognizant", "HCL"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Cafeteria"]
+    },
+    {
+        "name": "Maharishi Arvind Institute of Engineering & Technology",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.1,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 150000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 145000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 145000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 145000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 41000,
+                "2022": 42000,
+                "2021": 43000
+            }
+        },
+        "placements": {
+            "average_package": 1000000,
+            "highest_package": 3000000,
+            "top_recruiters": ["TCS", "Wipro", "Infosys", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Suresh Gyan Vihar University",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.2,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 200000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 195000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 195000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 195000
+            }
+        ],
+        "admission": {
+            "exam": "SGVU CET",
+            "cutoff": {
+                "2023": 25000,
+                "2022": 26000,
+                "2021": 27000
+            }
+        },
+        "placements": {
+            "average_package": 1100000,
+            "highest_package": 2800000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "HCL"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Rajasthan Institute of Engineering and Technology (RIET)",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.0,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 165000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 38000,
+                "2022": 39000,
+                "2021": 40000
+            }
+        },
+        "placements": {
+            "average_package": 900000,
+            "highest_package": 2400000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Cafeteria"]
+    },
+    {
+        "name": "Mody University of Science and Technology",
+        "location": "Laxmangarh",
+        "type": "Private",
+        "rating": 4.4,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 250000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 245000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 245000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 245000
+            }
+        ],
+        "admission": {
+            "exam": "MUST CET",
+            "cutoff": {
+                "2023": 15000,
+                "2022": 16000,
+                "2021": 17000
+            }
+        },
+        "placements": {
+            "average_package": 1300000,
+            "highest_package": 3500000,
+            "top_recruiters": ["TCS", "Wipro", "Infosys", "IBM", "Cognizant"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Institute of Engineering and Technology, Alwar",
+        "location": "Alwar",
+        "type": "Private",
+        "rating": 4.1,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 145000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 140000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 43000,
+                "2022": 44000,
+                "2021": 45000
+            }
+        },
+        "placements": {
+            "average_package": 1000000,
+            "highest_package": 2900000,
+            "top_recruiters": ["TCS", "Wipro", "Infosys", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Arya Institute of Engineering and Technology",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.0,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 155000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 150000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 150000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 150000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 39000,
+                "2022": 40000,
+                "2021": 41000
+            }
+        },
+        "placements": {
+            "average_package": 950000,
+            "highest_package": 2600000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Cafeteria"]
+    },
+    {
+        "name": "Rajasthan Technical University",
+        "location": "Kota",
+        "type": "Public",
+        "rating": 4.5,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 90000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 85000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 85000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 85000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 15000,
+                "2022": 16000,
+                "2021": 17000
+            }
+        },
+        "placements": {
+            "average_package": 1200000,
+            "highest_package": 3500000,
+            "top_recruiters": ["TCS", "Wipro", "Infosys", "Cognizant", "IBM"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Banasthali Vidyapith",
+        "location": "Tonk",
+        "type": "Public",
+        "rating": 4.6,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 180000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 175000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 175000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 175000
+            }
+        ],
+        "admission": {
+            "exam": "Banasthali Aptitude Test",
+            "cutoff": {
+                "2023": 10000,
+                "2022": 11000,
+                "2021": 12000
+            }
+        },
+        "placements": {
+            "average_package": 1300000,
+            "highest_package": 4000000,
+            "top_recruiters": ["TCS", "Wipro", "Infosys", "IBM", "Cognizant"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "Poornima College of Engineering",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.2,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 165000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 160000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 37000,
+                "2022": 38000,
+                "2021": 39000
+            }
+        },
+        "placements": {
+            "average_package": 1000000,
+            "highest_package": 2800000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Cafeteria"]
+    },
+    {
+        "name": "Birla Institute of Technology and Science, Pilani (BITS Pilani)",
+        "location": "Pilani",
+        "type": "Private",
+        "rating": 4.9,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 400000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 390000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 390000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 390000
+            }
+        ],
+        "admission": {
+            "exam": "BITSAT",
+            "cutoff": {
+                "2023": 2500,
+                "2022": 2600,
+                "2021": 2700
+            }
+        },
+        "placements": {
+            "average_package": 2400000,
+            "highest_package": 6000000,
+            "top_recruiters": ["Google", "Microsoft", "Facebook", "Amazon", "Flipkart"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Sports complex"]
+    },
+    {
+        "name": "JECRC University",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.3,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 175000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 170000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 170000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 170000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 30000,
+                "2022": 31000,
+                "2021": 32000
+            }
+        },
+        "placements": {
+            "average_package": 1100000,
+            "highest_package": 2800000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Cafeteria"]
+    },
+    {
+        "name": "Global Institute of Technology (GIT)",
+        "location": "Jaipur",
+        "type": "Private",
+        "rating": 4.1,
+        "courses": [
+            {
+                "name": "B.Tech Computer Science",
+                "duration": "4 years",
+                "annual_fee": 160000
+            },
+            {
+                "name": "B.Tech Mechanical Engineering",
+                "duration": "4 years",
+                "annual_fee": 155000
+            },
+            {
+                "name": "B.Tech Civil Engineering",
+                "duration": "4 years",
+                "annual_fee": 155000
+            },
+            {
+                "name": "B.Tech Electrical Engineering",
+                "duration": "4 years",
+                "annual_fee": 155000
+            }
+        ],
+        "admission": {
+            "exam": "REAP",
+            "cutoff": {
+                "2023": 35000,
+                "2022": 36000,
+                "2021": 37000
+            }
+        },
+        "placements": {
+            "average_package": 1000000,
+            "highest_package": 2700000,
+            "top_recruiters": ["Infosys", "Wipro", "TCS", "Cognizant", "Capgemini"]
+        },
+        "facilities": ["Library", "Hostel", "Labs", "Wi-Fi", "Cafeteria"]
+    }
+
+]

@@ -144,6 +144,8 @@ Weight Converter                      | [Weight Converter](https://github.com/Wa
 | Word to PDF                          | [Word to PDF](https://github.com/DhanushNehru/Python-Scripts/tree/master/Word%20to%20PDF%20converter)                                         | A Python script to convert an MS Word file to a PDF file.                                                            |
 | Youtube Downloader                   | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader)                                         | Downloads any video from [YouTube](https://youtube.com) in video or audio format!                               
 | Youtube Playlist Info Scraper                      | [Youtube Playlist Info Scraper](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Playlist%20Info%20Scraper)                                                            | This python module retrieve information about a YouTube playlist in json format using playlist link.
+| Rajasthan Chatbot                    | [Rajasthan Chatbot](https://github.com/DhanushNehru/Python-Scripts/tree/master/Rajasthan-Chatbot)                                         | A chatbot designed to answer questions and provide information about engineering colleges of Rajasthan.                                                |
+
 
 ## Gitpod
 

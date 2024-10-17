@@ -34,3 +34,16 @@ Always backup your data before using scripts that modify files. The author is no
 
 <!-- Updated README links and corrected typos -->
 <!-- Updated README links and corrected typos -->
+
+
+# KEY MODIFICATIONS 
+
+File Type Filtering:
+
+Added an input prompt to specify file extensions for filtering.
+Modified the find_duplicates function to only consider files with the specified extensions.
+
+Generate Report:
+
+Added a new generate_report function that creates a JSON report of duplicate files.
+Added the option for the user to choose to generate a report instead of deleting or moving files.

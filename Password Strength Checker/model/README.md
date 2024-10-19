@@ -12,4 +12,4 @@ This model is designed to evaluate the strength of passwords using machine learn
 - The model is trained on a labeled dataset of passwords classified by strength.
 
 ## Future improvements
-- In future engineering, columns about the amount of common used passwords (etc. 'password') or common used words should be added and be taken into consideration properly in model training.
+- In feature engineering, columns about the amount of common used passwords (etc. 'password') or common used words should be added and be taken into consideration properly in model training.

@@ -148,6 +148,7 @@ Weight Converter                      | [Weight Converter](https://github.com/Wa
 | Word to PDF                          | [Word to PDF](https://github.com/DhanushNehru/Python-Scripts/tree/master/Word%20to%20PDF%20converter)                                         | A Python script to convert an MS Word file to a PDF file.                                                            |
 | Youtube Downloader                   | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Downloader)                                         | Downloads any video from [YouTube](https://youtube.com) in video or audio format!                               
 | Youtube Playlist Info Scraper                      | [Youtube Playlist Info Scraper](https://github.com/DhanushNehru/Python-Scripts/tree/master/Youtube%20Playlist%20Info%20Scraper)                                                            | This python module retrieve information about a YouTube playlist in json format using playlist link.
+| Smart Attendance System                      | [Smart Attendance System](https://github.com/DhanushNehru/Python-Scripts/tree/master/Smart%20Attendance%20System)                                                            | This OpenCV framework is for Smart Attendance by actively decoding a student's QR Code.
 
 ## Gitpod
 

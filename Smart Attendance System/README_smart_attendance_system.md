@@ -30,7 +30,7 @@ git clone https://github.com/raj-mistry-01/Computer-Vision.git
 pip install -r requirements
 ```
 
-## What Is It (You cam also read it in .idea folder)
+## What Is It (You can also read it in .idea folder)
 Now first we should have the students's data
 We have name and roll number of the students stored in a data.csv
 We will encode the each student's name(a string) into a qrcode

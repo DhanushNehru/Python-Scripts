@@ -1,0 +1,4 @@
+opencv-python
+pyzbar
+Pillow
+tk

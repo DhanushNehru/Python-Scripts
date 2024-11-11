@@ -2,7 +2,7 @@
 + Python 3.x
 + Import of random module
 
-## Workings of Code
+## How the code works
 + Imports random module --> Selective import can be done of random.choice() only
 + 
 + The code uses both for and while loops

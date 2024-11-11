@@ -25,5 +25,3 @@ while True:
       print()
       if choice.lower() == 'n':
           break
-
-

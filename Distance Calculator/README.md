@@ -8,4 +8,7 @@ This is a *distance calculator*, used to calculate the distance between two poin
 
 `python3 distance_calculator.py`
 
+## Example
+![image](https://github.com/user-attachments/assets/987537c2-236e-4560-9a06-3de4bbe98f5e)
+
 Made by Mathdallas_code(me)

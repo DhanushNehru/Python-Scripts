@@ -36,9 +36,9 @@ while True:
         print("Error! Input has to be a number!")
         continue
 
-    startX = int(startX)
-    startY = int(startY)
-    endX = int(endX)
-    endY = int(endY)
+    startX = float(startX)
+    startY = float(startY)
+    endX = float(endX)
+    endY = float(endY)
     distance = math.sqrt(math.pow(startX - endX, 2) + math.pow(startY - endY, 2))
     print(f"The distance between ({startX}, {startY}) and ({endX}, {endY}) is {distance}.")

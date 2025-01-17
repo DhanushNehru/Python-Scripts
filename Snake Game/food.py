@@ -1,8 +1,8 @@
 from turtle import Turtle
 import random
 
-class Food(Turtle):
-    def __init__(self):
+class Food(Turtle):   #It refers to dot as food
+    def __init__(self): 
         super().__init__()
         self.shape("circle")
         self.penup()

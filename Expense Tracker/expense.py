@@ -57,6 +57,59 @@ def remove_all_expenses():
   else:
      tb.showinfo('Ok then', 'The task was aborted and no expense was deleted!')
 
+def search_expenses(search_term):
+    """
+    Search and display expenses based on a search term in any column.
+    """
+    global table
+    table.delete(*table.get_children())
+
+    query = f"""
+    SELECT * FROM ExpenseTracker WHERE 
+    Date LIKE ? OR 
+    Payee LIKE ? OR 
+    Description LIKE ? OR 
+    Amount LIKE ? OR 
+    ModeOfPayment LIKE ?;
+    """
+    search_param = f"%{search_term}%"
+    results = connector.execute(query, (search_param,) * 5)
+
+    for data in results.fetchall():
+        table.insert('', END, values=data)
+
+
+def filter_expenses_by_date(date_from, date_to):
+    """
+    Filter and display expenses based on a date range.
+    """
+    global table
+    table.delete(*table.get_children())
+
+    query = """
+    SELECT * FROM ExpenseTracker WHERE Date BETWEEN ? AND ?;
+    """
+    results = connector.execute(query, (date_from, date_to))
+
+    for data in results.fetchall():
+        table.insert('', END, values=data)
+
+
+def sort_expenses(column, order):
+    """
+    Sort expenses by a column in ascending or descending order.
+    """
+    global table
+    table.delete(*table.get_children())
+
+    query = f"SELECT * FROM ExpenseTracker ORDER BY {column} {order};"
+    results = connector.execute(query)
+
+    for data in results.fetchall():
+        table.insert('', END, values=data)
+
+
+
 def add_another_expense():
   global date, payee, Desc, amnt, MoP
   global connector
@@ -159,6 +212,54 @@ Button(buttons_frame, text='Clear Fields in DataEntry Frame', font=btn_font, wid
       command=clear_fields).place(x=335, y=5)
 
 Button(buttons_frame, text='Delete All Expenses', font=btn_font, width=25, bg=hlb_btn_bg, command=remove_all_expenses).place(x=640, y=5)
+
+import csv
+from tkinter.filedialog import asksaveasfilename
+
+
+def export_to_csv():
+    """
+    Export the table data to a CSV file.
+    """
+    data = connector.execute('SELECT * FROM ExpenseTracker').fetchall()
+    if not data:
+        tb.showerror("Export Failed", "No expenses to export!")
+        return
+
+    save_file_path = asksaveasfilename(
+        defaultextension=".csv",
+        filetypes=[("CSV files", "*.csv"), ("All files", "*.*")],
+        title="Save As"
+    )
+
+    if save_file_path:
+        with open(save_file_path, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            # Write the header
+            writer.writerow(['ID', 'Date', 'Payee', 'Description', 'Amount', 'Mode of Payment'])
+            # Write the data
+            writer.writerows(data)
+
+        tb.showinfo("Export Successful", f"Expenses exported to {save_file_path}")
+
+
+filter_frame = Frame(root, bg="light gray")
+filter_frame.place(x=10, y=500, width=1165, height=35)
+
+Label(filter_frame, text="Date From:", font=("Georgia", 10), bg="light gray").place(x=10, y=5)
+date_from = DateEntry(filter_frame, date=datetime.datetime.now().date(), width=10)
+date_from.place(x=90, y=5)
+
+Label(filter_frame, text="Date To:", font=("Georgia", 10), bg="light gray").place(x=200, y=5)
+date_to = DateEntry(filter_frame, date=datetime.datetime.now().date(), width=10)
+date_to.place(x=270, y=5)
+
+Button(filter_frame, text="Filter", font=('Gill Sans MT', 10), width=10, bg=hlb_btn_bg,
+       command=lambda: filter_expenses_by_date(date_from.get_date(), date_to.get_date())).place(x=400, y=3)
+
+Button(filter_frame, text="Export to CSV", font=('Gill Sans MT', 10), width=15, bg=hlb_btn_bg,
+       command=export_to_csv).place(x=500, y=3)
+
 
 # Treeview Frame
 table = ttk.Treeview(tree_frame, selectmode=BROWSE, columns=('ID', 'Date', 'Payee', 'Description', 'Amount', 'Mode of Payment'))

@@ -12,8 +12,6 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    pip install pygame
-
-
 ## Usage
 Clone or download this repository to your local machine.
 Open your terminal or command prompt and navigate to the project directory.
@@ -50,7 +48,6 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    pip install opencv-python
-
 **Usage**
 Clone or download this repository to your local machine.
 Open your terminal or command prompt and navigate to the project directory.

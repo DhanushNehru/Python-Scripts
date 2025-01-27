@@ -9,8 +9,7 @@ Simply choose a directory (DIR) in which to clone the project using
 git clone https://github.com/DhanushNehru/Python-Scripts/Black Hat Python.git
 ```
 
-create a new virtual environment or `venv` for it (recommended
-) and install the requirements using `pip install`.
+create a new virtual environment or `venv` for it (recommended) and install the requirements using `pip install`.
 
 
 <!-- Updated README links and corrected typos -->

@@ -4,7 +4,7 @@ With the help of this script, files can be moved automatically to the folder tha
 
 ## New Feature: Custom Folder Configuration
 
--Now, you can customize how files are arranged by defining your own folder structure and file extensions using a config.json file. This allows for more flexibility without needing to modify the Python code itself.
+Now, you can customize how files are arranged by defining your own folder structure and file extensions using a config.json file. This allows for more flexibility without needing to modify the Python code itself.
 `python arrangeit.py`
 
 # How To Use the config.json File

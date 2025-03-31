@@ -3,10 +3,10 @@
 A Python script that detects and blurs faces in images, videos, and webcam feeds using OpenCV and deep learning.
 
 ## Features
-- Face detection using DNN-based model
-- Real-time face blurring for webcam feed
-- Video processing with face anonymization
-- Adjustable blur strength and confidence thresholds
+- **Face detection** using DNN-based model
+- **Real-time face blurring** for webcam feed
+- **Video processing** with face anonymization
+- **Adjustable blur strength** and **confidence thresholds**
 
 ## Requirements
 - Python 3.6+

@@ -24,7 +24,6 @@ The following Python libraries are required to run the project:
 
 - `psutil`
 - `pynvml`
-- `typing` (built-in for Python 3.5+)
 
 You can install the required dependencies using the following command:
 

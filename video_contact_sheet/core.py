@@ -77,7 +77,9 @@ def make_contact_sheet(
         f"{metadata['file']}  |  {metadata['duration']:.1f}s  "
         f"|  {metadata['width']}x{metadata['height']}  |  {metadata['codec']}"
     )
-    tw, th = draw.textsize(text, font=FONT)
+    bbox = draw.textbbox((0, 0), text, font=FONT)
+    tw = bbox[2] - bbox[0]
+    th = bbox[3] - bbox[1]
     draw.text(((sheet_w - tw) // 2, sheet_h - th - 10), text, fill="white", font=FONT)
     return canvas
 

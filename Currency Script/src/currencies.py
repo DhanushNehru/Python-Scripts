@@ -1,3 +1,4 @@
+# TODO REVIEW BELOW CODE TO ENSURE THAT WHAT IS IN THIS MODULE FOR FUNCTION RECALLING CURRENCY FROM API
 # Importing necessary modules for currency formatting and HTTP requests
 from locale import currency
 import requests

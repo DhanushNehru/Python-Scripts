@@ -33,7 +33,9 @@ _**Note: Please follow the maintainer of the repository for quick approval of th
 
 **NOTE:** Remember to close your issues once your PR has been merged! They can be reopened if needed.
 
-More information on contributing and the general code of conduct for discussion and feedback in this repo can be found here: [CONTRIBUTIONS.md](https://github.com/DhanushNehru/Python-Scripts/blob/master/CONTRIBUTIONS.md)
+More information on contributing can be found here: [CONTRIBUTING.md](https://github.com/DhanushNehru/Python-Scripts/blob/master/CONTRIBUTING.md)
+
+General code of conduct for discussion and feedback in this repo can be found here: [CODE_OF_CONDUCT.md](https://github.com/DhanushNehru/Python-Scripts/blob/master/CODE_OF_CONDUCT.md)
 
 ## List of Scripts in Repo
 

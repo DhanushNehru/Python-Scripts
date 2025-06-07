@@ -55,8 +55,19 @@ for root, dirs, files in os.walk(local_root):
 
     for file_name in files:
         file_path = os.path.join(root, file_name)
-        print(f"Uploading '{file_name}' to '{rel_path}'...")
 
+        # === Check if file already exists in this Drive folder ===
+        query = (
+            f"title='{file_name}' and "
+            f"'{folder_mapping[root]}' in parents and "
+            f"trashed=false"
+        )
+        existing_files = drive.ListFile({'q': query}).GetList()
+        if existing_files:
+            print(f"⏩ File '{file_name}' already exists in '{rel_path}', skipping.")
+            continue
+
+        print(f"⬆️ Uploading '{file_name}' to '{rel_path}'...")
         file_drive = drive.CreateFile({
             'title': file_name,
             'parents': [{'id': folder_mapping[root]}]

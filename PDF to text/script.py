@@ -65,6 +65,24 @@ def convert_pdf_to_txt(pdf_path, save_to_file=True, output_folder="output_texts"
     except Exception as e:
         print(f"Error processing {pdf_path}: {e}")
 
+    
+def count_words_in_pdf(pdf_path):
+       try:
+           with open(pdf_path, 'rb') as pdf_file:
+               pdf_reader = PyPDF2.PdfReader(pdf_file)
+               text = ""
+               for page_num in range(len(pdf_reader.pages)):
+                   page = pdf_reader.pages[page_num]
+                   text += page.extract_text()
+
+               # Remove extra whitespaces and split into words
+               words = re.findall(r'\b\w+\b', text.lower())
+               return len(words)
+       except FileNotFoundError:
+           return "Error: PDF file not found."
+       except Exception as e:
+           return f"An error occurred: {e}"
+
 # Example usage:
 
 #example pdf from internet
@@ -75,3 +93,5 @@ pdf = "D:/repos/Python-Scripts/PDF to text/Atividade 28 Fev.pdf"
 
 # Convert PDF to text and save the cleaned text to a file
 convert_pdf_to_txt(pdf)
+word_count = count_words_in_pdf(pdf)
+print(f"Total word count in the PDF: {word_count}")

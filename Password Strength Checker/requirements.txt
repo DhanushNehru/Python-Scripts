@@ -30,7 +30,7 @@ requests==2.32.3
 rich==13.9.2
 scikit-learn==1.5.2
 scipy==1.14.1
-setuptools==75.2.0
+setuptools==78.1.1
 silence_tensorflow==1.2.2
 six==1.16.0
 tensorboard==2.17.1

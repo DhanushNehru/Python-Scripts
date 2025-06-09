@@ -1,56 +1,29 @@
-# TODO REVIEW BELOW CODE TO ENSURE THAT WHAT IS IN THIS MODULE FOR FUNCTION RECALLING CURRENCY FROM API
-# Importing necessary modules for currency formatting and HTTP requests
-from locale import currency
-import requests
-import json
+from api_handler import get_exchange_data
 
-# Get the base currency input from the user and convert it to lowercase
-currency = input("Enter the base currency (e.g., USD, EUR): ").lower()
+# Returns a list of all supported currency codes.
+def get_supported_currencies(rates):
+    return list(rates.keys())
 
-# Initialize an empty cache to store exchange rates
-cache = {}
+# Checks if a currency code is supported.
+def is_valid_currency(currency_code, rates):
+    return currency_code.upper() in rates
 
-# Infinite loop to process exchange requests until the user exits
-while True:
+# --- DEBUG / MANUAL TEST SECTION ---
+# This section runs only when you run this file directly (not when imported elsewhere)
+if __name__ == "__main__":
+    # Fetch live exchange data from the API
+    exchange_data = get_exchange_data()
 
-    # Get the target currency input from the user and convert it to lowercase
-    currency_exch = input("Enter the currency to exchange to (leave blank to exit): ").lower()
+    # Print the first 5 currencies for quick inspection
+    print("Sample of live rates from API:")
+    print(list(exchange_data["rates"].items())[:5])
 
-    # If the input is blank, break out of the loop (exit condition)
-    if currency_exch == '':
-        break
+    # Sample rates dictionary for local testing
+    rates_example = {"USD": 1.12, "EUR": 1.0, "GBP": 0.87}
 
-    # Get the amount to exchange from the user
-    amount_to_exch = int(input("Enter the amount to exchange: "))
+    # Print supported currencies
+    print("\nSupported currencies:", get_supported_currencies(rates_example))
 
-    # URL for getting exchange rates from floatrates.com
-    URL = f'http://www.floatrates.com/daily/{currency}.json'
-
-    # Fetch the exchange rates in JSON format
-    exch = json.loads(requests.get(URL).text)
-
-    # Update cache for USD and EUR based on the base currency
-    if currency == 'usd':
-        # If base currency is USD, cache EUR rate
-        cache.update(eur=exch['eur']['rate'])
-    elif currency == 'eur':
-        # If base currency is EUR, cache USD rate
-        cache.update(usd=exch['usd']['rate'])
-    else:
-        # For other base currencies, cache both USD and EUR rates
-        cache.update(usd=exch['usd']['rate'], eur=exch['eur']['rate'])
-
-    print("Checking the cache...")
-
-    # Check if the target currency's rate is in the cache
-    if currency_exch in cache:
-        # If the rate is in the cache, calculate the exchanged amount
-        rate = round(amount_to_exch * cache[currency_exch], 2)
-        print("Oh! It is in the cache!")
-        print(f"You received {rate} {currency_exch.upper()}.")
-    else:
-        # If the rate is not in the cache, fetch it from the exchange rates and store it in cache
-        print("Sorry, but it is not in the cache!")
-        cache[currency_exch] = exch[currency_exch]['rate']
-        rate = round(amount_to_exch * cache[currency_exch], 2)
-        print(f"You received {rate} {currency_exch.upper()}.")
+    # Check a few currency codes
+    print("Is 'usd' valid?", is_valid_currency("usd", rates_example))   # True
+    print("Is 'AUD' valid?", is_valid_currency("AUD", rates_example))  # False

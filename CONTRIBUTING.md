@@ -28,4 +28,4 @@ If this is your first time contributing to an open source project, check out thi
 
 ## Code of Conduct
 
-We strive to maintain a welcoming and inclusive community. Please read and respect our [Code of Conduct](https://github.com/DhanushNehru/Python-Scripts/blob/master/CODE_OF_CONDUCT.md) in all your interactions.
+We strive to maintain a welcoming and inclusive community. Please read and respect our [Code of Conduct](https://github.com/DhanushNehru/Python-Scripts/blob/main/CODE_OF_CONDUCT.md) in all your interactions.

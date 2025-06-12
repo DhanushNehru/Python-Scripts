@@ -174,7 +174,6 @@ You can use Gitpod in the cloud [![Gitpod Ready-to-Code](https://img.shields.io/
 <img src="https://contrib.rocks/image?repo=DhanushNehru/Python-Scripts" />
 </a>
 
-</br>
 
 If you liked this repository, support it by starring ⭐
 

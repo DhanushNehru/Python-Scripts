@@ -1,3 +1,7 @@
+"""
+CurrencyConverter: Converts an amount from one currency to another using live exchange rates.
+"""
+
 from api_handler import get_exchange_data
 
 class CurrencyConverter:
@@ -6,6 +10,20 @@ class CurrencyConverter:
         self.rates = data["rates"]
 
     def convert(self, from_currency: str, to_currency: str, amount: float) -> float:
+        """
+        Convert amount between two currencies.
+
+        Args:
+            from_currency: Source currency code (e.g., 'USD')
+            to_currency: Target currency code (e.g., 'AUD')
+            amount: Amount to convert
+
+        Returns:
+            Converted amount as float
+
+        Raises:
+            ValueError: If a currency code is invalid
+        """
         from_currency = from_currency.upper()
         to_currency = to_currency.upper()
 
@@ -17,7 +35,7 @@ class CurrencyConverter:
         converted_amount = round(amount_in_base * self.rates[to_currency], 2)
         return converted_amount
 
-# --- DEBUG / MANUAL TEST SECTION ---
+# --- DEBUG / MANUAL TEST ---
 if __name__ == "__main__":
     print("Running manual test for CurrencyConverter...\n")
 

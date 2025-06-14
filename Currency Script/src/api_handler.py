@@ -1,15 +1,23 @@
 import requests
 
 def get_exchange_data(api_url: str = "https://open.er-api.com/v6/latest") -> dict:
-    """Fetch latest exchange data from the API."""
+    """
+    Retrieve the latest foreign exchange rates from the specified API.
+
+    Args:
+        api_url (str): Endpoint to fetch exchange data from. Defaults to the open.er-api URL.
+
+    Returns:
+        dict: A dictionary containing the base currency, timestamp, and exchange rates.
+
+    Raises:
+        Exception: If the API request fails or returns a non-200 status.
+    """
     response = requests.get(api_url)
     if response.status_code != 200:
         raise Exception(f"API request failed with status {response.status_code}")
 
     data = response.json()
-    # Ensure response was successful
-    if data.get("result") != "success":
-        raise Exception(f"API returned error: {data.get('error-type', 'Unknown error')}")
 
     return data  # Includes 'base_code', 'time_last_update_utc', and 'rates'
 

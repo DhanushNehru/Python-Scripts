@@ -64,7 +64,6 @@ python main.py
 ## 📎 Notes
 
 * Make sure to enable the **Google Drive API** in your Google Cloud Console.
-* The first time you run the script, it will prompt you to authenticate and save a `token.json` for future use.
 
 ---
 

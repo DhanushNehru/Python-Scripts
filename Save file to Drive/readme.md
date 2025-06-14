@@ -2,7 +2,7 @@
 
 # 📁 Save File and Folder to Drive
 
-A simple utility to interact with Google Drive. This project uses the Google Drive API and requires authentication via a `client_secret.json` file.
+A simple utility to interact with Google Drive. This project uses the Google Drive API and requires authentication via  `client_secret.json` file.
 
 ## 🚀 Features
 
@@ -14,14 +14,7 @@ A simple utility to interact with Google Drive. This project uses the Google Dri
 
 ## 🛠️ Setup Instructions
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/drive-thing.git
-cd drive-thing
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 Make sure you have Python 3 installed.
 
@@ -29,7 +22,7 @@ Make sure you have Python 3 installed.
 pip install -r requirements.txt
 ```
 
-### 3. Generate `client_secret.json` (Google OAuth Credentials)
+### 2. Generate `client_secret.json` (Google OAuth Credentials)
 
 To access Google Drive, you’ll need OAuth 2.0 credentials:
 

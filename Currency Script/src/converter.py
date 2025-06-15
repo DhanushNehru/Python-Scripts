@@ -1,7 +1,3 @@
-"""
-CurrencyConverter: Converts an amount from one currency to another using live exchange rates.
-"""
-
 from api_handler import get_exchange_data
 
 class CurrencyConverter:
@@ -35,7 +31,8 @@ class CurrencyConverter:
         converted_amount = round(amount_in_base * self.rates[to_currency], 2)
         return converted_amount
 
-# --- DEBUG / MANUAL TEST ---
+# --- DEBUG / MANUAL TEST SECTION ---
+# This section runs only when you run this file directly (not when imported elsewhere)
 if __name__ == "__main__":
     print("Running manual test for CurrencyConverter...\n")
 

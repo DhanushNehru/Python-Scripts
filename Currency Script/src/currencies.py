@@ -1,11 +1,28 @@
 from api_handler import get_exchange_data
 
-# Returns a list of all supported currency codes.
 def get_supported_currencies(rates):
+    """
+    Return a list of supported currency codes from the rates dictionary.
+
+    Args:
+        rates (dict): Dictionary of currency codes and their exchange rates.
+
+    Returns:
+        list: List of supported currency codes (e.g., ['USD', 'EUR']).
+    """
     return list(rates.keys())
 
-# Checks if a currency code is supported.
 def is_valid_currency(currency_code, rates):
+    """
+    Check if the given currency code is valid and supported.
+
+    Args:
+        currency_code (str): Currency code to validate (e.g., 'USD').
+        rates (dict): Dictionary of available exchange rates.
+
+    Returns:
+        bool: True if the currency code exists in the rates, False otherwise.
+    """
     return currency_code.upper() in rates
 
 # --- DEBUG / MANUAL TEST SECTION ---

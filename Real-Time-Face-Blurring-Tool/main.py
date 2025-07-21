@@ -14,7 +14,16 @@ face_net = load_face_detection_model()
 
 # Save video function
 def save_video(video, output_path):
+    """
+    Initializes a video writer object to save processed video frames.
 
+    Parameters:
+        video (cv2.VideoCapture): OpenCV video capture object for the input video.
+        output_path (str): Path to save the output video.
+
+    Returns:
+        cv2.VideoWriter: OpenCV video writer object for saving frames.
+    """
     # Get video properties
     fps = video.get(cv2.CAP_PROP_FPS)
     frame_width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))

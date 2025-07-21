@@ -12,7 +12,7 @@ def load_face_detection_model():
 # Global variable to store the model (avoids reloading it multiple times)
 face_net = load_face_detection_model()
 
-#save video function
+# Save video function
 def save_video(video, output_path):
 
     # Get video properties
@@ -24,7 +24,7 @@ def save_video(video, output_path):
     # Define the video writer
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # MP4 codec
     out = cv2.VideoWriter(output_path, fourcc, fps, res)
-    return  out
+    return out
 
 def blur_faces(image, confidence_threshold=0.5, blur_strength=61):
     """
@@ -108,7 +108,9 @@ def blur_faces_videos(video_path):
     # Ensure the output file has a valid extension
     output_path = os.path.join(output_folder, os.path.splitext(name)[0] + "_blurred.mp4")
     
-    video, output_path, out= save_video(video_path)
+    #video, output_path, out= save_video(video_path)
+    video = cv2.VideoCapture(video_path)
+    out = save_video(video, output_path)
 
     while True:
         ret, frame = video.read()
@@ -143,7 +145,7 @@ def blur_face_webcam():
     # Ensure the output file has a valid extension
     output_path = os.path.join(output_folder, ("webcam_blurred.mp4"))
     
-    out= save_video(video, output_path)
+    out = save_video(video, output_path)
     while True:
         ret, frame = video.read()
         if not ret:

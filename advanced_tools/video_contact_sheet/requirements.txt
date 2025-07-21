@@ -1,0 +1,4 @@
+opencv-python>=4.0.0
+numpy>=1.19.0
+pillow>=8.0.0
+pytest>=6.0.0

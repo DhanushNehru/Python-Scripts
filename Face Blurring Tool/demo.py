@@ -45,7 +45,7 @@ def get_demo_image():
             return create_test_pattern()
             
     except KeyboardInterrupt:
-        print("\n Demo cancelled by user")
+        print("\nDemo cancelled by user")
         return False
     
     # Fallback to test pattern
@@ -150,9 +150,9 @@ def quick_demo():
                 success = blurrer.process_image("demo_face.jpg", f"demo_blurred_{method}.jpg")
                 
                 if success:
-                    print(f" {method} method worked!")
+                    print(f"✔️ {method} method worked!")
                 else:
-                    print(f" ⚠️  {method} method had issues")
+                    print(f"⚠️ {method} method had issues")
 
             except Exception as e:
                 print(f"✖️ {method} method failed: {e}")

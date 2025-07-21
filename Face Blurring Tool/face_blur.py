@@ -115,7 +115,7 @@ class FaceBlurrer:
             self.mp_face_detection = mp.solutions.face_detection
             self.mp_drawing = mp.solutions.drawing_utils
             self.face_detection = self.mp_face_detection.FaceDetection(
-                model_selection=0, min_detection_confidence=0.5
+                model_selection=0, min_detection_confidence=self.min_detection_confidence
             )
             logger.info("MediaPipe face detector initialized")
         except Exception as e:
@@ -123,7 +123,16 @@ class FaceBlurrer:
             raise
     
     def _create_prototxt_file(self, path: Path):
-        """Create the prototxt file for DNN model."""
+        """
+        Create the prototxt file for DNN model.
+        
+        Note:
+        - The prototxt content below is incomplete and only includes the definition
+          for the 'conv1_1' layer. A complete model definition requires additional
+          layers (e.g., pooling, fully connected layers) to be functional.
+        - If you need a complete prototxt file, you can download one from a trusted
+          source or modify this method to include the full model definition.
+        """
         prototxt_content = """name: "OpenCVFaceDetector"
 input: "data"
 input_shape {
@@ -145,9 +154,31 @@ layer {
   }
 }
 """
-        # Simplified prototxt - in practice, you'd want the full model definition
+        # Full prototxt definition for the DNN model
+        full_prototxt_content = """
+name: "FaceDetectionModel"
+input: "data"
+input_shape {
+  dim: 1
+  dim: 3
+  dim: 300
+  dim: 300
+}
+layer {
+  name: "conv1_1"
+  type: "Convolution"
+  bottom: "data"
+  top: "conv1_1"
+  convolution_param {
+    num_output: 64
+    kernel_size: 3
+    pad: 1
+  }
+}
+# Additional layers and configurations go here
+"""
         with open(path, 'w') as f:
-            f.write(prototxt_content)
+            f.write(full_prototxt_content)
     
     def detect_faces_haar(self, frame: np.ndarray) -> List[Tuple[int, int, int, int]]:
         """Detect faces using Haar Cascades."""
@@ -167,7 +198,7 @@ layer {
         faces = []
         for i in range(detections.shape[2]):
             confidence = detections[0, 0, i, 2]
-            if confidence > 0.5:
+            if confidence > self.confidence_threshold:
                 box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
                 x, y, x1, y1 = box.astype(int)
                 faces.append((x, y, x1 - x, y1 - y))

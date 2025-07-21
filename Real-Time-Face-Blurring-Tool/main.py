@@ -3,10 +3,12 @@ import cv2
 import numpy as np
 
 # Load DNN model once to avoid reloading it for each frame
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def load_face_detection_model():
     """Loads the pre-trained face detection model."""
-    prototxt_path = "./protocol/deploy.prototxt.txt"
-    model_path = "./model/res10_300x300_ssd_iter_140000_fp16.caffemodel"
+    prototxt_path = os.path.join(BASE_DIR, "protocol", "deploy.prototxt.txt")
+    model_path = os.path.join(BASE_DIR, "model", "res10_300x300_ssd_iter_140000_fp16.caffemodel")
     return cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
 
 # Global variable to store the model (avoids reloading it multiple times)

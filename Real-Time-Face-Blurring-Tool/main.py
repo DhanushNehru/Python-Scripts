@@ -108,7 +108,6 @@ def blur_faces_videos(video_path):
     # Ensure the output file has a valid extension
     output_path = os.path.join(output_folder, os.path.splitext(name)[0] + "_blurred.mp4")
     
-    #video, output_path, out= save_video(video_path)
     video = cv2.VideoCapture(video_path)
     out = save_video(video, output_path)
 

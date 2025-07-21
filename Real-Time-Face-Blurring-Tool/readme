@@ -17,5 +17,7 @@ A Python script that detects and blurs faces in images, videos, and webcam feeds
   - `res10_300x300_ssd_iter_140000_fp16.caffemodel` in `./model/`
 
 ## Installation
+
+### Step 1: Install Dependencies
 ```bash
 pip install opencv-python numpy

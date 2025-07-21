@@ -1,21 +1,27 @@
-# Face Blurring Application
+# Real-Time Face Blurring Tool
 
-A Python script that detects and blurs faces in images, videos, and webcam feeds using OpenCV and deep learning.
+A robust Python application for anonymizing faces in images, videos, and live webcam feeds using OpenCV's deep neural network (DNN) module.
 
 ## Features
-- **Face detection** using DNN-based model
-- **Real-time face blurring** for webcam feed
-- **Video processing** with face anonymization
-- **Adjustable blur strength** and **confidence thresholds**
+
+- **Multi-source processing**:
+  - 📷 Single image processing
+  - 🎥 Video file processing
+  - 🌐 Live webcam feed processing
+- **Advanced face detection** using Caffe-based DNN model
+- **Adjustable parameters**:
+  - Blur strength (kernel size)
+  - Detection confidence threshold
+- **Automatic output organization**:
+  - `./output_images/` for processed images
+  - `./output_videos/` for processed videos
+- **Progress tracking** for video processing
+- **Graceful resource handling** with proper cleanup
 
 ## Requirements
-- Python 3.6+
-- OpenCV (`opencv-python`)
-- NumPy
-- Model files:
-  - `deploy.prototxt.txt` in `./protocol/`
-  - `res10_300x300_ssd_iter_140000_fp16.caffemodel` in `./model/`
 
-## Installation
-```bash
-pip install opencv-python numpy
+- Python 3.6+
+- Required packages:
+  ```bash
+  pip install opencv-python numpy
+  ```

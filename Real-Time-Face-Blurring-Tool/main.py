@@ -9,7 +9,7 @@ DEFAULT_BLUR_STRENGTH = 61  # Must be odd
 DEFAULT_CONFIDENCE_THRESHOLD = 0.5
 OUTPUT_IMAGE_FOLDER = "./output_images/"
 OUTPUT_VIDEO_FOLDER = "./output_videos/"
-WEBCAM_RESOLUTION = (640, 480)
+WEBCAM_RESOLUTION = (640, 490)
 MODEL_PROTOTXT = "deploy.prototxt.txt"
 MODEL_WEIGHTS = "res10_300x300_ssd_iter_140000_fp16.caffemodel"
 

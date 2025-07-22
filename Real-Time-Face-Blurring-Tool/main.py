@@ -9,7 +9,7 @@ DEFAULT_BLUR_STRENGTH = 61  # Must be odd
 DEFAULT_CONFIDENCE_THRESHOLD = 0.5
 OUTPUT_IMAGE_FOLDER = "./output_images/"
 OUTPUT_VIDEO_FOLDER = "./output_videos/"
-WEBCAM_RESOLUTION = (640, 490)
+WEBCAM_RESOLUTION = (640, 480)
 MODEL_PROTOTXT = "deploy.prototxt.txt"
 MODEL_WEIGHTS = "res10_300x300_ssd_iter_140000_fp16.caffemodel"
 
@@ -34,12 +34,13 @@ def load_face_detection_model():
     except Exception as e:
         logger.error(f"Failed to load model: {e}")
         raise
-    
+
 face_net = load_face_detection_model()
 
 def save_video(video, output_path, default_fps=30, default_res=WEBCAM_RESOLUTION):
     """
     Initializes a video writer object to save processed video frames.
+    
     Args:
         video: OpenCV video capture object
         output_path: Path to save the output video

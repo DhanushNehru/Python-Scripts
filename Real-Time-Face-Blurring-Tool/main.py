@@ -51,7 +51,9 @@ def save_video(video, output_path, default_fps=30, default_res=WEBCAM_RESOLUTION
         cv2.VideoWriter object
     """
     try:
-        fps = video.get(cv2.CAP_PROP_FPS) or default_fps
+        fps = video.get(cv2.CAP_PROP_FPS)
+        if not fps or fps <= 1:
+            fps = default_fps
         width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH)) or default_res[0]
         height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT)) or default_res[1]
         
@@ -104,11 +106,12 @@ def blur_faces(image, confidence_threshold=DEFAULT_CONFIDENCE_THRESHOLD,
                 # Ensure coordinates stay within image bounds
                 startX, startY = max(0, startX), max(0, startY)
                 endX, endY = min(w, endX), min(h, endY)
-
-                # Extract and blur face ROI
-                face_roi = image[startY:endY, startX:endX]
-                blurred_face = cv2.GaussianBlur(face_roi, (blur_strength, blur_strength), 0)
-                image[startY:endY, startX:endX] = blurred_face
+                # Validate ROI dimensions
+                if endY > startY and endX > startX:
+                    # Extract and blur face ROI
+                    face_roi = image[startY:endY, startX:endX]
+                    blurred_face = cv2.GaussianBlur(face_roi, (blur_strength, blur_strength), 0)
+                    image[startY:endY, startX:endX] = blurred_face
                 
     except Exception as e:
         logger.error(f"Error during face blurring: {e}")
@@ -129,7 +132,8 @@ def blur_faces_images(image_path):
         blurred_image = blur_faces(image)
         
         os.makedirs(OUTPUT_IMAGE_FOLDER, exist_ok=True)
-        output_path = os.path.join(OUTPUT_IMAGE_FOLDER, os.path.basename(image_path))
+        filename, ext = os.path.splitext(os.path.basename(image_path))
+        output_path = os.path.join(OUTPUT_IMAGE_FOLDER, f"{filename}_blurred{ext}")
         
         if not cv2.imwrite(output_path, blurred_image):
             raise IOError(f"Failed to save image to {output_path}")
@@ -153,6 +157,8 @@ def process_video_stream(input_source=None, is_webcam=False):
         
         if is_webcam:
             video = cv2.VideoCapture(0)
+            if not video.isOpened():
+                raise ValueError("Unable to access the webcam.")
             video.set(cv2.CAP_PROP_FRAME_WIDTH, WEBCAM_RESOLUTION[0])
             video.set(cv2.CAP_PROP_FRAME_HEIGHT, WEBCAM_RESOLUTION[1])
             output_path = os.path.join(OUTPUT_VIDEO_FOLDER, "webcam_blurred.mp4")
@@ -161,6 +167,8 @@ def process_video_stream(input_source=None, is_webcam=False):
             if not os.path.exists(input_source):
                 raise FileNotFoundError(f"Video file not found at {input_source}")
             video = cv2.VideoCapture(input_source)
+            if not video.isOpened():
+                raise ValueError(f"Unable to open video file: {input_source}")
             name = os.path.basename(input_source)
             output_path = os.path.join(OUTPUT_VIDEO_FOLDER, f"{os.path.splitext(name)[0]}_blurred.mp4")
             logger.info(f"Processing video file: {input_source}")

@@ -10,6 +10,8 @@ DEFAULT_CONFIDENCE_THRESHOLD = 0.5
 OUTPUT_IMAGE_FOLDER = "./output_images/"
 OUTPUT_VIDEO_FOLDER = "./output_videos/"
 WEBCAM_RESOLUTION = (640, 480)
+INPUT_SIZE =  (300, 300)
+MEAN_VALUES = (104.0, 177.0, 123.0)
 MODEL_PROTOTXT = "deploy.prototxt.txt"
 MODEL_WEIGHTS = "res10_300x300_ssd_iter_140000_fp16.caffemodel"
 
@@ -87,10 +89,10 @@ def blur_faces(image, confidence_threshold=DEFAULT_CONFIDENCE_THRESHOLD,
     
     try:
         blob = cv2.dnn.blobFromImage(
-            cv2.resize(image, (300, 300)), 
+            cv2.resize(image,INPUT_SIZE), 
             1.0, 
-            (300, 300),
-            (104.0, 177.0, 123.0)
+           INPUT_SIZE,
+            MEAN_VALUES
         )
         
         face_net.setInput(blob)

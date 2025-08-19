@@ -1,14 +1,21 @@
-This repository consists of a list of python scripts to automate few tasks.
+# ⏰ Digital Clock (Tkinter)
 
-You can contribute by adding more python scripts which can be used to automate things. Some of already done are listed below.
-Incase you have anything to be followed while executing the python script mention it as well
+A simple **Digital Clock** built with **Python Tkinter** that displays the current time in hours, minutes, and seconds with AM/PM.
 
+---
 
-# Python Script
+## 💡 Features
+- Real-time digital clock  
+- Updates every second  
+- GUI built using Tkinter  
+- Non-resizable window  
 
-## Script  - Digital Clock
+---
 
-DigitalClock.py
+## ▶️ Run
+```bash
+python digital_clock.py
+```
 
 <!-- Updated README links and corrected typos -->
 <!-- Updated README links and corrected typos -->

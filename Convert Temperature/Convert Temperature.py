@@ -1,7 +1,6 @@
 import math
 
-def from_cel():    
-    x = float(input("Enter Temperature: "))
+def from_cel(x):    
     y = input("You want to convert it into: \n (a)fahrenheit (b)Kelvin ")
     
     if y == 'a':
@@ -14,8 +13,7 @@ def from_cel():
 
         
 
-def from_fah():
-    x = float(input("Enter Temperature: "))
+def from_fah(x):
     y = input("You want to convert it into: \n (a)celsius (b)Kelvin ")
     
     if y == 'a':
@@ -28,8 +26,7 @@ def from_fah():
         print(f"The temperature is: {final} K")
 
 
-def from_Kel():
-    x = float(input("Enter Temperature: "))
+def from_Kel(x):
     y = input("You want to convert it into: \n (a)celsius (b)fahrenheit ")
     
     if y == 'a':
@@ -49,19 +46,21 @@ def get_temp():
 
 get_temp()
 
+x = float(input("Enter Temperature: ")) 
 
 if t == "1":
-    from_cel()
+    from_cel(x)
 
 elif t == '2':
-    from_fah()
+    from_fah(x)
 
 elif t == '3':
-    from_Kel()
+    from_Kel(x)
 
 else:
     print("please enter a correct input")
     get_temp()
+
 
 
 

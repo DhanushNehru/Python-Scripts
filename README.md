@@ -164,11 +164,6 @@ More information on contributing and the general code of conduct for discussion 
 | Youtube Downloader                       | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/main/Youtube%20Downloader)                                                    | Downloads any video from [YouTube](https://youtube.com) in video or audio format!                                                                                 |
 | Youtube Playlist Info Scraper            | [Youtube Playlist Info Scraper](https://github.com/DhanushNehru/Python-Scripts/tree/main/Youtube%20Playlist%20Info%20Scraper)                          | This python module retrieve information about a YouTube playlist in json format using playlist link.                                                              |
 
-## Gitpod
-
-Use the cloud-free development environment where you can directly start coding.
-
-You can use Gitpod in the cloud [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/DhanushNehru/Python-Scripts/)
 
 ## Wall of Contributors
 

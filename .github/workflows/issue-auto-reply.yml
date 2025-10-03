@@ -1,0 +1,28 @@
+name: Auto-Reply to New Issues
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  post-welcome-comment:
+    name: Post Welcome Comment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post welcome comment on new issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const message = `Thank you for raising this issue! Our team will review it soon.
+
+            For more queries or discussions or approval of requests, please join the Discord server for further discussion: [Discord Link](https://discord.com/invite/Yn9g6KuWyA)`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: message
+            });

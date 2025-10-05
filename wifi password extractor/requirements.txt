@@ -1,0 +1,6 @@
+# Core dependency for generating QR codes (includes Pillow for image support)
+qrcode[pil]
+
+# (Optional) If you use virtualenv or want to pin versions, replace above with:
+# qrcode[pil]==7.3
+# Pillow==9.5.0

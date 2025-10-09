@@ -254,7 +254,7 @@ def create_icon_preview(output_dir):
                 <div class="icon-size">{icon.stem}<br>{size[0]}x{size[1]}</div>
             </div>
 """
-                        except:
+                        except Exception:
                             pass
                     
                     html_content += """

@@ -17,12 +17,12 @@ Lightweight, fast, and cross-platform (works on Linux, macOS, and Windows).
 
 ```bash
 # Analyze current directory
-python vis.py
+python disk_visualizer.py
 
 # Analyze a specific path
-python vis.py D:\Projects        # Windows
-python vis.py /home/user/docs    # Linux/macOS
+python disk_visualizer.py D:\Projects        # Windows
+python disk_visualizer.py /home/user/docs    # Linux/macOS
 
 # Show top 20 largest folders
-python vis.py . -n 20
+python disk_visualizer.py . -n 20
 ```

@@ -2,6 +2,7 @@
 
 This script scans a given directory for duplicate files based on their MD5 hash. It provides options to delete or move the duplicate files to another directory.
 
+The metadata script scans a given directry and finds duplicate files based on MD5 hash, file size and other metadata, it does not include the move, and delete features.
 ## Features
 
 - Scan a directory recursively for duplicate files.

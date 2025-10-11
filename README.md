@@ -1,3 +1,6 @@
+# Spanish Readme
+- [Ver esta página en Español](README_ESP.md) 
+
 # Table of Contents
 
 - [Contributing](#contributing)

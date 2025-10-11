@@ -1,0 +1,5 @@
+Key Features in the Enhanced Code:
+Logging: Each click is logged to a file named click_log.txt, which records the coordinates of each click along with the timestamp.
+Configurable Parameters: The number of clicks, clicking area, and interval between clicks can be easily configured at the beginning of the main() function.
+Threading: The clicking process runs in a separate thread, allowing the main thread to remain responsive. This also makes it easier to implement a graceful exit.
+Keyboard Interrupt Handling: You can stop the clicking process by pressing Ctrl+C in the terminal.

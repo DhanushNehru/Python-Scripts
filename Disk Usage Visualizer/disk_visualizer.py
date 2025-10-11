@@ -12,8 +12,8 @@ def get_dir_sizes(path="."):
                     full_path = r"\\?\\" + os.path.abspath(full_path)
 
                 size = os.path.getsize(full_path)
-                dir_name = os.path.relpath(root, path)
-                dir_sizes[dir_name] = dir_sizes.get(dir_name, 0) + size
+                dir_path = os.path.relpath(root, path)
+                dir_sizes[dir_path] = dir_sizes.get(dir_path, 0) + size
             except (FileNotFoundError, PermissionError, OSError):
                 continue
     return dir_sizes
@@ -40,9 +40,9 @@ def main():
     print(f"{'Directory':40s} | {'Size (MB)':>10s}")
     print("-" * 60)
 
-    for dir_name, size in sorted_dirs[: args.top]:
+    for dir_path, size in sorted_dirs[: args.top]:
         size_mb = size / (1024 * 1024)
-        print(f"{dir_name:40s} | {size_mb:10.2f}")
+        print(f"{dir_path:40s} | {size_mb:10.2f}")
 
     print("-" * 60)
     print("✅ Disk usage analysis complete.")

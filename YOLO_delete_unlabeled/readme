@@ -1,0 +1,11 @@
+This script can be used to 
+- delete labels that has no image 
+- delete images without labels
+- delete labels without any content in it
+
+To use this script 
+1. Open Powershell
+2. change directory to script's location using "cd c:\..."
+3. Type "python check_label.py --path path\to\folder"
+
+thats it.

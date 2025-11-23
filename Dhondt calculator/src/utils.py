@@ -1,20 +1,15 @@
-
-
-from typing import Optional
-
-
-def get_positive_integer(prompt: str) -> Optional[int]:
-    value: Optional[int] = None
-    valid_input = False
- 
+def get_positive_integer(prompt: str) -> int:
+    """Prompt the user to enter a positive integer."""
+    
+    valid_input: bool = False
     while not valid_input:
         print(prompt)
         try:
-            value = int(input())
+            value: int = int(input())
             if value <= 0:
                 print("Please enter a positive integer.")
             else:
-                valid_input = True
+                return value
         except ValueError:
             print("Invalid input. Please enter a valid integer.")
-    return value
+    

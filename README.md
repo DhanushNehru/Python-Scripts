@@ -29,7 +29,8 @@ _**Note: Please follow the maintainer of the repository for quick approval of th
 
 **3. Create a Pull Request (PR):** In your forked repository, develop the Python script and include a `README` file explaining how to use it. Ensure you credit the original contributor if you're building upon an existing script.
 
-**4. Update the List:** If you're adding a new script, make sure to include it in the "List of Python Scripts" section below, providing a title, a link to the script's folder, and a brief description.
+**4. Update the List:** If you're adding a new script, make sure to include it in the "List of Python Scripts" section below is organized by providing a title, a link to the script’s folder, and a brief description.
+
 
 **NOTE:** Remember to close your issues once your PR has been merged! They can be reopened if needed.
 

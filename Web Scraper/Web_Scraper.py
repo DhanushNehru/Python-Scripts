@@ -1,6 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 
+print("This is the traditional web scraper using BeautifulSoup.")
+print("For a more robust solution using Google Custom Search API, see 'google_web_scraper.py'")
+print()
+
 # URL to scrape data from
 URL = "https://www.python.org/blogs/"
 
@@ -24,7 +28,3 @@ with open("blog_titles.txt", "w") as file:
         file.write(title.get_text(strip=True) + "\n")
 
 print("\nBlog titles saved to 'blog_titles.txt'.")
-     
-   
-     
-     

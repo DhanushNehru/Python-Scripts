@@ -1,0 +1,6 @@
+opencv-python>=4.9
+ffmpeg-python>=0.2
+Pillow>=10.3
+tqdm>=4.66
+click>=8.1
+pytest>=8.2

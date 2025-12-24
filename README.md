@@ -178,3 +178,25 @@ More information on contributing and the general code of conduct for discussion 
 If you liked this repository, support it by starring ⭐
 
 Thank You for being here :)
+## CLI Web Scraper
+
+A simple command-line web scraper that fetches a webpage and displays:
+
+- Page title
+- Up to 5 text snippets from paragraph content
+
+### Requirements
+- Python 3.x
+- requests
+- beautifulsoup4
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+Usage
+python cli_web_scraper.py https://example.com
+Example Output
+Title: Example Domain
+Snippets:
+- This domain is for use in illustrative examples in documents.
+

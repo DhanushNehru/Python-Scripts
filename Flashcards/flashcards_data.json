@@ -1,0 +1,82 @@
+[
+    {
+        "question": "What keyword is used to create an anonymous function in Python?",
+        "answer": "lambda",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "What is the primary difference between a list and a tuple?",
+        "answer": "Lists are mutable, while tuples are immutable.",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "Which function is used to output text to the console?",
+        "answer": "print()",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "What data type is returned by `type(3.14)`?",
+        "answer": "float",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "Which keyword is used to include an external module?",
+        "answer": "import",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "Which character is used to start a single-line comment?",
+        "answer": "#",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "What is the result of the expression `2 ** 3`?",
+        "answer": "8",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "Which list method adds an item to the end of the list?",
+        "answer": "append()",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "Which logical operator returns True only if both operands are True?",
+        "answer": "and",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    },
+    {
+        "question": "Which built-in function returns the number of items in a sequence?",
+        "answer": "len()",
+        "status": "learning",
+        "level": 0,
+        "last_review": "2025-12-31",
+        "next_review": "2025-12-31"
+    }
+]

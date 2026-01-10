@@ -2,7 +2,7 @@ import sys
 import subprocess
 import shutil
 
-#functions to isntall python packages
+#functions to install python packages
 def installPackage(pkgName):
     print(f"[INFO] {pkgName} not found. Installing...")
     subprocess.check_call([sys.executable, "-m", "pip", "install", pkgName])
@@ -27,29 +27,34 @@ if shutil.which("ffmpeg") is None:
 
 print("[INFO] All dependencies are ready!")
 
-audio_file = input("Enter the path to your audio file (MP3, WAV, MP4 etc.): ").strip()
+import os
+while True:
+    audio_file = input("Enter the name of or path to your audio file (MP3, WAV, MP4 etc.): ").strip()
+    if not os.path.isfile(audio_file):
+        print(f"[ERROR] File '{audio_file}' does not exist. Please check the path and try again.")
+    else:
+        break
 valid_models = ["tiny", "small", "base", "medium", "large"]
 print("Models (Sorted from Fastest-Smallest-Least Accurate To Slowest-Largest-Most Accurate):-\n")
-print("Make Sure to write .en after writing model name if you only want english transcription (Less work for model)\n")
 print(valid_models)
-model_size = input("\nEnter the model size: ").strip().lower()
 
-if model_size not in valid_models:
-    print(f"[ERROR] Invalid model size '{model_size}'. Please choose from {valid_models}.")
-    sys.exit(1)
+while True:
+    model_size = input("\nEnter the model size: ").strip().lower()
+
+    if model_size not in valid_models:
+        print(f"[ERROR] Invalid model size '{model_size}'. Please choose from {valid_models}.\n")
+    else:
+        break
 
 model = WhisperModel(model_size)
-
-import os
-if not os.path.isfile(audio_file):
-    print(f"[ERROR] File '{audio_file}' does not exist. Please check the path and try again.")
-    sys.exit(1)
 
 output_file = audio_file.rsplit(".", 1)[0] + "_transcript.txt"
 segments, info = model.transcribe(audio_file)
 
 with open(output_file, "w", encoding="utf-8") as f:
+    print("\nTranscribing.")
     for segment in segments:
+        print(".", end="", flush=True)
         f.write(segment.text + "\n")
-print(f"[INFO] Transcription saved to {output_file}")
+print(f"\n[INFO] Transcription saved to {output_file}")
 print("\n -- Scripted by Syed Sultan (github = Syed-56)")

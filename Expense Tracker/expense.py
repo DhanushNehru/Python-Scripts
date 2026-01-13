@@ -1,3 +1,8 @@
+"""
+DebEx - Expense Tracker GUI
+Description: Track, filter, delete, and export expenses.
+Dependencies: tkinter, tkcalendar, sqlite3.
+"""
 import datetime
 import sqlite3
 from tkcalendar import DateEntry
@@ -36,7 +41,7 @@ def remove_expense():
   surety = tb.askyesno('Are you sure?', f'Are you sure that you want to delete the record of {values_selected[2]}')
 
   if surety:
-     connector.execute('DELETE FROM ExpenseTracker WHERE ID=%d' % values_selected[0])
+    connector.execute('DELETE FROM ExpenseTracker WHERE ID=?', (values_selected[0],))
      connector.commit()
 
      list_all_expenses()
@@ -289,6 +294,11 @@ table.column('#6', width=125, stretch=NO)  # Mode of Payment column
 table.place(relx=0, y=0, relheight=1, relwidth=1)
 
 list_all_expenses()
+
+# Show total expenses
+total_amount = sum([row[4] for row in connector.execute('SELECT * FROM ExpenseTracker')])
+Label(root, text=f"Total Expenses: {total_amount}", font=("Georgia", 14)).place(x=950, y=10)
+
 # Finalizing the GUI window
 root.update()
 root.mainloop()

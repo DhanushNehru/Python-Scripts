@@ -7,55 +7,59 @@ import tkinter.ttk as ttk
 
 # Functions
 def list_all_expenses():
-  global connector, table
+    # Clears the current table display and reloads all records from the database
+    global connector, table
 
-  table.delete(*table.get_children())
+    table.delete(*table.get_children())
 
-  all_data = connector.execute('SELECT * FROM ExpenseTracker')
-  data = all_data.fetchall()
+    all_data = connector.execute('SELECT * FROM ExpenseTracker')
+    data = all_data.fetchall()
 
-  for values in data:
-     table.insert('', END, values=values)
+    for values in data:
+        table.insert('', END, values=values)
 
 def clear_fields():
-  global Desc, payee, amnt, MoP, date, table
+    # Resets all input fields to empty/default values and clears table selection
+    global Desc, payee, amnt, MoP, date, table
 
-  today_date = datetime.datetime.now().date()
+    today_date = datetime.datetime.now().date()
 
-  Desc.set('') ; payee.set('') ; amnt.set(0.0) ; MoP.set('Cash'), date.set_date(today_date)
-  table.selection_remove(*table.selection())
+    Desc.set('') ; payee.set('') ; amnt.set(0.0) ; MoP.set('Cash'), date.set_date(today_date)
+    table.selection_remove(*table.selection())
 
 def remove_expense():
-  if not table.selection():
-     tb.showerror('No record selected!', 'Please select a record to delete!')
-     return
+    # Deletes the currently selected row from the table and database after confirmation
+    if not table.selection():
+        tb.showerror('No record selected!', 'Please select a record to delete!')
+        return
 
-  current_selected_expense = table.item(table.focus())
-  values_selected = current_selected_expense['values']
+    current_selected_expense = table.item(table.focus())
+    values_selected = current_selected_expense['values']
 
-  surety = tb.askyesno('Are you sure?', f'Are you sure that you want to delete the record of {values_selected[2]}')
+    surety = tb.askyesno('Are you sure?', f'Are you sure that you want to delete the record of {values_selected[2]}')
 
-  if surety:
-     connector.execute('DELETE FROM ExpenseTracker WHERE ID=%d' % values_selected[0])
-     connector.commit()
+    if surety:
+        connector.execute('DELETE FROM ExpenseTracker WHERE ID=%d' % values_selected[0])
+        connector.commit()
 
-     list_all_expenses()
-     tb.showinfo('Record deleted successfully!', 'The record you wanted to delete has been deleted successfully')
+        list_all_expenses()
+        tb.showinfo('Record deleted successfully!', 'The record you wanted to delete has been deleted successfully')
 
 def remove_all_expenses():
-  surety = tb.askyesno('Are you sure?', 'Are you sure that you want to delete all the expense items from the database?', icon='warning')
+    # Deletes every record in the ExpenseTracker table after double confirmation
+    surety = tb.askyesno('Are you sure?', 'Are you sure that you want to delete all the expense items from the database?', icon='warning')
 
-  if surety:
-     table.delete(*table.get_children())
+    if surety:
+        table.delete(*table.get_children())
 
-     connector.execute('DELETE FROM ExpenseTracker')
-     connector.commit()
+        connector.execute('DELETE FROM ExpenseTracker')
+        connector.commit()
 
-     clear_fields()
-     list_all_expenses()
-     tb.showinfo('All Expenses deleted', 'All the expenses were successfully deleted')
-  else:
-     tb.showinfo('Ok then', 'The task was aborted and no expense was deleted!')
+        clear_fields()
+        list_all_expenses()
+        tb.showinfo('All Expenses deleted', 'All the expenses were successfully deleted')
+    else:
+        tb.showinfo('Ok then', 'The task was aborted and no expense was deleted!')
 
 def search_expenses(search_term):
     """
@@ -78,7 +82,6 @@ def search_expenses(search_term):
     for data in results.fetchall():
         table.insert('', END, values=data)
 
-
 def filter_expenses_by_date(date_from, date_to):
     """
     Filter and display expenses based on a date range.
@@ -94,7 +97,6 @@ def filter_expenses_by_date(date_from, date_to):
     for data in results.fetchall():
         table.insert('', END, values=data)
 
-
 def sort_expenses(column, order):
     """
     Sort expenses by a column in ascending or descending order.
@@ -108,50 +110,58 @@ def sort_expenses(column, order):
     for data in results.fetchall():
         table.insert('', END, values=data)
 
-
-
 def add_another_expense():
-  global date, payee, Desc, amnt, MoP
-  global connector
+    # Saves a new expense record to the database if all required fields are filled
+    global date, payee, Desc, amnt, MoP
+    global connector
 
-  if not date.get() or not payee.get() or not Desc.get() or not amnt.get() or not MoP.get():
-     tb.showerror('Fields empty!', "Please fill all the missing fields before pressing the add button!")
-  else:
-     connector.execute(
-     'INSERT INTO ExpenseTracker (Date, Payee, Description, Amount, ModeOfPayment) VALUES (?, ?, ?, ?, ?)',
-     (date.get_date(), payee.get(), Desc.get(), amnt.get(), MoP.get())
-     )
-     connector.commit()
+    if not date.get() or not payee.get() or not Desc.get() or not amnt.get() or not MoP.get():
+        tb.showerror('Fields empty!', "Please fill all the missing fields before pressing the add button!")
+    else:
+        connector.execute(
+        'INSERT INTO ExpenseTracker (Date, Payee, Description, Amount, ModeOfPayment) VALUES (?, ?, ?, ?, ?)',
+        (date.get_date(), payee.get(), Desc.get(), amnt.get(), MoP.get())
+        )
+        connector.commit()
 
-     clear_fields()
-     list_all_expenses()
-     tb.showinfo('Expense added', 'The expense whose details you just entered has been added to the database')
+        clear_fields()
+        list_all_expenses()
+        tb.showinfo('Expense added', 'The expense whose details you just entered has been added to the database')
 
 def expense_to_words_before_adding():
-  global date, Desc, amnt, payee, MoP
+    # Shows a natural-language preview of the expense and asks for confirmation before saving
+    global date, Desc, amnt, payee, MoP
 
-  if not date or not Desc or not amnt or not payee or not MoP:
-     tb.showerror('Incomplete data', 'The data is incomplete, meaning fill all the fields first!')
+    if not date or not Desc or not amnt or not payee or not MoP:
+        tb.showerror('Incomplete data', 'The data is incomplete, meaning fill all the fields first!')
 
-  message = f'Your expense can be read like: \n"You paid {amnt.get()} to {payee.get()} for {Desc.get()} on {date.get_date()} via {MoP.get()}"'
+    message = f'Your expense can be read like: \n"You paid {amnt.get()} to {payee.get()} for {Desc.get()} on {date.get_date()} via {MoP.get()}"'
 
-  add_question = tb.askyesno('Read your record like: ', f'{message}\n\nShould I add it to the database?')
+    add_question = tb.askyesno('Read your record like: ', f'{message}\n\nShould I add it to the database?')
 
-  if add_question:
-     add_another_expense()
-  else:
-     tb.showinfo('Ok', 'Please take your time to add this record')
+    if add_question:
+        add_another_expense()
+    else:
+        tb.showinfo('Ok', 'Please take your time to add this record')
 
-# Connecting to the Database
+# ────────────────────────────────────────────────
+#  DATABASE SETUP
+# ────────────────────────────────────────────────
+
+# Connect to (or create) the SQLite database file
 connector = sqlite3.connect("Expense Tracker.db")
 cursor = connector.cursor()
 
+# Create the expenses table if it doesn't already exist
 connector.execute(
   'CREATE TABLE IF NOT EXISTS ExpenseTracker (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Date DATETIME, Payee TEXT, Description TEXT, Amount FLOAT, ModeOfPayment TEXT)'
 )
 connector.commit()
 
-# Backgrounds and Fonts
+# ────────────────────────────────────────────────
+#  STYLE / APPEARANCE CONSTANTS
+# ────────────────────────────────────────────────
+
 dataentery_frame_bg = 'light blue'
 buttons_frame_bg = 'tomato'
 hlb_btn_bg = 'Indianred'
@@ -160,7 +170,10 @@ lbl_font = ('Georgia', 13)
 entry_font = 'Times 13 bold'
 btn_font = ('Gill Sans MT', 13)
 
-# Initializing the GUI window
+# ────────────────────────────────────────────────
+#  MAIN WINDOW SETUP
+# ────────────────────────────────────────────────
+
 root = Tk()
 root.title('DebEx')
 root.geometry('1200x550')
@@ -168,13 +181,19 @@ root.resizable(0, 0)
 
 Label(root, text='DebEx', font=('white', 21, 'bold'), bg=hlb_btn_bg).pack(side=TOP, fill=X)
 
-# StringVar and DoubleVar variables
+# ────────────────────────────────────────────────
+#  INPUT VARIABLES (bound to GUI fields)
+# ────────────────────────────────────────────────
+
 Desc = StringVar()
 amnt = DoubleVar()
 payee = StringVar()
 MoP = StringVar(value='Cash')
 
-# Frames
+# ────────────────────────────────────────────────
+#  LAYOUT FRAMES
+# ────────────────────────────────────────────────
+
 data_entry_frame = Frame(root, bg=dataentery_frame_bg)
 data_entry_frame.place(x=0, y=35, relheight=0.95, relwidth=0.25)
 
@@ -184,7 +203,10 @@ buttons_frame.place(relx=0.25, rely=0.063, relwidth=0.75, relheight=0.12)
 tree_frame = Frame(root)
 tree_frame.place(relx=0.25, rely=0.18, relwidth=0.75, relheight=0.8)
 
-# Data Entry Frame
+# ────────────────────────────────────────────────
+#  LEFT PANEL – DATA ENTRY FIELDS
+# ────────────────────────────────────────────────
+
 Label(data_entry_frame, text='Date (M/DD/YY) :', font=lbl_font, bg=dataentery_frame_bg).place(x=10, y=50)
 date = DateEntry(data_entry_frame, date=datetime.datetime.now().date(), font=entry_font)
 date.place(x=160, y=50)
@@ -205,7 +227,10 @@ dd1.place(x=160, y=305)     ;     dd1.configure(width=10, font=entry_font)
 Button(data_entry_frame, text='Add expense', command=add_another_expense, font=btn_font, width=30,
       bg=hlb_btn_bg).place(x=10, y=395)
 
-# Buttons' Frame
+# ────────────────────────────────────────────────
+#  TOP BUTTONS BAR
+# ────────────────────────────────────────────────
+
 Button(buttons_frame, text='Delete Expense', font=btn_font, width=25, bg=hlb_btn_bg, command=remove_expense).place(x=30, y=5)
 
 Button(buttons_frame, text='Clear Fields in DataEntry Frame', font=btn_font, width=25, bg=hlb_btn_bg,
@@ -213,9 +238,12 @@ Button(buttons_frame, text='Clear Fields in DataEntry Frame', font=btn_font, wid
 
 Button(buttons_frame, text='Delete All Expenses', font=btn_font, width=25, bg=hlb_btn_bg, command=remove_all_expenses).place(x=640, y=5)
 
+# ────────────────────────────────────────────────
+#  CSV EXPORT FUNCTION (imported modules placed here in original)
+# ────────────────────────────────────────────────
+
 import csv
 from tkinter.filedialog import asksaveasfilename
-
 
 def export_to_csv():
     """
@@ -242,6 +270,9 @@ def export_to_csv():
 
         tb.showinfo("Export Successful", f"Expenses exported to {save_file_path}")
 
+# ────────────────────────────────────────────────
+#  BOTTOM FILTER BAR
+# ────────────────────────────────────────────────
 
 filter_frame = Frame(root, bg="light gray")
 filter_frame.place(x=10, y=500, width=1165, height=35)
@@ -260,8 +291,10 @@ Button(filter_frame, text="Filter", font=('Gill Sans MT', 10), width=10, bg=hlb_
 Button(filter_frame, text="Export to CSV", font=('Gill Sans MT', 10), width=15, bg=hlb_btn_bg,
        command=export_to_csv).place(x=500, y=3)
 
+# ────────────────────────────────────────────────
+#  MAIN DATA TABLE (Treeview)
+# ────────────────────────────────────────────────
 
-# Treeview Frame
 table = ttk.Treeview(tree_frame, selectmode=BROWSE, columns=('ID', 'Date', 'Payee', 'Description', 'Amount', 'Mode of Payment'))
 
 X_Scroller = Scrollbar(table, orient=HORIZONTAL, command=table.xview)
@@ -288,7 +321,9 @@ table.column('#6', width=125, stretch=NO)  # Mode of Payment column
 
 table.place(relx=0, y=0, relheight=1, relwidth=1)
 
+# Load initial data
 list_all_expenses()
+
 # Finalizing the GUI window
 root.update()
 root.mainloop()

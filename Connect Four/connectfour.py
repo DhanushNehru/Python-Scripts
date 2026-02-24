@@ -6,7 +6,17 @@ board = [["-"] * 6, ["-"] * 6, ["-"] * 6, ["-"] * 6, ["-"] * 6, ["-"] * 6, ["-"]
 def gamePlayTwoPlayers(p1, p2):
     win = ""
     while win == "":
-        column = int(input("{}'s turn. Enter which column you would like to drop your piece into: ".format(p1)))
+        while True:
+            try:
+                choice = int(input("{}'s turn. Enter column (1-7): ".format(p1)))
+                if 1 <= choice <= 7:
+                    column = choice - 1
+                    break
+                else:
+                    print("Invalid column! Please choose a number between 1 and 7.")
+            except ValueError:
+                print("That's not a number! Please enter a digit from 1 to 7.")
+        
         connectFourBoard(column, "X")
 
         if check_vertical_win(p1, p2, column):
@@ -26,7 +36,16 @@ def gamePlayTwoPlayers(p1, p2):
             print(check_negative_diagonal_win(p1, p2))
             break
 
-        column = int(input("{}'s turn. Enter which column you would like to drop your piece into: ".format(p2)))
+        while True:
+            try:
+                choice = int(input("{}'s turn. Enter column (1-7): ".format(p2)))
+                if 1 <= choice <= 7:
+                    column = choice - 1
+                    break
+                else:
+                    print("Invalid column! Please choose a number between 1 and 7.")
+            except ValueError:
+                print("That's not a number! Please enter a digit from 1 to 7.")
         connectFourBoard(column, "O")
 
         if check_vertical_win(p1, p2, column):

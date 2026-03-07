@@ -4,17 +4,25 @@ from urllib.parse import urljoin
 import csv
 from datetime import datetime
 
+
 def get_all_links(url):
+    """
+    Fetches a URL and extracts all unique HTTP/HTTPS links.
+    """
     print(f"Fetching page: {url}")
     try:
         headers = {"User-Agent": "Mozilla/5.0"}
         response = requests.get(url, timeout=10, headers=headers)
         soup = BeautifulSoup(response.text, "html.parser")
         links = set()
+
+        # Find all 'a' tags with an 'href' attribute
         for tag in soup.find_all("a", href=True):
             full_url = urljoin(url, tag["href"])
+            # Ensure we only check web links
             if full_url.startswith("http"):
                 links.add(full_url)
+
         print(f"Found {len(links)} links.")
         return links
     except Exception as e:
@@ -23,14 +31,22 @@ def get_all_links(url):
 
 
 def check_link(url):
+    """
+    Checks a single URL's status. It first tries a HEAD request for efficiency,
+    then falls back to a GET request if needed.
+    """
     try:
         headers = {"User-Agent": "Mozilla/5.0"}
+        # Use a HEAD request to get status without downloading the whole page
         response = requests.head(url, timeout=10, allow_redirects=True, headers=headers)
-        # Some servers don't support HEAD, fallback to GET
+
+        # If HEAD is not allowed (405) or forbidden (403), try a GET request
         if response.status_code in [405, 403]:
             response = requests.get(url, timeout=10, headers=headers)
+
         return response.status_code
     except requests.exceptions.ConnectionError:
+        # Handle cases where the server is not reachable
         return "Connection Error"
     except requests.exceptions.Timeout:
         return "Timeout"
@@ -39,6 +55,9 @@ def check_link(url):
 
 
 def get_status_label(status):
+    """
+    Converts an HTTP status code or error string into a user-friendly label.
+    """
     if isinstance(status, int):
         if status < 300:
             return " ✔ OK"
@@ -54,6 +73,9 @@ def get_status_label(status):
 
 
 def export_to_csv(results, filename):
+    """
+    Exports the list of checked links and their statuses to a CSV file.
+    """
     with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["URL", "Status", "Result"])
@@ -64,6 +86,9 @@ def export_to_csv(results, filename):
 
 
 def check_all_links(website_url):
+    """
+    Main function to orchestrate the link checking process for a given website.
+    """
     links = get_all_links(website_url)
 
     if not links:
@@ -77,6 +102,7 @@ def check_all_links(website_url):
     print(f"{'STATUS':<15} URL")
     print("-" * 60)
 
+    # Iterate through all found links and check their status
     for i, link in enumerate(links, 1):
         status = check_link(link)
         label = get_status_label(status)
@@ -84,6 +110,7 @@ def check_all_links(website_url):
 
         print(f"{label:<15} {link}")
 
+        # Categorize links as working or broken
         if isinstance(status, int) and status < 400:
             working.append((link, status))
         else:
@@ -109,9 +136,11 @@ def check_all_links(website_url):
         export_to_csv(all_results, filename)
 
 
+# --- Script Entry Point ---
 if __name__ == "__main__":
     print("--- Link Checker Tool ---")
     website = input("Enter website URL: ").strip()
+    # Ensure the URL has a scheme (http or https)
     if not website.startswith("http"):
         website = "https://" + website
     check_all_links(website)

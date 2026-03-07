@@ -1,0 +1,6 @@
+PySide6>=6.6.0
+Pillow>=10.0.0
+PyPDF2>=3.0.0
+python-docx>=1.0.0
+openpyxl>=3.1.0
+mutagen>=1.47.0

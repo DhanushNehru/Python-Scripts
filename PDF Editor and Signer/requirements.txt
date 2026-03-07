@@ -1,0 +1,4 @@
+PySide6>=6.0.0
+PyMuPDF>=1.23.0
+pyHanko>=0.20.0
+cryptography>=41.0.0

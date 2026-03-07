@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wifiqr"
+version = "1.1"
+description = "Cross-platform WiFi QR code generator"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "WifiQR" }]
+dependencies = [
+  "PySide6>=6.6",
+  "qrcode>=7.4",
+  "Pillow>=10.0",
+  "CairoSVG>=2.7"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0",
+  "pytest-qt>=4.2",
+  "pytest-cov>=5.0",
+  "opencv-python>=4.5"
+]
+dev = [
+  "mypy>=1.10",
+  "ruff>=0.6"
+]
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=wifiqr --cov-report=term-missing --cov-fail-under=100"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_ignores = true
+warn_unreachable = true
+no_implicit_reexport = true
+show_error_codes = true
+mypy_path = "src"
+files = ["src", "tests"]
+
+[[tool.mypy.overrides]]
+module = ["PySide6.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["qrcode.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["PIL.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["pytest.*", "pytestqt.*"]
+ignore_missing_imports = true
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "N"]
+
+[project.scripts]
+wifiqr = "wifiqr.app:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

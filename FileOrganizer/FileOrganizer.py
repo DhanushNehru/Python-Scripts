@@ -34,7 +34,7 @@ else:
         dest_file_path = os.path.join(dest_folder, file)
         counter = 1
         while os.path.exists(dest_file_path):
-            newfilename = f"{filename}{counter}.{extension}" if extension != "NoExtension" else f"{filename}_{counter}"
+            new_filename = f"{filename}{counter}.{extension}" if extension != "NoExtension" else f"{filename}_{counter}"
             dest_file_path = os.path.join(dest_folder, new_filename)
             counter += 1
 

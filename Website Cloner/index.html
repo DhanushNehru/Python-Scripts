@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PROXY SERVER</title>
+    <title>Website Cloner & Dockerizer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./util.css">
     <link rel="stylesheet" type="text/css" href="./main.css">
+    <style>
+        .progress-bar {
+            width: 100%;
+            background: #eee;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .progress {
+            height: 20px;
+            background: #57b846;
+            width: 0%;
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+        .console {
+            background: #222;
+            color: #eee;
+            font-family: monospace;
+            padding: 10px;
+            height: 120px;
+            overflow-y: auto;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="limiter">
         <div class="container-login0">
             <div class="wrap-login0" style="width: 500px">
-                <form class="login0-form validate-form" method="post" action="/" style="width: 100%">
+                <form class="login0-form validate-form" method="post" action="/" style="width: 100%" enctype="multipart/form-data">
                     <div class="wrap-input0">
-                        <input class="input0" type="text" id="link" name="submitButton" placeholder="ENTER LINK" required>
+                        <input class="input0" type="text" id="link" name="website_url" placeholder="ENTER WEBSITE URL" required>
                         <span class="focus-input0"></span>
                         <span class="symbol-input0">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                         </span>
                     </div>
+                    <div class="wrap-input0">
+                        <label for="project_dir">Choose Project Directory:</label>
+                        <input class="input0" type="file" id="project_dir" name="project_dir" webkitdirectory directory required>
+                    </div>
+                    <div class="wrap-input0">
+                        <input class="input0" type="text" id="docker_name" name="docker_name" placeholder="FRIENDLY DOCKER IMAGE NAME" required>
+                        <span class="focus-input0"></span>
+                    </div>
                     <div class="container-login0-form-btn">
                         <button class="login0-form-btn" type="submit">
-                            CLONE NOW
+                            CLONE & CREATE IMAGE
                         </button>
                     </div>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="console" id="console"></div>
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        // Progress bar and console updates will be handled by server via SSE or polling
+        // Placeholder for future JS logic
+    </script>
 </body>
 </html>

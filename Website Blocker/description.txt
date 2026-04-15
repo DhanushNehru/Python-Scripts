@@ -1,0 +1,22 @@
+* I implemented my contribution by refactoring the original website blocker script into a modular, object-oriented design that improves structure, reliability, and usability.
+
+* First, I introduced a WebsiteBlocker class to encapsulate the core functionality of the application. This class separates responsibilities into clear methods:
+
+  * is_working_hours() determines whether blocking should be active based on the current time
+  * block_websites() adds entries to the hosts file
+  * unblock_websites() safely restores the hosts file
+  * run() manages the main execution loop
+  * cleanup() ensures that any changes to the hosts file are reverted when the program is interrupted
+
+To support multiple operating systems, I implemented a helper method get_hosts_path() that dynamically selects the correct hosts file path depending on whether the script is running on Windows or a Unix-based system. This builds on the cross-platform idea introduced in PR #563, but integrates it into a cleaner and more structured design.
+
+I improved reliability by adding proper error handling when accessing the hosts file. Specifically, I handle PermissionError to prevent the program from crashing and instead provide a clear message to the user about running the script with administrator or root privileges.
+
+I also enhanced the usability of the script by adding an interactive interface that allows users to select commonly blocked websites or input custom domains without modifying the source code. This makes the tool more practical for real-world usage.
+
+Additionally, I improved the responsiveness of the script by replacing long fixed delays with shorter intervals (time.sleep(5)), allowing the program to react more quickly to changes in working hours.
+
+Finally, I implemented a cleanup mechanism using signal handling (SIGINT) so that when the user stops the program (e.g., using Ctrl+C), any modifications made to the hosts file are automatically reverted. This addresses a key limitation in the original implementation, where stopping the script could leave the system in a blocked state.
+
+Overall, my contribution significantly enhances the structure, reliability, and usability of the website blocker while maintaining the core functionality of blocking distracting websites during working hours.
+

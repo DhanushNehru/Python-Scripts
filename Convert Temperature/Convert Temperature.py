@@ -37,7 +37,7 @@ def from_Kel():
         print(f"The temperature is: {final} °C")
 
     else:
-        final = (x - 273.15)*(5/9) + 32
+        final = (x - 273.15)*(9/5) + 32
         print(f"The temperature is: {final} °F")
 
 

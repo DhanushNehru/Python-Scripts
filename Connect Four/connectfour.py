@@ -232,7 +232,7 @@ def main():
     if numPlayers == 1:
         player1 = input("Player 1, please enter your name: ")
         player2 = "CPU"
-        gamePlayTwoPlayers(player1, player2)
+        gamePlayOnePlayer(player1, player2)
     elif numPlayers == 2:
         player1 = input("Player 1, please enter your name: ")
         player2 = input("Player 2, please enter your name: ")

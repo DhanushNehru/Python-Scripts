@@ -1,180 +1,215 @@
-# Table of Contents
-
-- [Contributing](#contributing)
-  - [Adding a New Script](#adding-a-new-script)
-- [List of Scripts in Repo](#list-of-scripts-in-repo)
-- [Gitpod](#gitpod)
-- [Wall of Contributors](#wall-of-contributors)
-
- 
-[![Join Our Discord](https://img.shields.io/badge/Discord-Join%20Server-blue?logo=discord&style=for-the-badge)](https://discord.com/invite/Yn9g6KuWyA)
-[![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube&style=for-the-badge)](https://www.youtube.com/@dhanushnehru?sub_confirmation=1)
-[![Subscribe to Newsletter](https://img.shields.io/badge/Newsletter-Subscribe-orange?style=for-the-badge)](https://dhanushn.substack.com/)
-
 # Python Scripts
 
-This repository consists of a list of more than 60 Python scripts, primarily those which automate a specific task. Each folder contains one or more .py files and a README to explain what that specific Python script needs to run. These scripts are free to use as long as long as the original contributor is credited.
+A collection of Python scripts I've written, developed, and organized to automate tasks, explore programming concepts, and build useful tools.
+
+This repository contains scripts for file management, data conversion, games, graphics, sorting algorithms, and everyday automation. Each category has its own directory to keep things organized.
+
+Feel free to explore the scripts, use them, and suggest improvements. Please respect the repository's license and credit the original author when using or adapting code.
+
+## Table of Contents
+
+- [About](#about)
+- [Repository Structure](#repository-structure)
+- [Contributing](#contributing)
+- [List of Scripts](#list-of-scripts)
+  - [Converters](#converters)
+  - [Design](#design)
+  - [Games](#games)
+  - [Sorting Algorithms](#sorting-algorithms)
+  - [Tools](#tools)
+- [License](#license)
+- [Support](#support)
+
+## About
+
+I created this repository to collect my Python projects in one place, making them easier to maintain, explore, and improve.
+
+The repository includes beginner-friendly programs, practical utilities, small games, graphical experiments, and scripts that automate repetitive tasks.
+
+Most scripts focus on a specific task and can be explored independently. Some projects require additional Python packages, so check the relevant source code and any accompanying `README.md` or `requirements.txt` before running them.
+
+## Repository Structure
+
+```text
+Python-Scripts/
+├── Converters/
+├── Design/
+├── Games/
+├── Sorting/
+├── Tools/
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
+```
+
+Each directory contains scripts grouped by purpose. Some projects have their own subdirectories for related files, documentation, and dependencies.
 
 ## Contributing
 
-We encourage contributions from the community to make this repository even more valuable. Whether you want to add a new Python script or enhance an existing one, we welcome your input. Here's how you can contribute:
+Contributions, bug fixes, suggestions, and improvements are welcome.
 
-_**Note: Please follow the maintainer of the repository for quick approval of the PR's via [Twitter](https://twitter.com/Dhanush_Nehru), [Instagram](https://www.instagram.com/dhanush_nehru/), [Youtube](https://www.youtube.com/@dhanushnehru?sub_confirmation=1), [Github](https://github.com/DhanushNehru)**_
+If you'd like to contribute, please read [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution guidelines.
 
-### Adding a New Script
+Before submitting a pull request, please:
 
-**1. Create an issue:** Start by creating an issue in this repository. Describe the new script you'd like to contribute, its purpose, and any specific features it will provide.
+- Open an issue to discuss significant changes or new scripts.
+- Keep your code readable and consistent with the existing project structure.
+- Include documentation and dependency information where necessary.
+- Update this README when adding a new script.
+- Remove unnecessary temporary files and generated artifacts.
 
-**2. Fork the repository:** Fork this repository to your own GitHub account to create a copy you can work on.
+I'll review contributions and provide feedback where necessary.
 
-**3. Create a Pull Request (PR):** In your forked repository, develop the Python script and include a `README` file explaining how to use it. Ensure you credit the original contributor if you're building upon an existing script.
+## List of Scripts
 
-**4. Update the List:** If you're adding a new script, make sure to include it in the "List of Python Scripts" section below, providing a title, a link to the script's folder, and a brief description.
+### Converters
 
-**NOTE:** Remember to close your issues once your PR has been merged! They can be reopened if needed.
+Scripts for converting files, images, documents, and data between different formats.
 
-More information on contributing and the general code of conduct for discussion and feedback in this repo can be found here: [CONTRIBUTIONS.md](https://github.com/DhanushNehru/Python-Scripts/blob/main/CONTRIBUTIONS.md)
+| Script | Description |
+|---|---|
+| [Audio Book](Converters/audio_book.py) | Converts text or supported documents into audio. |
+| [Convert Temperature](Converters/Convert%20Temperature.py) | Converts temperatures between Fahrenheit, Celsius, and Kelvin. |
+| [CSV to Excel](Converters/csv_excel.py) | Converts CSV files into Excel spreadsheets. |
+| [CSV to NDJSON](Converters/csv_to_ndjson.py) | Converts CSV data into newline-delimited JSON. |
+| [Emoji to PDF](Converters/emoji_to_pdf.py) | Creates PDF documents containing emojis. |
+| [HTML to Images](Converters/html-to-images.py) | Converts HTML documents into images. |
+| [Image to ASCII](Converters/image_to_ascii.py) | Converts images into ASCII art. |
+| [Image to GIF](Converters/imageTogif.py) | Creates GIF animations from images. |
+| [Image to WebP](Converters/image_to_webp.py) | Converts images into WebP format. |
+| [Image to WebP GUI](Converters/image_to_webp_gui.py) | Provides a graphical interface for converting images to WebP. |
+| [Image Text to PDF](Converters/imagetxt_to_pdf.py) | Combines images and text into PDF documents. |
+| [JSON to CSV 1](Converters/jsontocsv1.py) | Converts JSON data into CSV format. |
+| [JSON to CSV 2](Converters/jsontocsv2.py) | Provides another implementation of JSON-to-CSV conversion. |
+| [JSON to YAML](Converters/json_to_yaml.py) | Converts JSON data into YAML format. |
+| [Longitude and Latitude Converter](Converters/lonlat_converter_lambert.py) | Converts geographic coordinates using the Lambert conformal conic projection. |
+| [PDF to HTML](Converters/pdf_to_html.py) | Converts PDF documents into HTML. |
+| [PDF to Text](Converters/pdf_to_txt.py) | Extracts text from PDF documents. |
+| [PNG to JPG](Converters/png_to_jpg.py) | Converts PNG images into JPG format. |
+| [Text to Image](Converters/text2image.py) | Converts text into images. |
+| [Weight Converter](Converters/weight.py) | Converts between different weight measurement units. |
+| [Word to PDF](Converters/wordToPDF.py) | Converts Word documents into PDF files. |
 
-## List of Scripts in Repo
+### Design
 
-| Script                                   | Link                                                                                                                                                     | Description                                                                                                                                                       |
-| ---------------------------------------- |----------------------------------------------------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Arrange It                               | [Arrange It](https://github.com/DhanushNehru/Python-Scripts/tree/main/Arrange%20It)                                                                    | A Python script that can automatically move files into corresponding folders based on their extensions.                                                           |
-| Auto WiFi Check                          | [Auto WiFi Check](https://github.com/DhanushNehru/Python-Scripts/tree/main/Auto%20WiFi%20Check)                                                        | A Python script to monitor if the WiFi connection is active or not                                                                                                |
-| AutoCert                                 | [AutoCert](https://github.com/DhanushNehru/Python-Scripts/tree/main/AutoCert)                                                                          | A Python script to auto-generate e-certificates in bulk.                                                                                                          |
-| Autocomplete Notes App                   | [Autocomplete Notes App](https://github.com/DhanushNehru/Python-Scripts/tree/main/Autocomplete%20Notes%20App)                                                        | A Python script that provides a notes application with autocomplete features.                                                                                                          |
-| Automated Emails                         | [Automated Emails](https://github.com/DhanushNehru/Python-Scripts/tree/main/Automate%20Emails%20Daily)                                                 | A Python script to send out personalized emails by reading a CSV file.                                                                                            |
-| Black Hat Python                         | [Black Hat Python](https://github.com/DhanushNehru/Python-Scripts/tree/main/Black%20Hat%20Python)                                                      | Source code from the book Black Hat Python                                                                                                                        |
-| Blackjack                                | [Blackjack](https://github.com/DhanushNehru/Python-Scripts/tree/main/Blackjack)                                                                        | A game of Blackjack - let's get a 21.                                                                                                                             |
-| Chessboard                               | [Chessboard](https://github.com/DhanushNehru/Python-Scripts/tree/main/Chess%20Board)                                                                   | Creates a chessboard using matplotlib.                                                                                                                            |
-| Compound Interest Calculator             | [Compound Interest Calculator](https://github.com/DhanushNehru/Python-Scripts/tree/main/Calculate%20Compound%20Interest)                               | A Python script to calculate compound interest.                                                                                                                   |
-| Convert Temperature                      | [Convert Temperature](https://github.com/DhanushNehru/Python-Scripts/tree/main/Convert%20Temperature)                                                  | A python script to convert temperature between Fahreheit, Celsius and Kelvin                                                                                      |
-| Connect Four                             | [Connect Four](https://github.com/DhanushNehru/Python-Scripts/tree/main/Connect%20Four)                                                                | A Python script for the board game Connect Four, which can be played by 1-2 players                                                                               |
-| Countdown Timer                          | [Countdown Timer](https://github.com/DhanushNehru/Python-Scripts/tree/main/Countdown%20Timer)                                                          | Displays a message when the Input time elapses.                                                                                                                   |
-| Crop Images                              | [Crop Images](https://github.com/DhanushNehru/Python-Scripts/tree/main/Crop%20Images)                                                                  | A Python script to crop a given image.                                                                                                                            |
-| CSV to Excel                             | [CSV to Excel](https://github.com/DhanushNehru/Python-Scripts/tree/main/CSV%20to%20Excel)                                                              | A Python script to convert a CSV to an Excel file.                                                                                                                |
-| CSV_TO_NDJSON                             | [CSV to Excel](https://github.com/DhanushNehru/Python-Scripts/tree/main/CSV_TO_NDJSON)                                                              | A Python script to convert a CSV to an NDJSON files file.                                                                                                                |
-| Currency Script                          | [Currency Script](https://github.com/DhanushNehru/Python-Scripts/tree/main/Currency%20Script)                                                          | A Python script to convert the currency of one country to that of another.                                                                                        |
-| Digital Clock                            | [Digital Clock](https://github.com/DhanushNehru/Python-Scripts/tree/main/Digital%20Clock)                                                              | A Python script to preview a digital clock in the terminal.                                                                                                       |
-| Disk Usage Visualizer                    | [Disk Usage Visualizer](https://github.com/DhanushNehru/Python-Scripts/tree/main/Disk%20Usage%20Visualizer) | A Python script to display the top N directories taking up space in your disk.
-| Display Popup Window                     | [Display Popup Window](https://github.com/DhanushNehru/Python-Scripts/tree/main/Display%20Popup%20Window)                                              | A Python script to preview a GUI interface to the user.                                                                                                           |
-| Distance Calculator                      | [Distance Calculator](https://github.com/Mathdallas-code/Python-Scripts/tree/main/Distance%20Calculator)                                               | A Python script to calculate the distance between two points.
-| Duplicate Finder                         | [Duplicate Finder](https://github.com/DhanushNehru/Python-Scripts/tree/main/Duplicate%Fnder)                                                           | The script identifies duplicate files by MD5 hash and allows deletion or relocation.                                                                              |
-| Emoji                                    | [Emoji](https://github.com/DhanushNehru/Python-Scripts/tree/main/Emoji)                                                                                | The script generates a PDF with an emoji using a custom TrueType font.                                                                                            |
-| Emoji to PDF                             | [Emoji to PDF](https://github.com/DhanushNehru/Python-Scripts/tree/main/Emoji%20To%20Pdf)                                                              | A Python Script to view Emoji in PDF.                                                                                                                             |
-| Expense Tracker                          | [Expense Tracker](https://github.com/DhanushNehru/Python-Scripts/tree/main/Expense%20Tracker)                                                          | A Python script which can track expenses.                                                                                                                         |
-| Face Reaction                            | [Face Reaction](https://github.com/DhanushNehru/Python-Scripts/tree/main/Face%20Reaction)                                                              | A script which attempts to detect facial expressions.                                                                                                             |
-| Fake Profiles                            | [Fake Profiles](https://github.com/DhanushNehru/Python-Scripts/tree/main/Fake%20Profile)                                                               | Creates fake profiles.                                                                                                                                            |
-| File Encryption Decryption               | [File Encryption Decryption](https://github.com/DhanushNehru/Python-Scripts/tree/main/File%20Encryption%20Decryption)                                  | Encrypts and Decrypts files using AES Algorithms for Security purposes.                                                                                           |
-| File Search                              | [File_search](https://github.com/debojit11/Python-Scripts/tree/main/File_Search)                                                                       | A python script that searches a specified folder for all files, regardless of file type, within its directory and subdirectories.                                 |
-| Font Art                                 | [Font Art](https://github.com/DhanushNehru/Python-Scripts/tree/main/Font%20Art)                                                                        | Displays a font art using Python.                                                                                                                                 |
-| File Organizer                           | [FileOrganizer](https://github.com/DhanushNehru/Python-Scripts/tree/main/FileOrganizer)                                                                | Organizes files into different folders according to their file type                                                                                               |
-| File Renamer                             | [FileRenamer](https://github.com/DhanushNehru/Python-Scripts/tree/main/FileRenamer)                                                                    | Bulk renames files with the same start/end                                                                                                                        |
-| File Text Search                         | [FileTextSearch](https://github.com/DhanushNehru/Python-Scripts/tree/main/FileTextSearch)                                                              | Searches for a keyword/phrase accross different files                                                                                                             |
-| Freelance Helper Program                 | [freelance-helper](https://github.com/DhanushNehru/Python-Scripts/tree/main/freelance-help-program)                                                    | Takes an Excel file with working hours and calculates the payment.                                                                                                |
-| Get Hexcodes From Websites               | [Get Hexcodes From Websites](https://github.com/DhanushNehru/Python-Scripts/tree/main/Get%20Hexcodes%20From%20Websites)                                | Generates a Python list containing Hexcodes from a website.                                                                                                       |
-| Hand_Volume                              | [Hand_Volume](https://github.com/DhanushNehru/Python-Scripts/tree/main/Hand%20Volume)                                                                  | Detects and tracks hand movements to control volume.                                                                                                              |
-| Hangman Game                             | [Hangman](https://github.com/DhanushNehru/Python-Scripts/tree/main/Hangman%20Game)                                                                     | A classic word-guessing game where players guess letters to find the hidden word                                                                                  |
-| Hardware Detector                        | [Hardware Detector](https://github.com/DhanushNehru/Python-Scripts/tree/main/Hardware%20Detector)                                                      | A Python script that detects and displays hardware specifications and resource usage, including CPU, RAM, disk space, and GPU information.                        |
-| Harvest Predictor                        | [Harvest Predictor](https://github.com/DhanushNehru/Python-Scripts/tree/main/Harvest%20Predictor)                                                      | Takes some necessary input parameters and predicts harvest according to it.                                                                                       |
-| Html-to-images                           | [html-to-images](https://github.com/DhanushNehru/Python-Scripts/tree/main/HTML%20to%20Images)                                                          | Converts HTML documents to image files.                                                                                                                           |
-| Image Capture                            | [Image Capture](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20Capture)                                                              | Captures image from your webcam and saves it on your local device.                                                                                                |
-| Image Compress                           | [Image Compress](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20Compress)                                                            | Takes an image and compresses it.                                                                                                                                 |
-| Image Manipulation without libraries     | [Image Manipulation without libraries](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20Manipulation%20without%20libraries)            | Manipulates images without using any external libraries.                                                                                                          |
-| Image Text                               | [Image Text](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20Text)                                                                    | Extracts text from the image.                                                                                                                                     |
-| Image Text to PDF                        | [Image Text to PDF](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20Text%20to%20PDF)                                                  | Adds an image and text to a PDF.                                                                                                                                  |
-| Image Uploader                           | [Image Uploader](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20Uploader)                                                            | Uploads images to Imgur using a keyboard shortcut.                                                                                                                |
-| Image Watermarker                        | [Image Watermarker](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20Watermarker)                                                      | Adds a watermark to an image.                                                                                                                                     |
-| Image to ASCII                           | [Image to ASCII](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20to%20ASCII)                                                          | Converts an image into ASCII art.                                                                                                                                 |
-| Image to Gif                             | [Image to Gif](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20to%20GIF)                                                              | Generate gif from images.                                                                                                                                         |
-| Images to WebP Converter                 | [Images to WebP Converter](https://github.com/DhanushNehru/Python-Scripts/tree/main/Images%20to%20WebP%20Converter)                                   | Converts images to WebP via cmd or GUI                                                                                                                            |
-| Interactive Dictionary                   | [Interactive Dictionary](https://github.com/DhanushNehru/Python-Scripts/tree/main/Image%20InteractiveDictionary)                                       | finding out meanings of words                                                                                                                                     |
-| IP Geolocator                            | [IP Geolocator](https://github.com/DhanushNehru/Python-Scripts/tree/main/IP%20Geolocator)                                                              | Uses an IP address to geolocate a location on Earth.                                                                                                              |
-| Jokes Generator                          | [Jokes generator](https://github.com/DhanushNehru/Python-Scripts/tree/main/Jokes%20Generator)                                                          | Generates jokes.                                                                                                                                                  |
-| JSON to CSV 1                            | [JSON to CSV 1](https://github.com/DhanushNehru/Python-Scripts/tree/main/JSON%20to%20CSV)                                                              | Converts JSON to CSV files.                                                                                                                                       |
-| JSON to CSV 2                            | [JSON to CSV 2](https://github.com/DhanushNehru/Python-Scripts/tree/main/JSON%20to%20CSV%202)                                                          | Converts a JSON file to a CSV file.                                                                                                                               |
-| JSON to CSV converter                    | [JSON to CSV converter](https://github.com/DhanushNehru/Python-Scripts/tree/main/Json%20to%20CSV%20Convertor)                                          | Converts JSON file to CSV files. It can convert nested JSON files as well. A sample JSON is included for testing.                                                 |
-| JSON to YAML converter                   | [JSON to YAML converter](https://github.com/DhanushNehru/Python-Scripts/tree/main/JSON%20to%20YAML)                                                    | Converts JSON file to YAML files. A sample JSON is included for testing.                                                                                          |
-| Keylogger                                | [Keylogger](https://github.com/DhanushNehru/Python-Scripts/tree/main/Keylogger)                                                                        | Keylogger that can track your keystrokes, clipboard text, take screenshots at regular intervals, and records audio.                                               |
-| Keyword - Retweeting                     | [Keyword - Retweeting](https://github.com/DhanushNehru/Python-Scripts/tree/main/Keyword%20Retweet%20Twitter%20Bot)                                     | Find the latest tweets containing given keywords and then retweet them.                                                                                           |
-| LinkedIn Bot                             | [LinkedIn Bot](https://github.com/DhanushNehru/Python-Scripts/tree/main/LinkedIn%20Bot)                                                                | Automates the process of searching for public profiles on LinkedIn and exporting the data to an Excel sheet.                                                      |
-| Longitude & Latitude to conical coverter | [Longitude Latitude conical converter](master/Longitude%20Latitude%20conical%20converter)                                                                | Converts Longitude and Latitude to Lambert conformal conic projection.                                                                                            |
-| Mail Sender                              | [Mail Sender](https://github.com/DhanushNehru/Python-Scripts/tree/main/Mail%20Sender)                                                                  | Sends an email.                                                                                                                                                   |
-| Merge Two Images                         | [Merge Two Images](https://github.com/DhanushNehru/Python-Scripts/tree/main/Merge%20Two%20Images)                                                      | Merges two images horizontally or vertically.                                                                                                                     |
-| Mood based youtube song generator        | [Mood based youtube song generator](https://github.com/DhanushNehru/Python-Scripts/tree/main/Mood%20based%20youtube%20song%20generator)                | This Python script fetches a random song from YouTube based on your mood input and opens it in your default web browser.                                          |
-| Mouse mover                              | [Mouse mover](https://github.com/DhanushNehru/Python-Scripts/tree/main/Mouse%20Mover)                                                                  | Moves your mouse every 15 seconds.                                                                                                                                |
-| Multi-Platform Icon Generator            | [Multi-Platform Icon Generator](https://github.com/DhanushNehru/Python-Scripts/tree/main/Multi-Platform%20Icon%20Generator)                                                                 | Automates creation of 35+ platform-specific icon sizes from one source image for app stores and web deployment.
-| Morse Code                               | [Morse Code](https://github.com/DhanushNehru/Python-Scripts/tree/main/Morse%20Code)                                                                     | Encodes and decodes Morse code.                                                                                                                                   |
-| No Screensaver                           | [No Screensaver](https://github.com/DhanushNehru/Python-Scripts/tree/main/No%20Screensaver)                                                            | Prevents screensaver from turning on.                                                                                                                             |
-| OTP Verification                         | [OTP Verification](https://github.com/DhanushNehru/Python-Scripts/tree/main/OTP%20%20Verify)                                                           | An OTP Verification Checker.                                                                                                                                      |
-| Password Generator                       | [Password Generator](https://github.com/DhanushNehru/Python-Scripts/tree/main/Password%20Generator)                                                    | Generates a random password.                                                                                                                                      |
-| Password Manager                         | [Password Manager](https://github.com/nem5345/Python-Scripts/tree/main/Password%20Manager)                                                             | Generate and interact with a password manager.                                                                                                                    |
-| Password Strength Checker                | [Password Strength Checker](https://github.com/nem5345/Python-Scripts/tree/main/Password%20Strength%20Checker)                                         | Evaluates how strong a given password is.                                                                                                                         |
-| PDF Merger                               | [PDF Merger](https://github.com/DhanushNehru/Python-Scripts/tree/main/PDF%20Merger)                                                                    | Merges multiple PDF files into a single PDF, with options for output location and custom order.                                                                   |
-| PDF to Audio                             | [PDF to Audio](https://github.com/DhanushNehru/Python-Scripts/tree/main/PDF%20to%20Audio)                                                              | Converts PDF to audio.                                                                                                                                            |
-| PDF to Text                              | [PDF to text](https://github.com/DhanushNehru/Python-Scripts/tree/main/PDF%20to%20text)                                                                | Converts PDF to text.                                                                                                                                             |
-| PDF merger and splitter                  | [PDF Merger and Splitter](https://github.com/AbhijitMotekar99/Python-Scripts/blob/main/PDF%20Merger%20and%20Splitter/PDF%20Merger%20and%20Splitter.py) | Create a tool that can merge multiple PDF files into one or split a single PDF into separate pages.                                                               |
-| Pizza Order                              | [Pizza Order](https://github.com/DhanushNehru/Python-Scripts/tree/main/Pizza%20Order)                                                                  | An algorithm designed to handle pizza orders from customers with accurate receipts and calculations.                                                                                                        |
-| Planet Simulation                        | [Planet Simulation](https://github.com/DhanushNehru/Python-Scripts/tree/main/Planet%20Simulation)                                                      | A simulation of several planets rotating around the sun.                                                                                                          |
-| Playlist Exchange                        | [Playlist Exchange](https://github.com/DhanushNehru/Python-Scripts/tree/main/Playlist%20Exchange)                                                      | A Python script to exchange songs and playlists between Spotify and Python.                                                                                       |
-| Pigeonhole Sort                          | [Algorithm](https://github.com/DhanushNehru/Python-Scripts/tree/main/PigeonHole)                                                                       | The pigeonhole sort algorithm to sort your arrays efficiently!                                                                                                    |
-| PNG TO JPG CONVERTOR                     | [PNG-To-JPG](https://github.com/DhanushNehru/Python-Scripts/tree/main/PNG%20To%20JPG)                                                                  | A PNG TO JPG IMAGE CONVERTOR.                                                                                                                                     |
-| Pomodoro Timer                           | [Pomodoro Timer](https://github.com/DhanushNehru/Python-Scripts/tree/main/Pomodoro%20Timer)                                                            | A Pomodoro timer                                                                                                                                                  |
-| Python GUI Notepad                       | [Python GUI Notepad](https://github.com/DhanushNehru/Python-Scripts/tree/main/Python%20GUI%20Notepad)          | A Python-based GUI Notepad with essential features like saving, opening, editing text files, basic formatting, and a simple user interface for quick note-taking. |
-| Profanity Checker                        | [Profanity Checker](https://github.com/DhanushNehru/Python-Scripts/tree/main/Profanity%20Checker)                                                     | A Python script to detect and optionally censor profanity in text.                                                                                                   |
-| QR Code Generator                        | [QR Code Generator](https://github.com/DhanushNehru/Python-Scripts/tree/main/QR%20Code%20Generator)                                                    | This is generate a QR code from the provided link                                                                                                                 |
-| QR Code Scanner                          | [QR Code Scanner](https://github.com/DhanushNehru/Python-Scripts/tree/main/QR%20Code%20Scanner)                                                        | Helps in Sacanning the QR code in form of PNG or JPG just by running the python script.                                                                           |
-| QR Code with logo                        | [QR code with Logo](https://github.com/DhanushNehru/Python-Scripts/tree/main/QR%20with%20Logo)                                                         | QR Code Customization Feature                                                                                                                                     |
-| Random Color Generator                   | [Random Color Generator](https://github.com/DhanushNehru/Python-Scripts/tree/main/Random%20Color%20Generator)                                          | A random color generator that will show you the color and values!                                                                                                 |
-| Remove Background                        | [Remove Background](https://github.com/DhanushNehru/Python-Scripts/tree/main/Remove%20Background)                                                      | Removes the background of images.                                                                                                                                 |
-| Road-Lane-Detection                      | [Road-Lane-Detection](https://github.com/NotIncorecc/Python-Scripts/tree/main/Road-Lane-Detection)                                                     | Detects the lanes of the road                                                                                                                                     |
-| Rock Paper Scissor 1                     | [Rock Paper Scissor 1](https://github.com/DhanushNehru/Python-Scripts/tree/main/Rock%20Paper%20Scissor%201)                                            | A game of Rock Paper Scissors.                                                                                                                                    |
-| Rock Paper Scissor 2                     | [Rock Paper Scissor 2](https://github.com/DhanushNehru/Python-Scripts/tree/main/Rock%20Paper%20Scissor%202)                                            | A new version game of Rock Paper Scissors.                                                                                                                        |
-| Run Then Notify                          | [Run Then Notify](https://github.com/DhanushNehru/Python-Scripts/tree/main/Run%20Then%20Notify)                                                        | Runs a slow command and emails you when it completes execution.                                                                                                   |
-| Save File To Drive                       | [Save File To Drive](https://github.com/DhanushNehru/Python-Scripts/tree/master/Save%20file%20to%20Drive)                                              | Saves all files and folder with proper structure from a folder to drive easily through a python script .                                                          |
-| Selfie with Python                       | [Selfie with Python](https://github.com/DhanushNehru/Python-Scripts/tree/main/Selfie%20with%20Python)                                                  | Take your selfie with python .                                                                                                                                    |
-| Simple DDOS                              | [Simple DDOS](https://github.com/DhanushNehru/Python-Scripts/tree/main/Simple%20DDOS)                                                                      | The code allows you to send multiple HTTP requests concurrently for a specified duration.                                                                         |
-| Simple TCP Chat Server                   | [Simple TCP Chat Server](https://github.com/DhanushNehru/Python-Scripts/tree/main/TCP%20Chat%20Server)                                                 | Creates a local server on your LAN for receiving and sending messages!                                                                                            |
-| Smart Attendance System                  | [Smart Attendance System](https://github.com/DhanushNehru/Python-Scripts/tree/main/Smart%20Attendance%20System)                                        | This OpenCV framework is for Smart Attendance by actively decoding a student's QR Code.                                                                           |
-| Snake Game                               | [Snake Game](https://github.com/DhanushNehru/Python-Scripts/tree/main/Snake%20Game)                                                                    | Classic snake game using python.                                                                                                                                  |
-| Snake Water Gun                          | [Snake Water Gun](https://github.com/DhanushNehru/Python-Scripts/tree/main/Snake%20Water%20Gun)                                                        | A game similar to Rock Paper Scissors.                                                                                                                            |
-| Sorting                                  | [Sorting](https://github.com/DhanushNehru/Python-Scripts/tree/main/Sorting)                                                                            | Algorithm for bubble sorting.                                                                                                                                     |
-| Star Pattern                             | [Star Pattern](https://github.com/DhanushNehru/Python-Scripts/tree/main/Star%20Pattern)                                                                | Creates a star pattern pyramid.                                                                                                                                   |
-| Subnetting Calculator                    | [Subnetting Calculator](https://github.com/DhanushNehru/Python-Scripts/tree/main/Subnetting%20Calculator)                                              | Calculates network information based on a given IP address and subnet mask.                                                                                       |
-| Take a break                             | [Take a break](https://github.com/DhanushNehru/Python-Scripts/tree/main/Take%20A%20Break)                                                              | Python code to take a break while working long hours.                                                                                                             |
-| Text Recognition                         | [Text Recognition](https://github.com/DhanushNehru/Python-Scripts/tree/Text-Recognition/Text%20Recognition)                                              | A Image Text Recognition ML Model to extract text from Images                                                                                                     |
-| Text to Image                            | [Text to Image](https://github.com/DhanushNehru/Python-Scripts/tree/main/Text%20to%20Image)                                                            | A Python script that will take your text and convert it to a JPEG.                                                                                                |
-| Thread Progress                          | [Thread Progress](https://github.com/DhanushNehru/Python-Scripts/tree/main/Thread%20Progress)                                                              | A Python script demonstrating safe multithreading by using a lock to update a shared progress variable concurrently.                                                           |
-| Tic Tac Toe 1                            | [Tic Tac Toe 1](https://github.com/DhanushNehru/Python-Scripts/tree/main/Tic-Tac-Toe%201)                                                              | A game of Tic Tac Toe.                                                                                                                                            |
-| Tik Tac Toe 2                            | [Tik Tac Toe 2](https://github.com/DhanushNehru/Python-Scripts/tree/main/Tic-Tac-Toe%202)                                                              | A game of Tik Tac Toe.                                                                                                                                            |
-| Turtle Art & Patterns                    | [Turtle Art](https://github.com/DhanushNehru/Python-Scripts/tree/main/Turtle%20Art)                                                                    | Scripts to view turtle art also have prompt-based ones.                                                                                                           |
-| Turtle Graphics                          | [Turtle Graphics](https://github.com/DhanushNehru/Python-Scripts/tree/main/Turtle%20Graphics)                                                          | Code using turtle graphics.                                                                                                                                       |
-| Twitter Selenium Bot                     | [Twitter Selenium Bot](https://github.com/DhanushNehru/Python-Scripts/tree/main/Twitter%20Selenium%20Bot)                                              | A bot that can interact with Twitter in a variety of ways.                                                                                                        |
-| Umbrella Reminder                        | [Umbrella Reminder](https://github.com/DhanushNehru/Python-Scripts/tree/main/Umbrella%20Reminder)                                                      | A reminder for umbrellas.                                                                                                                                         |
-| University Rankings                      | [University Rankings](https://github.com/DhanushNehru/Python-Scripts/tree/main/University%20Rankings)                                                  | Ranks Universities across the globes using the Country, Continent, and Captial                                                                                    |
-| URL Shortener                            | [URL Shortener](https://github.com/DhanushNehru/Python-Scripts/tree/main/URL%20Shortener)                                                              | A URL shortener code compresses long URLs into shorter, more manageable links                                                                                     |
-| Video Downloader                         | [Video Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/main/Video%20Downloader)                                                        | Download Videos from youtube to your local system.                                                                                                                |
-| Video Watermarker                        | [Video Watermarker](https://github.com/DhanushNehru/Python-Scripts/tree/main/Video%20Watermarker)                                                      | Adds watermark to any video of your choice.                                                                                                                       |
-| Virtual Painter                          | [Virtual Painter](https://github.com/DhanushNehru/Python-Scripts/tree/main/Virtual%20Painter)                                                          | Virtual painting application.                                                                                                                                     |
-| Wallpaper Changer                        | [Wallpaper Changer](https://github.com/DhanushNehru/Python-Scripts/tree/main/Wallpaper%20Changer)                                                      | Automatically changes home wallpaper, adding a random quote and stock tickers on it.                                                                              |
-| Weather GUI                              | [Weather GUI](https://github.com/DhanushNehru/Python-Scripts/tree/main/Weather%20GUI)                                                                  | Displays information on the weather.                                                                                                                              |
-| Website Blocker                          | [Website Blocker](https://github.com/DhanushNehru/Python-Scripts/tree/main/Website%20Blocker)                                                          | Downloads the website and loads it on your homepage in your local IP.                                                                                             |
-| Website Cloner                           | [Website Cloner](https://github.com/DhanushNehru/Python-Scripts/tree/main/Website%20Cloner)                                                            | Clones any website and opens the site in your local IP.                                                                                                           |
-| Web Scraper                              | [Web Scraper](https://github.com/DhanushNehru/Python-Scripts/tree/main/Web%20Scraper)                                                                        | A Python script that scrapes blog titles from [Python.org](https://www.python.org/) and saves them to a file.                                                                                |
-| Weight Converter                         | [Weight Converter](https://github.com/DhanushNehru/Python-Scripts/tree/main/Weight%20Converter)                                                        | Simple GUI script to convert weight in different measurement units.                                                                                               |
-| Wikipedia Data Extractor                 | [Wikipedia Data Extractor](https://github.com/DhanushNehru/Python-Scripts/tree/main/Wikipedia%20Data%20Extractor)                                      | A simple Wikipedia data extractor script to get output in your IDE.                                                                                               |
-| Word to PDF                              | [Word to PDF](https://github.com/DhanushNehru/Python-Scripts/tree/main/Word%20to%20PDF%20converter)                                                    | A Python script to convert an MS Word file to a PDF file.                                                                                                         |
-| Youtube Downloader                       | [Youtube Downloader](https://github.com/DhanushNehru/Python-Scripts/tree/main/Youtube%20Downloader)                                                    | Downloads any video from [YouTube](https://youtube.com) in video or audio format!                                                                                 |
-| Youtube Playlist Info Scraper            | [Youtube Playlist Info Scraper](https://github.com/DhanushNehru/Python-Scripts/tree/main/Youtube%20Playlist%20Info%20Scraper)                          | This python module retrieve information about a YouTube playlist in json format using playlist link.                                                              |
+Scripts for generating graphics, patterns, and visual experiments.
 
+| Script | Description |
+|---|---|
+| [Font Art](Design/FontArt.py) | Generates text-based font art. |
+| [Fractal Tree](Design/fractaltree.py) | Generates a fractal tree using recursive drawing. |
+| [Star Pattern](Design/starPattern.py) | Creates star patterns using Python. |
+| [Turtle Graphics](Design/TurtleGraphics.py) | Demonstrates graphics and drawing using Python's Turtle module. |
 
-## Wall of Contributors
+#### Turtle Art
 
-<a href="https://github.com/DhanushNehru/Python-Scripts/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=DhanushNehru/Python-Scripts" />
-</a>
+The `Design/Turtle Art/` directory contains additional drawing projects.
 
+| Script | Description |
+|---|---|
+| [Art 2](Design/Turtle%20Art/art2.py) | A Turtle graphics drawing. |
+| [Art 4](Design/Turtle%20Art/art4.py) | A Turtle graphics drawing. |
+| [Art 5](Design/Turtle%20Art/art5.py) | A Turtle graphics drawing. |
+| [Doraemon](Design/Turtle%20Art/Doraemon.py) | Draws Doraemon using Turtle graphics. |
+| [Happy Birthday](Design/Turtle%20Art/happy_birthday.py) | Creates a birthday-themed drawing. |
+| [Pikachu](Design/Turtle%20Art/Pikachu.py) | Draws Pikachu using Turtle graphics. |
+| [Rainbow Hexagon](Design/Turtle%20Art/rainbow_hexagon.py) | Creates a rainbow-colored hexagonal pattern. |
+| [Rainbow Triangle](Design/Turtle%20Art/rainbow_triangle.py) | Creates a rainbow-colored triangular pattern. |
+| [Scenery](Design/Turtle%20Art/scenery.py) | Draws a scenery illustration. |
+| [Shinchan](Design/Turtle%20Art/Shinchan.py) | Draws Shinchan using Turtle graphics. |
+| [Sunflower](Design/Turtle%20Art/sunflowerGood.py) | Creates a sunflower drawing. |
+| [X Square](Design/Turtle%20Art/Xsquare.py) | Creates a geometric drawing. |
 
-If you liked this repository, support it by starring ⭐
+The `Design/Turtle Art/Prompt_Based/` directory contains interactive drawing scripts.
 
-Thank You for being here :)
+| Script | Description |
+|---|---|
+| [Benzene](Design/Turtle%20Art/Prompt_Based/benzene.py) | Draws a benzene ring. |
+| [Tkinter Name](Design/Turtle%20Art/Prompt_Based/tkinterName.py) | Displays a name using a Tkinter interface. |
+| [Windows Logo](Design/Turtle%20Art/Prompt_Based/windowsLogo.py) | Draws a Windows-style logo. |
+
+### Games
+
+Small games and simulations built with Python.
+
+| Script | Description |
+|---|---|
+| [Blackjack](Games/BlackjackGame.py) | A playable Blackjack card game. |
+| [Chessboard](Games/ChessBoard.py) | Generates a chessboard using Python. |
+| [Connect Four](Games/connectfour.py) | Implements the Connect Four game. |
+| [Hangman](Games/hangman_game.py) | A word-guessing game in which players guess letters to reveal a hidden word. |
+| [Planet Simulation](Games/Planet_simulation.py) | Simulates planets orbiting the Sun. |
+| [Rock Paper Scissors](Games/rps.py) | Implements the classic Rock Paper Scissors game. |
+| [Snake Water Gun](Games/snake-water-gun.py) | A game based on the Rock Paper Scissors concept. |
+| [Tic Tac Toe](Games/tic_tac_toe.py) | Implements the classic Tic Tac Toe game. |
+| [Snake Game](Games/Snake%20Game/) | A Snake game with separate modules for the game, food, snake, and scoreboard. |
+
+### Sorting Algorithms
+
+Implementations of common sorting algorithms.
+
+| Script | Description |
+|---|---|
+| [Bubble Sort](Sorting/bubblesort.py) | Sorts elements using the bubble sort algorithm. |
+| [Insertion Sort](Sorting/insertionsort.py) | Sorts elements using the insertion sort algorithm. |
+| [Selection Sort](Sorting/selectionsort.py) | Sorts elements using the selection sort algorithm. |
+
+### Tools
+
+Utilities for automation, file management, data processing, networking, and other everyday tasks.
+
+| Script | Description |
+|---|---|
+| [Automated Emails](Tools/automails_daily.py) | Automates email-related tasks. |
+| [Birthday Manager](Tools/Automating%20Emails/) | Manages birthday information and related email automation. |
+| [DDoS Demonstration](Tools/ddos.py) | Demonstrates concurrent HTTP request generation. Use only in an authorized test environment. |
+| [Disk Usage Visualizer](Tools/disk_visualizer.py) | Displays directories that consume the most disk space. |
+| [Distance Calculator](Tools/distance_calculator.py) | Calculates the distance between two points. |
+| [Duplicate Finder](Tools/duplicate-finder.py) | Identifies duplicate files using file hashes. |
+| [Expense Tracker](Tools/Expense%20Tracker/) | Tracks expenses and stores related data. |
+| [Face Reaction](Tools/face_reaction.py) | Attempts to detect facial expressions. |
+| [Fake Profile Generator](Tools/FakeProfile.py) | Generates sample profile data. |
+| [File Encryption and Decryption](Tools/fileEncryptDecrypt.py) | Encrypts and decrypts files. |
+| [File Organizer](Tools/FileOrganizer.py) | Organizes files according to their types. |
+| [File Renamer](Tools/File_Renamer.py) | Renames multiple files automatically. |
+| [File Search](Tools/file_search.py) | Searches for files in directories and subdirectories. |
+| [File Text Search](Tools/FileTextSearch.py) | Searches files for specific text or phrases. |
+| [Hand Volume Control](Tools/Hand%20Volume/) | Uses hand tracking to control system volume. |
+| [Image Compressor](Tools/image_compressor.py) | Compresses image files. |
+| [Image Watermarker](Tools/image_watermarker.py) | Adds watermarks to images. |
+| [Instagram Downloader](Tools/insta_down.py) | Downloads supported Instagram content. |
+| [Jokes Generator](Tools/jokes.py) | Generates or retrieves jokes. |
+| [Merge Images](Tools/mergeImages.py) | Combines images horizontally or vertically. |
+| [Morse Code](Tools/morse_code.py) | Encodes and decodes Morse code. |
+| [Multi-Platform Icon Generator](Tools/multi_platform_icongen.py) | Generates application icons for multiple platforms. |
+| [Password Generator](Tools/PasswordGenerator.py) | Generates random passwords. |
+| [Pomodoro Timer](Tools/Pomodoro%20Timer.py) | Implements a Pomodoro timer for focused work sessions and breaks. |
+| [Python GUI Notepad](Tools/Python%20GUI%20Notepad.py) | A simple graphical text editor. |
+| [QR Code Generator](Tools/QRcodeGen.py) | Generates QR codes from provided data. |
+| [QR Code Ticket Generator](Tools/QR%20Ticket%20Generator/) | Generates QR-code-based tickets. |
+| [QR Code with Logo](Tools/qr_with_logo.py) | Creates QR codes with a logo. |
+| [Random Color Generator](Tools/RandColorGen.py) | Generates random colors. |
+| [Random Song Generator](Tools/random_song_generator.py) | Selects songs based on the provided mood or input. |
+| [Recently Accessed Files](Tools/recently_accessed_files.py) | Identifies recently accessed files. |
+| [Subnetting Calculator](Tools/subnetting_calculator.py) | Calculates network information from an IP address and subnet mask. |
+| [Countdown Timer](Tools/timer.py) | Implements a timer for specified durations. |
+| [Umbrella Reminder](Tools/umbrellaReminder.py) | Provides an umbrella reminder. |
+| [URL Shortener](Tools/urlshortener.py) | Generates shorter URLs from longer ones. |
+| [Web Scraper](Tools/Web_Scraper.py) | Scrapes information from websites. |
+| [Website Cloner](Tools/Website%20Cloner/) | Downloads and serves supported website content locally. |
+| [Wikipedia Extractor](Tools/wikipedia_extractor.py) | Extracts information from Wikipedia. |
+| [YouTube Downloader](Tools/youtubeDownloader.py) | Downloads supported YouTube media. |
+
+## License
+
+This repository includes a [LICENSE](LICENSE) file. Please review it before using, modifying, or redistributing the code.
+
+When using or adapting code contributed by someone else, respect the applicable license and preserve any required attribution.
+
+## Support
+
+If you find something useful here, consider giving the repository a star.
+
+If you encounter a bug or have an idea for an improvement, feel free to open an issue.
+
+Thanks for visiting!

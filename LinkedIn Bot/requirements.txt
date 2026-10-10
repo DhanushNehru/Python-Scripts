@@ -1,3 +1,0 @@
-Selenium: 4.12.1
-BeautifulSoup4: 4.13.0
-CSV

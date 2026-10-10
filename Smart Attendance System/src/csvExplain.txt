@@ -1,2 +1,0 @@
-first column = Student's Roll Number
-Second column = Student's Name

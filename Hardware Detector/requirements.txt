@@ -1,3 +1,0 @@
-psutil
-pynvml
-typing
